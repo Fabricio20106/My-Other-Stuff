@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "l",
+        "l",
+        "c"
+    ],
+    "key":
+    {
+        "l":
+        {
+            "item": "minecraft:lapis_lazuli"
+        },
+        "c":
+        {
+            "item": "others:coal_powder"
+        }
+    },
+    "result":
+    {
+        "item": "others:alan_ai_sword"
+    }
+}

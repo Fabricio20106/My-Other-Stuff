@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "g",
+        "g",
+        "s"
+    ],
+    "key":
+    {
+        "g":
+        {
+            "item": "others:galaxy_cloth"
+        },
+        "s":
+        {
+            "item": "minecraft:stick"
+        }
+    },
+    "result":
+    {
+        "item": "others:rainbow_sword"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "others:block/orange_flower_pot_cross",
+    "textures": {
+        "plant": "others:block/inno_flower"
+    }
+}

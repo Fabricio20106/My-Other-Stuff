@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "sps",
+        " s ",
+        " s "
+    ],
+    "key":
+    {
+        "s":
+        {
+            "item": "minecraft:stick"
+        },
+        "p":
+        {
+            "item": "others:phoenix_gem"
+        }
+    },
+    "result":
+    {
+        "item": "others:phoenix_wand"
+    }
+}

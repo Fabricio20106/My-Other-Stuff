@@ -1,0 +1,28 @@
+{
+  "name": "AI Swords",
+  "icon": "others:alan_ai_sword",
+  "category": "others:weapons",
+  "pages": [
+    {
+      "type": "text",
+      "text": "These AI Swords are like the other mc swords."
+    },
+    {
+      "type": "spotlight",
+      "item": "others:alice_ai_sword",
+      "title": "Ai sword are basically normal minecraft swords, inspired on an drawing of mine. The drawing is basically an Rimworld styled base but with aspects of the my Lego characters, with the rooms being the bedroom: the bedroom for Alice, Alan, Innovator, Nicolas and other characters. The kitchen: having an pretty table, some soups being cooked, and the black and white chekerboard patern as the floor. And the inventions room: which is being made an Alan Ai Sword in the table."
+    },
+    {
+      "type": "crafting",
+      "recipe": "others:alan_ai_sword",
+      "recipe2": "others:alice_ai_sword",
+      "title": "Alan Ai Sword"
+    },
+    {
+      "type": "recipe",
+      "recipe": "others:nicolas_ai_sword",
+      "recipe2": "others:innovator_ai_sword",
+      "text": "The ai swords crafting recipes!"
+    }
+  ]
+}

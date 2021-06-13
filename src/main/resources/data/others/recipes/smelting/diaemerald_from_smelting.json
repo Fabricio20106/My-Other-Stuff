@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "others:diaemerald_ore"
+  },
+  "result": "others:diaemerald",
+  "experience": 0.6,
+  "cookingtime": 200
+}

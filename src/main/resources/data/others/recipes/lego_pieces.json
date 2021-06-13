@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "nn",
+        "pp"
+    ],
+    "key":
+    {
+        "n":
+        {
+            "item": "minecraft:iron_nugget"
+        },
+        "p":
+        {
+            "item": "others:iron_powder"
+        }
+    },
+    "result":
+    {
+        "item": "others:lego_pieces",
+        "count": 16
+    }
+}

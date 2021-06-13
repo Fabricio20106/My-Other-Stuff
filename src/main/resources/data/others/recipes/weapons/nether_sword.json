@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "p",
+        "p",
+        "s"
+    ],
+    "key":
+    {
+        "p":
+        {
+            "item": "others:purple_ingot"
+        },
+        "s":
+        {
+            "item": "others:white_stick"
+        }
+    },
+    "result":
+    {
+        "item": "others:nether_sword"
+    }
+}

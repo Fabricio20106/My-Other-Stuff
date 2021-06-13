@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "others:inno_block"
+  },
+  "result": "others:inno_ingot",
+  "count": 9
+}

@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "sss",
+        "sws",
+        "sss"
+    ],
+    "key":
+    {
+        "s":
+        {
+            "item": "minecraft:stick"
+        },
+        "w":
+        {
+            "item": "minecraft:white_dye"
+        }
+    },
+    "result":
+    {
+        "item": "others:white_stick",
+        "count": 8
+    }
+}

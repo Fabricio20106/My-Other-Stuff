@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "others:block/nether_core_block"
+    }
+  }
+}

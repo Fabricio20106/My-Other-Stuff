@@ -1,0 +1,120 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "others:item/"
+  }
+}
+
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "others:item/"
+  }
+}
+
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "others:block/"
+  }
+}
+
+{
+  "parent": "others:block/"
+}
+
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "others:potted/"
+  }
+}
+
+"item.others.": "",
+"block.others.": "",
+
+"item.others.music_disc_": "Music Disc",
+"item.others.music_disc_.desc": "",
+
+{
+  "variants": {
+    "": {
+      "model": "others:block/"
+    }
+  }
+}
+
+shapeless:
+
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "others:"
+    }
+  ],
+  "result": {
+    "item": "others:"
+  }
+}
+
+furnace:
+
+
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": ""
+  },
+  "result": "",
+  "experience": 0.0,
+  "cookingtime": 200
+}
+
+shaped
+
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "",
+        "",
+        ""
+    ],
+    "key":
+    {
+        "":
+        {
+            "item": "others:"
+        },
+        "":
+        {
+            "item": "others:"
+        }
+    },
+    "result":
+    {
+        "item": "others:"
+    }
+}
+
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "eee",
+        "eee",
+        "eee"
+    ],
+    "key":
+    {
+        "e":
+        {
+            "item": "others:_nugget"
+        }
+    },
+    "result":
+    {
+        "item": "others:"
+    }
+}

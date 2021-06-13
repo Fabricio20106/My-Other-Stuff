@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "others:lined_bedrock"
+  },
+  "result": "others:lined_bedrock_slab",
+  "count": 2
+}

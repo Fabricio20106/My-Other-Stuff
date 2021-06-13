@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "r",
+        "r",
+        "c"
+    ],
+    "key":
+    {
+        "r":
+        {
+            "item": "minecraft:redstone"
+        },
+        "c":
+        {
+            "item": "others:coal_powder"
+        }
+    },
+    "result":
+    {
+        "item": "others:nicolas_ai_sword"
+    }
+}

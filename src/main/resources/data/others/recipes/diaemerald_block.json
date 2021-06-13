@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "ddd",
+        "ddd",
+        "ddd"
+    ],
+    "key":
+    {
+        "d":
+        {
+            "item": "others:diaemerald"
+        }
+    },
+    "result":
+    {
+        "item": "others:diaemerald_block"
+    }
+}

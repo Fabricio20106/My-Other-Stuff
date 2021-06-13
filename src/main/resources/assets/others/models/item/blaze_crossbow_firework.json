@@ -1,0 +1,6 @@
+{
+    "parent": "others:item/blaze_crossbow",
+    "textures": {
+        "layer0": "others:item/blaze_crossbow_firework"
+    }
+}

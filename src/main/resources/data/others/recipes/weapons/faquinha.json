@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "i",
+        "p",
+        "i"
+    ],
+    "key":
+    {
+        "i":
+        {
+            "item": "minecraft:iron_ingot"
+        },
+        "p":
+        {
+            "item": "others:pink_dye"
+        }
+    },
+    "result":
+    {
+        "item": "others:faquinha"
+    }
+}

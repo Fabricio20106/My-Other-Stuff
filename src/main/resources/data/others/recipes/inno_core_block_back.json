@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "others:inno_core_block"
+    }
+  ],
+  "result": {
+    "item": "others:inno_core",
+    "count": 9
+  }
+}

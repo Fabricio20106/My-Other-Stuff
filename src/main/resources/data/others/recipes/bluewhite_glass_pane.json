@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "bbb",
+        "bbb"
+    ],
+    "key":
+    {
+        "b":
+        {
+            "item": "others:bluewhite_glass"
+        }
+    },
+    "result":
+    {
+        "item": "others:bluewhite_glass_pane",
+        "count": 6
+    }
+}

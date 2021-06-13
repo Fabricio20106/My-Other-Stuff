@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        " l ",
+        "lml",
+        "ldl"
+    ],
+    "key":
+    {
+        "l":
+        {
+            "item": "others:blue_leather"
+        },
+        "m":
+        {
+            "item": "minecraft:melon"
+        },
+        "d":
+        {
+            "item": "minecraft:dirt"
+        }
+    },
+    "result":
+    {
+        "item": "others:melon_cape"
+    }
+}

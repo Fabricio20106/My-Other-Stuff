@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "eee",
+        "eee",
+        "eee"
+    ],
+    "key":
+    {
+        "e":
+        {
+            "item": "others:inno_nugget"
+        }
+    },
+    "result":
+    {
+        "item": "others:inno_ingot"
+    }
+}

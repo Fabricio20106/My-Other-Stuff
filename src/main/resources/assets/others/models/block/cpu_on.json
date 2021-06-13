@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "top": "others:block/cpu_side",
+    "front": "others:block/cpu_full",
+    "side": "others:block/cpu_side"
+  }
+}

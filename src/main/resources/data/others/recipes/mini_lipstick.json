@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "g",
+        "r",
+        "d"
+    ],
+    "key":
+    {
+        "g":
+        {
+            "item": "others:glass_casing"
+        },
+        "r":
+        {
+            "item": "others:red_lipstick"
+        },
+        "d":
+        {
+             "item": "others:dark_base"
+        }
+    },
+    "result":
+    {
+        "item": "others:mini_lipstick"
+    }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "others:nether_core_block"
+    }
+  ],
+  "result": {
+    "item": "others:nether_core",
+    "count": 9
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "others:light_magenta_ingot"
+    }
+  ],
+  "result": {
+    "item": "others:light_magenta_nugget",
+    "count": 9
+  }
+}

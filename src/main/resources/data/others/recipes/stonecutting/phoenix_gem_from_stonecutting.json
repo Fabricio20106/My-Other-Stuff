@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "others:phoenix_gem_block"
+  },
+  "result": "others:phoenix_gem",
+  "count": 9
+}

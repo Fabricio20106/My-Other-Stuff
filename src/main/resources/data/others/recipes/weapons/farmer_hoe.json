@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "bb",
+        " s",
+        " s"
+    ],
+    "key":
+    {
+        "b":
+        {
+            "item": "others:bright_first_ingot"
+        },
+        "s":
+        {
+            "item": "others:white_stick"
+        }
+    },
+    "result":
+    {
+        "item": "others:farmer_hoe"
+    }
+}

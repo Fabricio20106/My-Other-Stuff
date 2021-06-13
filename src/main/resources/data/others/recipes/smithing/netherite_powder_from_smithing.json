@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "others:diamond_powder"
+  },
+  "addition": {
+    "item": "others:netherite_powder"
+  },
+  "result": {
+    "item": "others:netherite_powder"
+  }
+}

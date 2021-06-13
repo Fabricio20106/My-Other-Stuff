@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "g",
+        "g",
+        "c"
+    ],
+    "key":
+    {
+        "g":
+        {
+            "item": "minecraft:gold_ingot"
+        },
+        "c":
+        {
+            "item": "others:coal_powder"
+        }
+    },
+    "result":
+    {
+        "item": "others:alice_ai_sword"
+    }
+}

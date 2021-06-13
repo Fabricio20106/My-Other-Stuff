@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "others:purple_ingot"
+    }
+  ],
+  "result": {
+    "item": "others:purple_nugget",
+    "count": 9
+  }
+}

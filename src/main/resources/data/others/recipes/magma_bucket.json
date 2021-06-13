@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "m m",
+        " m "
+    ],
+    "key":
+    {
+        "m":
+        {
+            "item": "minecraft:magma_block"
+        }
+    },
+    "result":
+    {
+        "item": "others:magma_bucket"
+    }
+}

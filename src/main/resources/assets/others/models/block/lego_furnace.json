@@ -1,0 +1,8 @@
+{
+  "parent": "block/orientable",
+  "textures": {
+    "top": "others:block/lego_furnace_top",
+    "front": "others:block/lego_furnace_front",
+    "side": "others:block/lego_furnace_side"
+  }
+}

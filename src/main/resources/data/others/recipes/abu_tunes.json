@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "lml"
+    ],
+    "key":
+    {
+        "l":
+        {
+            "item": "minecraft:light_blue_dye"
+        },
+        "m":
+        {
+            "item": "minecraft:music_disc_wait"
+        }
+    },
+    "result":
+    {
+        "item": "others:abu_tunes"
+    }
+}

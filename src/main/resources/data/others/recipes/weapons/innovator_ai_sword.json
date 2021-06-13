@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "i",
+        "i",
+        "c"
+    ],
+    "key":
+    {
+        "i":
+        {
+            "item": "others:inno_core"
+        },
+        "c":
+        {
+            "item": "others:coal_powder"
+        }
+    },
+    "result":
+    {
+        "item": "others:innovator_ai_sword"
+    }
+}

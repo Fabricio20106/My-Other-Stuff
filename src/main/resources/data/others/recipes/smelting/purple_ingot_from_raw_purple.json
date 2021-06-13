@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "others:raw_purple"
+  },
+  "result": "others:purple_ingot",
+  "experience": 0.6,
+  "cookingtime": 200
+}

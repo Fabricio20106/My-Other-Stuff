@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "ggg",
+        "gig",
+        " g "
+    ],
+    "key":
+    {
+        "g":
+        {
+            "item": "minecraft:gold_ingot"
+        },
+        "i":
+        {
+            "item": "minecraft:glass"
+        }
+    },
+    "result":
+    {
+        "item": "others:mirror"
+    }
+}

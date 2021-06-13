@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "i",
+        "i",
+        "s"
+    ],
+    "key":
+    {
+        "i":
+        {
+            "item": "others:inno_ingot"
+        },
+        "s":
+        {
+            "item": "others:white_stick"
+        }
+    },
+    "result":
+    {
+        "item": "others:inno_sword"
+    }
+}

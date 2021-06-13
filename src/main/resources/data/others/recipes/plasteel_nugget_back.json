@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "eee",
+        "eee",
+        "eee"
+    ],
+    "key":
+    {
+        "e":
+        {
+            "item": "others:plasteel_nugget"
+        }
+    },
+    "result":
+    {
+        "item": "others:plasteel"
+    }
+}

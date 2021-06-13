@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "others:crystal_ore"
+  },
+  "result": "others:crystal",
+  "experience": 0.7,
+  "cookingtime": 200
+}

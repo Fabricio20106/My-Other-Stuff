@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "c",
+        "s",
+        "s"
+    ],
+    "key":
+    {
+        "c":
+        {
+            "item": "minecraft:crying_obsidian"
+        },
+        "s":
+        {
+            "item": "minecraft:stick"
+        }
+    },
+    "result":
+    {
+        "item": "others:anchor_shovel"
+    }
+}

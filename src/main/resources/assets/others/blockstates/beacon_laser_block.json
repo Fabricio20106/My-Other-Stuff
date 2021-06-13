@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "others:block/beacon_laser_block"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "others:dark_first_ingot"
+    }
+  ],
+  "result": {
+    "item": "others:dark_first_nugget",
+    "count": 9
+  }
+}

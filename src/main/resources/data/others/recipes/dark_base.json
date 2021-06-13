@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "ccc"
+    ],
+    "key":
+    {
+        "c":
+        {
+            "item": "others:coal_powder"
+        }
+    },
+    "result":
+    {
+        "item": "others:dark_base",
+        "count": 2
+    }
+}

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "others:block/phoenix_gem_block"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "p"
+    ],
+    "key":
+    {
+        "":
+        {
+            "item": "minecraft:pink_tulip"
+        }
+    },
+    "result":
+    {
+        "item": "others:tulip"
+    }
+}

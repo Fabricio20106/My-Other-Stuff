@@ -1,0 +1,6 @@
+{
+   "parent": "block/cube_all",
+   "textures": {
+     "all": "others:block/nether_core_block"
+   }
+}

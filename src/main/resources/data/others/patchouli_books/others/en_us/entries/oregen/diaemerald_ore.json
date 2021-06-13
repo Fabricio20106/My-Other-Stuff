@@ -1,0 +1,13 @@
+{
+  "name": "Diaemerald Ore",
+  "icon": "others:diaemerald_ore",
+  "category": "others:oregen",
+  "pages": [
+    {
+      "type": "image",
+      "images": "others:textures/gui/entries/diaemeralds.png",
+      "title": "Diaemerald Ore Generation",
+      "text": "It cames from an irl diamond pickaxe i bought, which looked like more a bluish-green color. Then when i was adding recipes to the mod, i had to make an gem to it, thich i called i 'Diaemerald'."
+    }
+  ]
+}

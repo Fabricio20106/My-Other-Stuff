@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "p",
+        "p",
+        "s"
+    ],
+    "key":
+    {
+        "p":
+        {
+            "item": "others:plasteel"
+        },
+        "s":
+        {
+            "item": "minecraft:stick"
+        }
+    },
+    "result":
+    {
+        "item": "others:plasteel_sword"
+    }
+}

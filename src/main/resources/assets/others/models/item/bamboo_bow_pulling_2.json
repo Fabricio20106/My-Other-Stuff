@@ -1,0 +1,6 @@
+{
+    "parent": "others:item/bamboo_bow",
+    "textures": {
+        "layer0": "others:item/bamboo_bow_pulling_2"
+    }
+}
