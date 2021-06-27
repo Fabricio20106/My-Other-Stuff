@@ -13,12 +13,30 @@ import net.minecraftforge.common.world.BiomeGenerationSettingsBuilder;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
 
 public class OreGeneration {
-    /*public static void genOres(final BiomeLoadingEvent event) {
+    public static void genDiaemeraldOre(final BiomeLoadingEvent event) {
         if (!(event.getCategory().equals(Biome.Category.NETHER) || event.getCategory().equals(Biome.Category.THEEND))) {
-            Methods.genOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, BlockInit.inno_ore.get().getDefaultState(), 8, 20, 64, 4);
-            Methods.genOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, BlockInit.diaemerald_ore.get().getDefaultState(), 8, 0, 16, 4);
-            Methods.genOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_NETHER, BlockInit.purple_ore.get().getDefaultState(), 8, 32, 72, 4);
-            Methods.genOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, BlockInit.crystal_ore.get().getDefaultState(), 8, 8, 16, 10);
+            genOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, BlockInit.diaemerald_ore.get().getDefaultState(), 8, 0, 16, 4);
         }
-    }*/
+    }
+    public static void genInnoOre(final BiomeLoadingEvent event) {
+        if (!(event.getCategory().equals(Biome.Category.NETHER) || event.getCategory().equals(Biome.Category.THEEND))) {
+            genOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, BlockInit.inno_ore.get().getDefaultState(), 8, 20, 64, 4);
+        }
+    }
+    public static void genPurpleOre(final BiomeLoadingEvent event) {
+        if (!(event.getCategory().equals(Biome.Category.NETHER) || event.getCategory().equals(Biome.Category.THEEND))) {
+            genOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_NETHER, BlockInit.purple_ore.get().getDefaultState(), 8, 32, 72, 4);
+        }
+    }
+    public static void genCrystalOre(final BiomeLoadingEvent event) {
+        if (!(event.getCategory().equals(Biome.Category.NETHER) || event.getCategory().equals(Biome.Category.THEEND))) {
+            genOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, BlockInit.crystal_ore.get().getDefaultState(), 8, 8, 16, 10);
+        }
+    }
+
+    public static void genOre(BiomeGenerationSettingsBuilder settings, RuleTest fillerType, BlockState state, int veinSize, int minHeight, int maxHeight, int amount) {
+        settings.withFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(
+                new OreFeatureConfig(fillerType, state, veinSize)).withPlacement(Placement.RANGE.configure(
+                new TopSolidRangeConfig(minHeight, 0, maxHeight))).square().func_242731_b(amount));
+    }
 }

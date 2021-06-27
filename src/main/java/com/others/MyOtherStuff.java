@@ -15,11 +15,16 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
+import java.util.logging.LogManager;
+import java.util.logging.Logger;
+
 @Mod(MyOtherStuff.mod_id)
 public class MyOtherStuff {
     // 16773874 <- inno decimal color fff2f2 <- inno hexadecimal color
     // WeaponryInit.weapons.register(Registring);
     // .maxStackSize(1)
+
+    public static final Logger logger = LogManager.getLogManager().getLogger(MyOtherStuff.mod_id);
 
     public static final String mod_id = "others";
 
@@ -27,8 +32,8 @@ public class MyOtherStuff {
         final IEventBus Registring = FMLJavaModLoadingContext.get().getModEventBus();
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
-        /*Some Other Stuff*/
         MinecraftForge.EVENT_BUS.register(this);
+        /*Some Other Stuff*/
         register();
 
         StuffInit.items.register(Registring);
@@ -48,5 +53,4 @@ public class MyOtherStuff {
 
     @SubscribeEvent
     public void onServerStarting(FMLServerStartingEvent event) {}
-
 }

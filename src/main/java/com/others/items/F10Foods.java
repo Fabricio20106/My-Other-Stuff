@@ -3,7 +3,6 @@ package com.others.items;
 import net.minecraft.item.Food;
 
 public class F10Foods {
-
     public static final Food green_apple = (new Food.Builder()).hunger(6).saturation(3).build();
     public static final Food cupcake = (new Food.Builder()).hunger(6).saturation(3).build();
     public static final Food sprinkled_donut = (new Food.Builder()).hunger(6).saturation(3).build();
@@ -15,5 +14,4 @@ public class F10Foods {
     public static final Food packaged_survival_meal = (new Food.Builder()).hunger(6).saturation(3).build();
     public static final Food nutrient_paste_meal = (new Food.Builder()).hunger(6).saturation(3).build();
     public static final Food blue_carrot = (new Food.Builder()).hunger(3).saturation(0.6F).build();
-
 }
