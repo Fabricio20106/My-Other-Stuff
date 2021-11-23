@@ -1,24 +1,19 @@
 {
     "type": "minecraft:crafting_shaped",
-    "pattern":
-    [
+    "pattern": [
         "iii",
         "imi",
         "iii"
     ],
-    "key":
-    {
-        "i":
-        {
+    "key": {
+        "i": {
             "item": "minecraft:iron_ingot"
         },
-        "m":
-        {
+        "m": {
             "item": "minecraft:magenta_dye"
         }
     },
-    "result":
-    {
+    "result": {
         "item": "others:light_magenta_ingot",
         "count": 8
     }

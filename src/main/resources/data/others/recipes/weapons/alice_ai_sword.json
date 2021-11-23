@@ -1,24 +1,19 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern":
-    [
-        "g",
-        "g",
-        "c"
-    ],
-    "key":
-    {
-        "g":
-        {
-            "item": "minecraft:gold_ingot"
-        },
-        "c":
-        {
-            "item": "others:coal_powder"
-        }
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "g",
+    "g",
+    "c"
+  ],
+  "key": {
+    "g": {
+      "tag": "forge:ingots/gold"
     },
-    "result":
-    {
-        "item": "others:alice_ai_sword"
+    "c": {
+      "tag": "forge:dusts/coal"
     }
+  },
+  "result": {
+    "item": "others:alice_ai_sword"
+  }
 }

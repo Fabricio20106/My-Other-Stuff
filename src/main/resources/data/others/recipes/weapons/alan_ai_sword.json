@@ -1,24 +1,19 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern":
-    [
-        "l",
-        "l",
-        "c"
-    ],
-    "key":
-    {
-        "l":
-        {
-            "item": "minecraft:lapis_lazuli"
-        },
-        "c":
-        {
-            "item": "others:coal_powder"
-        }
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "l",
+    "l",
+    "c"
+  ],
+  "key": {
+    "l": {
+      "tag": "forge:gems/lapis"
     },
-    "result":
-    {
-        "item": "others:alan_ai_sword"
+    "c": {
+      "tag": "forge:dusts/coal"
     }
+  },
+  "result": {
+    "item": "others:alan_ai_sword"
+  }
 }

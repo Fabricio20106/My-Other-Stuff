@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "others:blue_block"
+    }
+  },
+  "result": {
+    "item": "others:blue_stairs",
+    "count": 6
+  }
+}

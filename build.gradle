@@ -13,8 +13,8 @@ apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
 version = '1.4.1'
-group = 'com.others'
-archivesBaseName = 'others'
+group = 'com.junethewoods.myotherstuff'
+archivesBaseName = 'myotherstuff-1.16.4'
 
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8'
 
@@ -58,8 +58,10 @@ minecraft {
 
             property 'forge.logging.console.level', 'debug'
 
-            args '--mod', 'others', '--all', '--existing', file('src/generated/resources').toString(), '--existing', file('src/main/resources').toString(), '--output', file('src/generated/resources/')
-
+            args '--mod', 'others', '--all',
+                    '--existing', file('src/main/resources').toString(),
+                    '--existing', file('src/generated/resources').toString(),
+                    '--output', file('src/generated/resources/')
             mods {
                 others {
                     source sourceSets.main
@@ -79,7 +81,7 @@ dependencies {
 jar {
     manifest {
         attributes([
-            "Specification-Title": "others",
+            "Specification-Title": "My Other Stuff",
             "Specification-Vendor": "examplemodsareus",
             "Specification-Version": "1",
             "Implementation-Title": project.name,

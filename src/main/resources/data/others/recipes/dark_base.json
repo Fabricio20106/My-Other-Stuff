@@ -1,18 +1,14 @@
 {
     "type": "minecraft:crafting_shaped",
-    "pattern":
-    [
+    "pattern": [
         "ccc"
     ],
-    "key":
-    {
-        "c":
-        {
-            "item": "others:coal_powder"
+    "key": {
+        "c": {
+            "tag": "forge:dusts/coal"
         }
     },
-    "result":
-    {
+    "result": {
         "item": "others:dark_base",
         "count": 2
     }

@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:ores/inno",
+    "#forge:ores/purple",
+    "#forge:ores/diaemerald",
+    "#forge:ores/crystal",
+    "#forge:ores/first"
+  ]
+}

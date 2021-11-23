@@ -1,27 +1,21 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern":
-    [
-        "cr",
-        "n"
-    ],
-    "key":
-    {
-        "c":
-        {
-            "item": "others:coal_powder"
-        },
-        "r":
-        {
-            "item": "minecraft:redstone_dust"
-        },
-        "n":
-        {
-            "item": "minecraft:note_block"
-        }
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "cr",
+    "n "
+  ],
+  "key": {
+    "c": {
+      "tag": "forge:dusts/coal"
     },
-    "result":
-    {
-        "item": "others:circuit_piece_speaker"
+    "r": {
+      "item": "minecraft:redstone"
+    },
+    "n": {
+      "item": "minecraft:note_block"
     }
+  },
+  "result": {
+    "item": "others:circuit_piece_speaker"
+  }
 }

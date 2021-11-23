@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "X X",
+    "X X"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:crying_obsidian"
+    }
+  },
+  "result": {
+    "item": "others:anchor_leggings"
+  }
+}

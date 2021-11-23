@@ -1,32 +1,25 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern":
-    [
-        "lcl",
-        " s ",
-        " g "
-    ],
-    "key":
-    {
-        "l":
-        {
-            "item": "others:lego_pieces"
-        },
-        "c":
-        {
-            "item": "minecraft:sugar_cane"
-        },
-        "s":
-        {
-            "item": "minecraft:stick"
-        },
-        "g":
-        {
-            "item": "minecraft:gray_wool"
-        }
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "lcl",
+    " s ",
+    " g "
+  ],
+  "key": {
+    "l": {
+      "item": "others:lego_pieces"
     },
-    "result":
-    {
-        "item": "others:lego_hammer"
+    "c": {
+      "item": "minecraft:sugar_cane"
+    },
+    "s": {
+      "tag": "forge:rods/wooden"
+    },
+    "g": {
+      "item": "minecraft:gray_wool"
     }
+  },
+  "result": {
+    "item": "others:lego_hammer"
+  }
 }

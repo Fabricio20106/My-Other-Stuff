@@ -74,6 +74,10 @@
   "block.others.autocrafter": "Autocrafter",
   "block.others.lego_furnace": "Lego Furnace",
   "block.others.cpu": "Cpu",
+  "block.others.raw_inno_block": "Block of Raw Inno",
+  "block.others.raw_purple_block": "Block of Raw Purple",
+  "block.others.raw_first_block": "Block of Raw First",
+  "block.others.blue_stairs": "Blue Stairs",
 
   "item.others.raw_inno": "Raw Inno",
   "item.others.inno_dye": "Inno Dye",

@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smelting",
   "ingredient": {
-    "item": "others:diaemerald_ore"
+    "tag": "forge:ores/diaemerald"
   },
   "result": "others:diaemerald",
   "experience": 0.6,

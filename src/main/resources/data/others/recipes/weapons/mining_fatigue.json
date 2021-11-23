@@ -1,24 +1,19 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern":
-    [
-        "n",
-        "i",
-        "i"
-    ],
-    "key":
-    {
-        "n":
-        {
-            "item": "minecraft:iron_nugget"
-        },
-        "i":
-        {
-            "item": "minecraft:iron_ingot"
-        }
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "n",
+    "i",
+    "i"
+  ],
+  "key": {
+    "n": {
+      "item": "minecraft:heavy_weighted_pressure_plate"
     },
-    "result":
-    {
-        "item": "others:mining_fatigue"
+    "i": {
+      "tag": "forge:ingots/iron"
     }
+  },
+  "result": {
+    "item": "others:mining_fatigue"
+  }
 }

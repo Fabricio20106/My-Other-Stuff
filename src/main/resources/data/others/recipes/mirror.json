@@ -1,24 +1,19 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern":
-    [
-        "ggg",
-        "gig",
-        " g "
-    ],
-    "key":
-    {
-        "g":
-        {
-            "item": "minecraft:gold_ingot"
-        },
-        "i":
-        {
-            "item": "minecraft:glass"
-        }
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ggg",
+    "gig",
+    " g "
+  ],
+  "key": {
+    "g": {
+      "tag": "forge:ingots/gold"
     },
-    "result":
-    {
-        "item": "others:mirror"
+    "i": {
+      "item": "minecraft:glass"
     }
+  },
+  "result": {
+    "item": "others:mirror"
+  }
 }

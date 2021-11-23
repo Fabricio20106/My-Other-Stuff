@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:storage_blocks/diaemerald",
+    "#forge:storage_blocks/crystal",
+    "#forge:storage_blocks/inno",
+    "#forge:storage_blocks/purple",
+    "#forge:storage_blocks/bright_first",
+    "#forge:storage_blocks/dark_first",
+    "#forge:storage_blocks/first",
+    "#forge:storage_blocks/phoenix",
+    "#forge:storage_blocks/plasteel",
+    "#forge:storage_blocks/inno_core",
+    "#forge:storage_blocks/nether_core"
+  ]
+}

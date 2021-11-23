@@ -1,24 +1,19 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern":
-    [
-        "i",
-        "i",
-        "c"
-    ],
-    "key":
-    {
-        "i":
-        {
-            "item": "others:inno_core"
-        },
-        "c":
-        {
-            "item": "others:coal_powder"
-        }
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "i",
+    "i",
+    "c"
+  ],
+  "key": {
+    "i": {
+      "tag": "forge:gems/inno_core"
     },
-    "result":
-    {
-        "item": "others:innovator_ai_sword"
+    "c": {
+      "tag": "forge:dusts/coal"
     }
+  },
+  "result": {
+    "item": "others:innovator_ai_sword"
+  }
 }

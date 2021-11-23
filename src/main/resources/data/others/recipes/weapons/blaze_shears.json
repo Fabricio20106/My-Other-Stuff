@@ -1,19 +1,15 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern":
-    [
-        "b ",
-        " b"
-    ],
-    "key":
-    {
-        "b":
-        {
-            "item": "minecraft:blaze_rod"
-        }
-    },
-    "result":
-    {
-        "item": "others:blaze_shears"
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " b",
+    "b "
+  ],
+  "key": {
+    "b": {
+      "item": "minecraft:blaze_rod"
     }
+  },
+  "result": {
+    "item": "others:blaze_shears"
+  }
 }

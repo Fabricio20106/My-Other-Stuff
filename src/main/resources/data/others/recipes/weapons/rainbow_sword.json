@@ -1,24 +1,19 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern":
-    [
-        "g",
-        "g",
-        "s"
-    ],
-    "key":
-    {
-        "g":
-        {
-            "item": "others:galaxy_cloth"
-        },
-        "s":
-        {
-            "item": "minecraft:stick"
-        }
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "g",
+    "g",
+    "s"
+  ],
+  "key": {
+    "g": {
+      "item": "others:galaxy_cloth"
     },
-    "result":
-    {
-        "item": "others:rainbow_sword"
+    "s": {
+      "tag": "forge:rods/wooden"
     }
+  },
+  "result": {
+    "item": "others:rainbow_sword"
+  }
 }

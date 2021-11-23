@@ -1,24 +1,19 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern":
-    [
-        "bb",
-        " s",
-        " s"
-    ],
-    "key":
-    {
-        "b":
-        {
-            "item": "others:bright_first_ingot"
-        },
-        "s":
-        {
-            "item": "others:white_stick"
-        }
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "bb",
+    " s",
+    " s"
+  ],
+  "key": {
+    "b": {
+      "tag": "forge:ingots/bright_first"
     },
-    "result":
-    {
-        "item": "others:farmer_hoe"
+    "s": {
+      "tag": "forge:rods/wooden"
     }
+  },
+  "result": {
+    "item": "others:farmer_hoe"
+  }
 }

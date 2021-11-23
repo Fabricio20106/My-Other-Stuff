@@ -1,24 +1,19 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern":
-    [
-        "i",
-        "p",
-        "i"
-    ],
-    "key":
-    {
-        "i":
-        {
-            "item": "minecraft:iron_ingot"
-        },
-        "p":
-        {
-            "item": "others:pink_dye"
-        }
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "i",
+    "p",
+    "i"
+  ],
+  "key": {
+    "i": {
+      "tag": "forge:ingots/iron"
     },
-    "result":
-    {
-        "item": "others:faquinha"
+    "p": {
+      "item": "others:pink_dye"
     }
+  },
+  "result": {
+    "item": "others:faquinha"
+  }
 }

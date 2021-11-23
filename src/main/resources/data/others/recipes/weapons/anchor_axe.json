@@ -1,24 +1,19 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern":
-    [
-        "cc",
-        "cs",
-        " s"
-    ],
-    "key":
-    {
-        "c":
-        {
-            "item": "minecraft:crying_obsidian"
-        },
-        "s":
-        {
-            "item": "minecraft:stick"
-        }
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "cc",
+    "cs",
+    " s"
+  ],
+  "key": {
+    "c": {
+      "item": "minecraft:crying_obsidian"
     },
-    "result":
-    {
-        "item": "others:anchor_axe"
+    "s": {
+      "tag": "forge:rods/wooden"
     }
+  },
+  "result": {
+    "item": "others:anchor_axe"
+  }
 }

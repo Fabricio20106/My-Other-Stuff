@@ -1,19 +1,15 @@
 {
     "type": "minecraft:crafting_shaped",
-    "pattern":
-    [
+    "pattern": [
         " g ",
         "g g"
     ],
-    "key":
-    {
-        "g":
-        {
+    "key": {
+        "g": {
             "item": "minecraft:glass"
         }
     },
-    "result":
-    {
+    "result": {
         "item": "others:glass_casing",
         "count": 3
     }

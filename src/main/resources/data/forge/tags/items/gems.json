@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:gems/diaemerald",
+    "#forge:gems/phoenix",
+    "#forge:gems/crystal",
+    "#forge:gems/inno_core",
+    "#forge:gems/nether_core",
+    "#forge:gems/ruby"
+  ]
+}

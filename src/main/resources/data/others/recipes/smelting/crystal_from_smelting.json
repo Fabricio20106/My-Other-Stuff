@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smelting",
   "ingredient": {
-    "item": "others:crystal_ore"
+    "tag": "forge:ores/crystal"
   },
   "result": "others:crystal",
   "experience": 0.7,

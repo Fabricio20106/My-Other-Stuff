@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CW",
+    "RW"
+  ],
+  "key": {
+    "C": {
+      "item": "others:circuit_piece_speaker"
+    },
+    "R": {
+      "tag": "forge:dusts/redstone"
+    },
+    "W": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "result": {
+    "item": "others:multilaser_speakers",
+    "count": 2
+  }
+}

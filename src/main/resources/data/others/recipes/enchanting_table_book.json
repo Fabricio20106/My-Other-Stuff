@@ -1,23 +1,18 @@
 {
     "type": "minecraft:crafting_shaped",
-    "pattern":
-    [
+    "pattern": [
         "bg",
-        "g"
+        "g "
     ],
-    "key":
-    {
-        "b":
-        {
+    "key": {
+        "b": {
             "item": "minecraft:book"
         },
-        "g":
-        {
+        "g": {
             "item": "minecraft:gold_ingot"
         }
     },
-    "result":
-    {
+    "result": {
         "item": "others:enchanting_table_book"
     }
 }

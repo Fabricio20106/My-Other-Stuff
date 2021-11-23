@@ -1,22 +1,17 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern":
-    [
-        "rer"
-    ],
-    "key":
-    {
-        "r":
-        {
-            "item": "minecraft:red_carpet"
-        },
-        "e":
-        {
-            "item": "minecraft:emerald"
-        }
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "rer"
+  ],
+  "key": {
+    "r": {
+      "item": "minecraft:red_carpet"
     },
-    "result":
-    {
-        "item": "others:heroes_emerald"
+    "e": {
+      "item": "minecraft:emerald"
     }
+  },
+  "result": {
+    "item": "others:heroes_emerald"
+  }
 }

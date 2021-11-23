@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X X",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "others:galaxy_cloth"
+    }
+  },
+  "result": {
+    "item": "others:galaxy_chestplate"
+  }
+}

@@ -1,23 +1,18 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern":
-    [
-        "ds",
-        "s"
-    ],
-    "key":
-    {
-        "d":
-        {
-            "item": "minecraft:diamond"
-        },
-        "s":
-        {
-            "item": "minecraft:string"
-        }
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ds",
+    "s "
+  ],
+  "key": {
+    "d": {
+      "tag": "forge:gems/diamond"
     },
-    "result":
-    {
-        "item": "others:heart_yo_yo"
+    "s": {
+      "item": "minecraft:string"
     }
+  },
+  "result": {
+    "item": "others:heart_yo_yo"
+  }
 }

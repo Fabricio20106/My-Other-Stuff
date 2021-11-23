@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X X",
+    "XRX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:crying_obsidian"
+    },
+    "R": {
+      "item": "minecraft:respawn_anchor"
+    }
+  },
+  "result": {
+    "item": "others:anchor_chestplate"
+  }
+}

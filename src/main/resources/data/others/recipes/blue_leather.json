@@ -1,22 +1,17 @@
 {
     "type": "minecraft:crafting_shaped",
-    "pattern":
-    [
+    "pattern": [
         "blb"
     ],
-    "key":
-    {
-        "b":
-        {
+    "key": {
+        "b": {
             "item": "minecraft:blue_dye"
         },
-        "l":
-        {
+        "l": {
             "item": "others:leather"
         }
     },
-    "result":
-    {
+    "result": {
         "item": "others:blue_leather",
         "count": 4
     }

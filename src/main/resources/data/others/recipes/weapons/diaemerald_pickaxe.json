@@ -1,24 +1,19 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern":
-    [
-        "ddd",
-        " s ",
-        " s "
-    ],
-    "key":
-    {
-        "s":
-        {
-            "item": "minecraft:stick"
-        },
-        "d":
-        {
-            "item": "others:diaemerald"
-        }
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ddd",
+    " s ",
+    " s "
+  ],
+  "key": {
+    "s": {
+      "tag": "forge:rods/wooden"
     },
-    "result":
-    {
-        "item": "others:diaemerald_pickaxe"
+    "d": {
+      "tag": "forge:gems/diaemerald"
     }
+  },
+  "result": {
+    "item": "others:diaemerald_pickaxe"
+  }
 }

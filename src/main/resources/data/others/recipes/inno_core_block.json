@@ -1,20 +1,16 @@
 {
     "type": "minecraft:crafting_shaped",
-    "pattern":
-    [
+    "pattern": [
         "eee",
         "eee",
         "eee"
     ],
-    "key":
-    {
-        "e":
-        {
+    "key": {
+        "e": {
             "item": "others:inno_core"
         }
     },
-    "result":
-    {
+    "result": {
         "item": "others:inno_core_block"
     }
 }

@@ -1,19 +1,15 @@
 {
     "type": "minecraft:crafting_shaped",
-    "pattern":
-    [
+    "pattern": [
         "eee",
         "eee"
     ],
-    "key":
-    {
-        "e":
-        {
+    "key": {
+        "e": {
             "item": "others:end_crystal_glass"
         }
     },
-    "result":
-    {
+    "result": {
         "item": "others:end_crystal_glass_pane",
         "count": 6
     }

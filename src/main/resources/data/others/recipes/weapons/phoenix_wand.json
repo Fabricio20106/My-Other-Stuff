@@ -1,24 +1,19 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern":
-    [
-        "sps",
-        " s ",
-        " s "
-    ],
-    "key":
-    {
-        "s":
-        {
-            "item": "minecraft:stick"
-        },
-        "p":
-        {
-            "item": "others:phoenix_gem"
-        }
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "sps",
+    " s ",
+    " s "
+  ],
+  "key": {
+    "s": {
+      "tag": "forge:rods/wooden"
     },
-    "result":
-    {
-        "item": "others:phoenix_wand"
+    "p": {
+      "tag": "forge:gems/phoenix"
     }
+  },
+  "result": {
+    "item": "others:phoenix_wand"
+  }
 }
