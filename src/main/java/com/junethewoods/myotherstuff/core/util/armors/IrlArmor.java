@@ -9,6 +9,6 @@ import java.util.function.Supplier;
 
 public class IrlArmor extends OtRobes {
     public IrlArmor(String name, Supplier<Ingredient> repairMaterial) {
-        super(MyOtherStuff.prefix + name, 15, new int[]{2, 5, 6, 2}, 50, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 3.0F, 0.0F, repairMaterial);
+        super(MyOtherStuff.PREFIX + name, 15, new int[]{2, 5, 6, 2}, 50, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 3.0F, 0.0F, repairMaterial);
     }
 }

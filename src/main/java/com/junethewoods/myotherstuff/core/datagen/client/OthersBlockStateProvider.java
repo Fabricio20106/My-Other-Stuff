@@ -1,4 +1,4 @@
-package com.junethewoods.myotherstuff.core.datagen;
+package com.junethewoods.myotherstuff.core.datagen.client;
 
 import com.junethewoods.myotherstuff.core.MyOtherStuff;
 import com.junethewoods.myotherstuff.core.init.BlockInit;
@@ -7,9 +7,9 @@ import net.minecraft.data.DataGenerator;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
-public class OtherBlockStateProvider extends BlockStateProvider {
-    public OtherBlockStateProvider(DataGenerator gen, ExistingFileHelper exFileHelper) {
-        super(gen, MyOtherStuff.mod_id, exFileHelper);
+public class OthersBlockStateProvider extends BlockStateProvider {
+    public OthersBlockStateProvider(DataGenerator gen, ExistingFileHelper exFileHelper) {
+        super(gen, MyOtherStuff.MOD_ID, exFileHelper);
     }
 
     @Override

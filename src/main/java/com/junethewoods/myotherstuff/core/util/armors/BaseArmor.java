@@ -9,6 +9,6 @@ import java.util.function.Supplier;
 
 public class BaseArmor extends OtRobes {
     public BaseArmor(String name, int maxDamageFactor, int[] damageReductionAmountArray, int enchantability, SoundEvent soundEvent, float toughness, float knockbackResistance, Supplier<Ingredient> repairMaterial) {
-        super(MyOtherStuff.prefix + name, maxDamageFactor, damageReductionAmountArray, enchantability, soundEvent, toughness, knockbackResistance, repairMaterial);
+        super(MyOtherStuff.PREFIX + name, maxDamageFactor, damageReductionAmountArray, enchantability, soundEvent, toughness, knockbackResistance, repairMaterial);
     }
 }

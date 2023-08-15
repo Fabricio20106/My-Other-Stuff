@@ -1,6 +1,5 @@
 package com.junethewoods.myotherstuff.core.init;
 
-import com.junethewoods.myotherstuff.core.MyOtherStuff;
 import com.junethewoods.myotherstuff.core.util.OtRobes;
 import com.junethewoods.myotherstuff.core.util.armors.BaseArmor;
 import com.junethewoods.myotherstuff.core.util.armors.IrlArmor;
@@ -12,7 +11,6 @@ import net.minecraft.item.Items;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.SoundEvents;
-import net.minecraftforge.registries.DeferredRegister;
 
 public class Robes {
     public static final SoundEvent leatherEquip = SoundEvents.ITEM_ARMOR_EQUIP_LEATHER;

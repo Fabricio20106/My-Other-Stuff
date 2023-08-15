@@ -15,18 +15,18 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import java.util.function.Supplier;
 
 public enum OtherRobes implements IArmorMaterial {
-    blup(MyOtherStuff.mod_id + ":blup", 15, new int[]{2, 5, 6, 2}, 50, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 3.0F, 0.0F, () -> {return Ingredient.fromItems(StuffInit.blue_leather.get());}),
-    crystal(MyOtherStuff.mod_id + ":crystal", 15, new int[]{2, 5, 6, 2}, 50, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 3.0F, 0.0F, () -> {return Ingredient.fromItems(StuffInit.crystal.get()); }),
-    empresary(MyOtherStuff.mod_id + ":empresary2", 15, new int[]{2, 5, 6, 2}, 50, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 3.0F, 0.0F, () -> {return Ingredient.fromItems(StuffInit.blue_leather.get()); }),
-    galaxy(MyOtherStuff.mod_id + ":galaxy", 15, new int[]{2, 5, 6, 2}, 50, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 3.0F, 0.0F, () -> {return Ingredient.fromItems(StuffInit.galaxy_cloth.get()); }),
-    green(MyOtherStuff.mod_id + ":green", 15, new int[]{2, 5, 6, 2}, 50, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 3.0F, 0.0F, () -> {return Ingredient.fromItems(Items.GREEN_WOOL); }),
-    number(MyOtherStuff.mod_id + ":number", 15, new int[]{2, 5, 6, 2}, 50, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 3.0F, 0.0F, () -> {return Ingredient.fromItems(Items.BLUE_WOOL); }),
-    orange(MyOtherStuff.mod_id + ":orange", 15, new int[]{2, 5, 6, 2}, 50, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 3.0F, 0.0F, () -> {return Ingredient.fromItems(Items.ORANGE_WOOL); }),
-    pales(MyOtherStuff.mod_id + ":pales", 15, new int[]{2, 5, 6, 2}, 50, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 3.0F, 0.0F, () -> {return Ingredient.fromItems(Items.BLUE_DYE); }),
-    speed(MyOtherStuff.mod_id + ":speed", 15, new int[]{2, 5, 6, 2}, 50, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 3.0F, 0.0F, () -> {return Ingredient.fromItems(Items.REDSTONE); }),
-    husk(MyOtherStuff.mod_id + ":husk", 15, new int[]{2, 5, 6, 2}, 50, SoundEvents.ITEM_ARMOR_EQUIP_TURTLE, 3.0F, 0.0F, () -> {return Ingredient.fromItems(Items.YELLOW_WOOL); }),
-    abu(MyOtherStuff.mod_id + ":abu", 15, new int[]{2, 5, 6, 2}, 50, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.0F, () -> {return Ingredient.fromItems(StuffInit.blue_leather.get()); }),
-    kimono(MyOtherStuff.mod_id + ":kimono", 15, new int[]{2, 5, 6, 2}, 50, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.0F, () -> {return Ingredient.fromItems(StuffInit.blue_leather.get()); });
+    blup(MyOtherStuff.MOD_ID + ":blup", 15, new int[]{2, 5, 6, 2}, 50, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 3.0F, 0.0F, () -> {return Ingredient.fromItems(StuffInit.blue_leather.get());}),
+    crystal(MyOtherStuff.MOD_ID + ":crystal", 15, new int[]{2, 5, 6, 2}, 50, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 3.0F, 0.0F, () -> {return Ingredient.fromItems(StuffInit.crystal.get()); }),
+    empresary(MyOtherStuff.MOD_ID + ":empresary2", 15, new int[]{2, 5, 6, 2}, 50, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 3.0F, 0.0F, () -> {return Ingredient.fromItems(StuffInit.blue_leather.get()); }),
+    galaxy(MyOtherStuff.MOD_ID + ":galaxy", 15, new int[]{2, 5, 6, 2}, 50, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 3.0F, 0.0F, () -> {return Ingredient.fromItems(StuffInit.galaxy_cloth.get()); }),
+    green(MyOtherStuff.MOD_ID + ":green", 15, new int[]{2, 5, 6, 2}, 50, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 3.0F, 0.0F, () -> {return Ingredient.fromItems(Items.GREEN_WOOL); }),
+    number(MyOtherStuff.MOD_ID + ":number", 15, new int[]{2, 5, 6, 2}, 50, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 3.0F, 0.0F, () -> {return Ingredient.fromItems(Items.BLUE_WOOL); }),
+    orange(MyOtherStuff.MOD_ID + ":orange", 15, new int[]{2, 5, 6, 2}, 50, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 3.0F, 0.0F, () -> {return Ingredient.fromItems(Items.ORANGE_WOOL); }),
+    pales(MyOtherStuff.MOD_ID + ":pales", 15, new int[]{2, 5, 6, 2}, 50, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 3.0F, 0.0F, () -> {return Ingredient.fromItems(Items.BLUE_DYE); }),
+    speed(MyOtherStuff.MOD_ID + ":speed", 15, new int[]{2, 5, 6, 2}, 50, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 3.0F, 0.0F, () -> {return Ingredient.fromItems(Items.REDSTONE); }),
+    husk(MyOtherStuff.MOD_ID + ":husk", 15, new int[]{2, 5, 6, 2}, 50, SoundEvents.ITEM_ARMOR_EQUIP_TURTLE, 3.0F, 0.0F, () -> {return Ingredient.fromItems(Items.YELLOW_WOOL); }),
+    abu(MyOtherStuff.MOD_ID + ":abu", 15, new int[]{2, 5, 6, 2}, 50, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.0F, () -> {return Ingredient.fromItems(StuffInit.blue_leather.get()); }),
+    kimono(MyOtherStuff.MOD_ID + ":kimono", 15, new int[]{2, 5, 6, 2}, 50, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.0F, () -> {return Ingredient.fromItems(StuffInit.blue_leather.get()); });
 
     private static final int[] MAX_DAMAGE_ARRAY = new int[]{13, 15, 16, 11};
     private final String name;

@@ -25,7 +25,7 @@ public class OtherSounds {
     public static void classLoad() {}
 
     static SoundEvent registerSound(String name) {
-        ResourceLocation location = new ResourceLocation(MyOtherStuff.mod_id, name);
+        ResourceLocation location = new ResourceLocation(MyOtherStuff.MOD_ID, name);
         SoundEvent event = new SoundEvent(location);
         event.setRegistryName(name);
         ForgeRegistries.SOUND_EVENTS.register(event);

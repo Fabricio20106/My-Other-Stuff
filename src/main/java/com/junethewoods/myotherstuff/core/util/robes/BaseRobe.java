@@ -9,6 +9,6 @@ import java.util.function.Supplier;
 
 public class BaseRobe extends OtRobes {
     public BaseRobe(String name, Supplier<Ingredient> repairMaterial, SoundEvent equipSound) {
-        super(MyOtherStuff.prefix + name, 15, new int[]{2, 5, 6, 2}, 50, equipSound, 3.0F, 0.0F, repairMaterial);
+        super(MyOtherStuff.PREFIX + name, 15, new int[]{2, 5, 6, 2}, 50, equipSound, 3.0F, 0.0F, repairMaterial);
     }
 }

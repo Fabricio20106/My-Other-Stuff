@@ -3,6 +3,7 @@ package com.junethewoods.myotherstuff.core;
 import com.junethewoods.myotherstuff.client.renderer.entity.layer.OthersElytraLayer;
 import com.junethewoods.myotherstuff.core.init.BlockInit;
 import com.junethewoods.myotherstuff.core.init.StuffInit;
+import com.junethewoods.myotherstuff.core.init.WeaponryInit;
 import com.junethewoods.myotherstuff.core.misc.OreGeneration;
 import com.junethewoods.myotherstuff.core.misc.OtherSounds;
 import net.minecraft.client.Minecraft;
@@ -24,23 +25,23 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import java.util.logging.LogManager;
 import java.util.logging.Logger;
 
-@Mod(MyOtherStuff.mod_id)
+@Mod(MyOtherStuff.MOD_ID)
 public class MyOtherStuff {
     // 16773874 <- inno decimal color fff2f2 <- inno hexadecimal color
     // WeaponryInit.weapons.register(Registring);
     // .maxStackSize(1)
 
-    public static final Logger logger = LogManager.getLogManager().getLogger(MyOtherStuff.mod_id);
+    public static final Logger LOGGER = LogManager.getLogManager().getLogger(MyOtherStuff.MOD_ID);
 
-    public static final String mod_id = "others";
+    public static final String MOD_ID = "others";
 
-    public static final String prefix = mod_id + ":";
+    public static final String PREFIX = MOD_ID + ":";
 
     public MyOtherStuff() {
-        final IEventBus registering = FMLJavaModLoadingContext.get().getModEventBus();
-        final IEventBus eventBus = MinecraftForge.EVENT_BUS;
-        registering.addListener(this::setup);
-        registering.addListener(this::doClientStuff);
+        IEventBus registering = FMLJavaModLoadingContext.get().getModEventBus();
+        IEventBus eventBus = MinecraftForge.EVENT_BUS;
+        registering.addListener(this::commonSetup);
+        registering.addListener(this::clientSetup);
         eventBus.register(this);
         eventBus.addListener(EventPriority.HIGH, OreGeneration::genCrystalOre);
         eventBus.addListener(EventPriority.HIGH, OreGeneration::genInnoOre);
@@ -49,8 +50,9 @@ public class MyOtherStuff {
         /*Some Other Stuff*/
         register();
 
-        StuffInit.items.register(registering);
-        BlockInit.blocks.register(registering);
+        StuffInit.ITEMS.register(registering);
+        WeaponryInit.ITEMS.register(registering);
+        BlockInit.BLOCKS.register(registering);
         StuffInit.classLoad();
         BlockInit.classLoad();
         OtherSounds.classLoad();
@@ -58,19 +60,19 @@ public class MyOtherStuff {
     }
 
     public static ResourceLocation resourceLoc(String name) {
-        return new ResourceLocation(mod_id, name);
+        return new ResourceLocation(MOD_ID, name);
     }
 
     public static void register() {}
 
-    public void setup(final FMLCommonSetupEvent event) {
+    public void commonSetup(final FMLCommonSetupEvent event) {
         Minecraft.getInstance().getRenderManager().getSkinMap().values().forEach(player -> player.addLayer(new OthersElytraLayer<>(player)));
 
         ItemModelsProperties.registerProperty(StuffInit.blaze_elytra.get(), new ResourceLocation("broken"), (itemStack, clientWorld, livingEntity) ->
                 ElytraItem.isUsable(itemStack) ? 0.0F : 1.0F);
     }
 
-    public void doClientStuff(final FMLClientSetupEvent event) {
+    public void clientSetup(final FMLClientSetupEvent event) {
         RenderTypeLookup.setRenderLayer(BlockInit.acacia_leaves.get(), RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(BlockInit.blue_glass.get(), RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(BlockInit.bluewhite_glass.get(), RenderType.getCutout());
