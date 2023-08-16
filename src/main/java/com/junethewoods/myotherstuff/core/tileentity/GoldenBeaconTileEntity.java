@@ -7,6 +7,6 @@ import net.minecraft.tileentity.BeaconTileEntity;
 import net.minecraft.tileentity.ITickableTileEntity;
 
 public class GoldenBeaconTileEntity extends BeaconTileEntity implements INamedContainerProvider, ITickableTileEntity {
-    public static final Effect[][] effect_list = new Effect[][]{{Effects.SLOW_FALLING, Effects.HASTE}, {Effects.NIGHT_VISION, Effects.ABSORPTION}, {Effects.STRENGTH}, {Effects.LUCK}};
+    public static final Effect[][] effect_list = new Effect[][]{{Effects.SLOW_FALLING, Effects.DIG_SPEED}, {Effects.NIGHT_VISION, Effects.ABSORPTION}, {Effects.DAMAGE_BOOST}, {Effects.LUCK}};
 
 }

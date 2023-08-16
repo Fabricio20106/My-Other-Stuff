@@ -8,7 +8,8 @@ public class BlueCarrotBlock extends CarrotBlock {
     public BlueCarrotBlock(Properties p_i48433_1_) {
         super(p_i48433_1_);
     }
-    public IItemProvider getSeedsItem() {
+
+    public IItemProvider getBaseSeedId() {
         return StuffInit.blue_carrot.get();
     }
 }

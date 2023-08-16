@@ -33,33 +33,33 @@ public class GoldenBeaconBlock extends ContainerBlock implements IBeaconBeamColo
 
     @Nullable
     @Override
-    public TileEntity createNewTileEntity(IBlockReader worldIn) {
+    public TileEntity newBlockEntity(IBlockReader worldIn) {
         return new GoldenBeaconTileEntity();
     }
 
-    public ActionResultType onBlockActivated(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit) {
-        if (worldIn.isRemote) {
+    public ActionResultType use(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit) {
+        if (worldIn.isClientSide) {
             return ActionResultType.SUCCESS;
         } else {
-            TileEntity tileentity = worldIn.getTileEntity(pos);
+            TileEntity tileentity = worldIn.getBlockEntity(pos);
             if (tileentity instanceof BeaconTileEntity) {
-                player.openContainer((BeaconTileEntity)tileentity);
-                player.addStat(Stats.INTERACT_WITH_BEACON);
+                player.openMenu((BeaconTileEntity)tileentity);
+                player.awardStat(Stats.INTERACT_WITH_BEACON);
             }
             return ActionResultType.CONSUME;
         }
     }
 
-    public BlockRenderType getRenderType(BlockState state) {
+    public BlockRenderType getRenderShape(BlockState state) {
         return BlockRenderType.MODEL;
     }
 
     /**
      * Called by ItemBlocks after a block is set in the world, to allow post-place logic
      */
-    public void onBlockPlacedBy(World worldIn, BlockPos pos, BlockState state, LivingEntity placer, ItemStack stack) {
-        if (stack.hasDisplayName()) {
-            TileEntity tileentity = worldIn.getTileEntity(pos);
+    public void setPlacedBy(World worldIn, BlockPos pos, BlockState state, LivingEntity placer, ItemStack stack) {
+        if (stack.hasCustomHoverName()) {
+            TileEntity tileentity = worldIn.getBlockEntity(pos);
             if (tileentity instanceof GoldenBeaconTileEntity) {
                 ((GoldenBeaconTileEntity)tileentity).setCustomName(stack.getDisplayName());
             }

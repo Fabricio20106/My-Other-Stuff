@@ -9,6 +9,6 @@ import java.util.function.Supplier;
 
 public class GenericEquipRobe extends OtRobes {
     public GenericEquipRobe(String name, Supplier<Ingredient> repairMaterial) {
-        super(MyOtherStuff.PREFIX + name, 15, new int[]{2, 5, 6, 2}, 50, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.0F, repairMaterial);
+        super(MyOtherStuff.PREFIX + name, 15, new int[]{2, 5, 6, 2}, 50, SoundEvents.ARMOR_EQUIP_GENERIC, 0, 0, repairMaterial);
     }
 }

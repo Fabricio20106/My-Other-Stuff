@@ -19,17 +19,17 @@ public class LegoFurnaceBlock extends AbstractFurnaceBlock implements ITileEntit
     }
 
     @Override
-    protected void interactWith(World worldIn, BlockPos pos, PlayerEntity player) {
-        TileEntity tileentity = worldIn.getTileEntity(pos);
+    protected void openContainer(World worldIn, BlockPos pos, PlayerEntity player) {
+        TileEntity tileentity = worldIn.getBlockEntity(pos);
         if (tileentity instanceof LegoFurnaceTileEntity) {
-            player.openContainer((INamedContainerProvider)tileentity);
-            player.addStat(Stats.INTERACT_WITH_FURNACE);
+            player.openMenu((INamedContainerProvider)tileentity);
+            player.awardStat(Stats.INTERACT_WITH_FURNACE);
         }
     }
 
     @Nullable
     @Override
-    public TileEntity createNewTileEntity(IBlockReader worldIn) {
+    public TileEntity newBlockEntity(IBlockReader worldIn) {
         return new LegoFurnaceTileEntity();
     }
 }

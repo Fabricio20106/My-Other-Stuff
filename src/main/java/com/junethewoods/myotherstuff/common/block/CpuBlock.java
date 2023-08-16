@@ -14,27 +14,27 @@ import net.minecraft.util.Rotation;
 
 public class CpuBlock extends HorizontalBlock {
     public static final BooleanProperty enabled = OtherBlockStateProperties.enabled;
-    public static final DirectionProperty facing = HorizontalBlock.HORIZONTAL_FACING;
+    public static final DirectionProperty facing = HorizontalBlock.FACING;
 
     public CpuBlock(Properties properties) {
         super(properties);
-        this.setDefaultState(this.stateContainer.getBaseState().with(facing, Direction.NORTH).with(enabled, Boolean.FALSE));
+        this.registerDefaultState(this.stateDefinition.any().setValue(facing, Direction.NORTH).setValue(enabled, Boolean.FALSE));
     }
 
     @Override
-    protected void fillStateContainer(StateContainer.Builder<Block, BlockState> builder) {
+    protected void createBlockStateDefinition(StateContainer.Builder<Block, BlockState> builder) {
         builder.add(enabled, facing);
     }
 
     public BlockState getStateForPlacement(BlockItemUseContext context) {
-        return this.getDefaultState().with(facing, context.getPlacementHorizontalFacing().getOpposite());
+        return this.defaultBlockState().setValue(facing, context.getHorizontalDirection().getOpposite());
     }
 
     public BlockState rotate(BlockState state, Rotation rot) {
-        return state.with(facing, rot.rotate(state.get(facing)));
+        return state.setValue(facing, rot.rotate(state.getValue(facing)));
     }
 
     public BlockState mirror(BlockState state, Mirror mirrorIn) {
-        return state.rotate(mirrorIn.toRotation(state.get(facing)));
+        return state.rotate(mirrorIn.getRotation(state.getValue(facing)));
     }
 }

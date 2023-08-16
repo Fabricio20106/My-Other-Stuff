@@ -19,6 +19,6 @@ public class LegoFurnaceTileEntity extends AbstractFurnaceTileEntity {
     }
 
     protected Container createMenu(int id, PlayerInventory player) {
-        return new FurnaceContainer(id, player, this, this.furnaceData);
+        return new FurnaceContainer(id, player, this, this.dataAccess);
     }
 }

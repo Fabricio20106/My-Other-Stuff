@@ -4,7 +4,7 @@ import com.junethewoods.myotherstuff.client.renderer.entity.layer.OthersElytraLa
 import com.junethewoods.myotherstuff.core.init.BlockInit;
 import com.junethewoods.myotherstuff.core.init.StuffInit;
 import com.junethewoods.myotherstuff.core.init.WeaponryInit;
-import com.junethewoods.myotherstuff.core.misc.OreGeneration;
+import com.junethewoods.myotherstuff.core.worldgen.OreGeneration;
 import com.junethewoods.myotherstuff.core.misc.OtherSounds;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.RenderType;
@@ -66,35 +66,35 @@ public class MyOtherStuff {
     public static void register() {}
 
     public void commonSetup(final FMLCommonSetupEvent event) {
-        Minecraft.getInstance().getRenderManager().getSkinMap().values().forEach(player -> player.addLayer(new OthersElytraLayer<>(player)));
+        Minecraft.getInstance().getEntityRenderDispatcher().getSkinMap().values().forEach(player -> player.addLayer(new OthersElytraLayer<>(player)));
 
-        ItemModelsProperties.registerProperty(StuffInit.blaze_elytra.get(), new ResourceLocation("broken"), (itemStack, clientWorld, livingEntity) ->
-                ElytraItem.isUsable(itemStack) ? 0.0F : 1.0F);
+        ItemModelsProperties.register(StuffInit.blaze_elytra.get(), new ResourceLocation("broken"), (stack, clientWorld, livEntity) ->
+                ElytraItem.isFlyEnabled(stack) ? 0 : 1);
     }
 
     public void clientSetup(final FMLClientSetupEvent event) {
-        RenderTypeLookup.setRenderLayer(BlockInit.acacia_leaves.get(), RenderType.getCutout());
-        RenderTypeLookup.setRenderLayer(BlockInit.blue_glass.get(), RenderType.getCutout());
-        RenderTypeLookup.setRenderLayer(BlockInit.bluewhite_glass.get(), RenderType.getCutout());
-        RenderTypeLookup.setRenderLayer(BlockInit.end_crystal_glass.get(), RenderType.getCutout());
-        RenderTypeLookup.setRenderLayer(BlockInit.blue_glass_pane.get(), RenderType.getCutout());
-        RenderTypeLookup.setRenderLayer(BlockInit.bluewhite_glass_pane.get(), RenderType.getCutout());
-        RenderTypeLookup.setRenderLayer(BlockInit.end_crystal_glass_pane.get(), RenderType.getCutout());
-        RenderTypeLookup.setRenderLayer(BlockInit.golden_beacon.get(), RenderType.getCutout());
-        RenderTypeLookup.setRenderLayer(BlockInit.azalea.get(), RenderType.getCutout());
-        RenderTypeLookup.setRenderLayer(BlockInit.swamp_oak_sapling.get(), RenderType.getCutout());
-        RenderTypeLookup.setRenderLayer(BlockInit.tall_birch_sapling.get(), RenderType.getCutout());
-        RenderTypeLookup.setRenderLayer(BlockInit.oak_bush_sapling.get(), RenderType.getCutout());
-        RenderTypeLookup.setRenderLayer(BlockInit.potted_tall_birch_sapling.get(), RenderType.getCutout());
-        RenderTypeLookup.setRenderLayer(BlockInit.potted_swamp_oak_sapling.get(), RenderType.getCutout());
-        RenderTypeLookup.setRenderLayer(BlockInit.potted_oak_bush_sapling.get(), RenderType.getCutout());
-        RenderTypeLookup.setRenderLayer(BlockInit.potted_grass.get(), RenderType.getCutout());
-        RenderTypeLookup.setRenderLayer(BlockInit.potted_inno_flower.get(), RenderType.getCutout());
-        RenderTypeLookup.setRenderLayer(BlockInit.orange_potted_inno_flower.get(), RenderType.getCutout());
-        RenderTypeLookup.setRenderLayer(BlockInit.orange_flower_pot.get(), RenderType.getCutout());
-        RenderTypeLookup.setRenderLayer(BlockInit.orange_flower_pot_1.get(), RenderType.getCutout());
-        RenderTypeLookup.setRenderLayer(BlockInit.blue_carrots.get(), RenderType.getCutout());
-        RenderTypeLookup.setRenderLayer(BlockInit.blue_wall.get(), RenderType.getCutout());
+        RenderTypeLookup.setRenderLayer(BlockInit.acacia_leaves.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(BlockInit.blue_glass.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(BlockInit.bluewhite_glass.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(BlockInit.end_crystal_glass.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(BlockInit.blue_glass_pane.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(BlockInit.bluewhite_glass_pane.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(BlockInit.end_crystal_glass_pane.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(BlockInit.golden_beacon.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(BlockInit.azalea.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(BlockInit.swamp_oak_sapling.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(BlockInit.tall_birch_sapling.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(BlockInit.oak_bush_sapling.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(BlockInit.potted_tall_birch_sapling.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(BlockInit.potted_swamp_oak_sapling.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(BlockInit.potted_oak_bush_sapling.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(BlockInit.potted_grass.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(BlockInit.potted_inno_flower.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(BlockInit.orange_potted_inno_flower.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(BlockInit.orange_flower_pot.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(BlockInit.orange_flower_pot_1.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(BlockInit.blue_carrots.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(BlockInit.blue_wall.get(), RenderType.cutout());
     }
 
     @SubscribeEvent

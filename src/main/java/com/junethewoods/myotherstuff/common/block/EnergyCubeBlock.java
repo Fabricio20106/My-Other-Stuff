@@ -12,11 +12,11 @@ public class EnergyCubeBlock extends Block {
         super(properties);
     }
 
-    public int getWeakPower(BlockState blockState, IBlockReader blockAccess, BlockPos pos, Direction side) {
+    public int getSignal(BlockState blockState, IBlockReader blockAccess, BlockPos pos, Direction side) {
         return 15;
     }
 
-    public boolean canProvidePower(BlockState state) {
+    public boolean isSignalSource(BlockState state) {
         return true;
     }
 }

@@ -3,6 +3,7 @@ package com.junethewoods.myotherstuff.core.datagen;
 import com.junethewoods.myotherstuff.core.MyOtherStuff;
 import com.junethewoods.myotherstuff.core.datagen.client.OthersBlockStateProvider;
 import com.junethewoods.myotherstuff.core.datagen.client.OthersItemModelProvider;
+import com.junethewoods.myotherstuff.core.datagen.lang.OtherEnglishLanguageProvider;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.eventbus.api.SubscribeEvent;

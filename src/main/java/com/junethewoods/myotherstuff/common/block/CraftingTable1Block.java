@@ -21,16 +21,16 @@ public class CraftingTable1Block extends BaseTableBlock {
         super(properties);
     }
 
-    public ActionResultType onBlockActivated(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit) {
-        if (worldIn.isRemote) {
+    public ActionResultType use(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit) {
+        if (worldIn.isClientSide) {
             return ActionResultType.SUCCESS;
         } else {
-            player.openContainer(state.getContainer(worldIn, pos));
+            player.openMenu(state.getMenuProvider(worldIn, pos));
             return ActionResultType.CONSUME;
         }
     }
 
-    public INamedContainerProvider getContainer(BlockState state, World worldIn, BlockPos pos) {
-        return new SimpleNamedContainerProvider((id, inventory, player) -> new WorkbenchContainer(id, inventory, IWorldPosCallable.of(worldIn, pos)), container_name);
+    public INamedContainerProvider getMenuProvider(BlockState state, World worldIn, BlockPos pos) {
+        return new SimpleNamedContainerProvider((id, inventory, player) -> new WorkbenchContainer(id, inventory, IWorldPosCallable.create(worldIn, pos)), container_name);
     }
 }

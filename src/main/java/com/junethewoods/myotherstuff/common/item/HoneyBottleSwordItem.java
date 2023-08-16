@@ -18,7 +18,7 @@ public class HoneyBottleSwordItem extends SwordItem {
     public boolean onLeftClickEntity(ItemStack stack, PlayerEntity player, Entity entity) {
         if (entity instanceof LivingEntity) {
             LivingEntity entityLiving = (LivingEntity) entity;
-            entityLiving.addPotionEffect(new EffectInstance(Effects.SLOWNESS, 200));
+            entityLiving.addEffect(new EffectInstance(Effects.MOVEMENT_SLOWDOWN, 200));
         }
         return super.onLeftClickEntity(stack, player, entity);
     }

@@ -5,8 +5,8 @@ public class OthersGlassBlock extends net.minecraft.block.AbstractGlassBlock {
         super(properties);
     }
 
-    @java.lang.Override
-    public net.minecraft.block.BlockRenderType getRenderType(net.minecraft.block.BlockState state) {
+    @Override
+    public net.minecraft.block.BlockRenderType getRenderShape(net.minecraft.block.BlockState state) {
         return net.minecraft.block.BlockRenderType.MODEL;
     }
 }
