@@ -1,6 +1,6 @@
 package com.junethewoods.myotherstuff.common.block;
 
-import com.junethewoods.myotherstuff.core.tileentity.GoldenBeaconTileEntity;
+import com.junethewoods.myotherstuff.core.blockentity.GoldenBeaconBlockEntity;
 import net.minecraft.block.BlockRenderType;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.ContainerBlock;
@@ -22,8 +22,8 @@ import net.minecraft.world.World;
 import javax.annotation.Nullable;
 
 public class GoldenBeaconBlock extends ContainerBlock implements IBeaconBeamColorProvider {
-    public GoldenBeaconBlock(Properties builder) {
-        super(builder);
+    public GoldenBeaconBlock(Properties properties) {
+        super(properties);
     }
 
     @Override
@@ -33,17 +33,17 @@ public class GoldenBeaconBlock extends ContainerBlock implements IBeaconBeamColo
 
     @Nullable
     @Override
-    public TileEntity newBlockEntity(IBlockReader worldIn) {
-        return new GoldenBeaconTileEntity();
+    public TileEntity newBlockEntity(IBlockReader reader) {
+        return new GoldenBeaconBlockEntity();
     }
 
-    public ActionResultType use(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit) {
-        if (worldIn.isClientSide) {
+    public ActionResultType use(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockRayTraceResult rayTraceResult) {
+        if (world.isClientSide) {
             return ActionResultType.SUCCESS;
         } else {
-            TileEntity tileentity = worldIn.getBlockEntity(pos);
-            if (tileentity instanceof BeaconTileEntity) {
-                player.openMenu((BeaconTileEntity)tileentity);
+            TileEntity blockEntity = world.getBlockEntity(pos);
+            if (blockEntity instanceof BeaconTileEntity) {
+                player.openMenu((BeaconTileEntity) blockEntity);
                 player.awardStat(Stats.INTERACT_WITH_BEACON);
             }
             return ActionResultType.CONSUME;
@@ -54,14 +54,12 @@ public class GoldenBeaconBlock extends ContainerBlock implements IBeaconBeamColo
         return BlockRenderType.MODEL;
     }
 
-    /**
-     * Called by ItemBlocks after a block is set in the world, to allow post-place logic
-     */
-    public void setPlacedBy(World worldIn, BlockPos pos, BlockState state, LivingEntity placer, ItemStack stack) {
+    // Called by ItemBlocks after a block is set in the world, to allow post-place logic.
+    public void setPlacedBy(World world, BlockPos pos, BlockState state, LivingEntity placer, ItemStack stack) {
         if (stack.hasCustomHoverName()) {
-            TileEntity tileentity = worldIn.getBlockEntity(pos);
-            if (tileentity instanceof GoldenBeaconTileEntity) {
-                ((GoldenBeaconTileEntity)tileentity).setCustomName(stack.getDisplayName());
+            TileEntity blockEntity = world.getBlockEntity(pos);
+            if (blockEntity instanceof GoldenBeaconBlockEntity) {
+                ((GoldenBeaconBlockEntity) blockEntity).setCustomName(stack.getDisplayName());
             }
         }
     }

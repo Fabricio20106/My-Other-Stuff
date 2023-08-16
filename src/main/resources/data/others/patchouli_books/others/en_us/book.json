@@ -1,7 +1,7 @@
 {
   "name": "Others Help Center",
-  "landing_text": "This is the guide for my mod franchise, Others Removed, My Other Stuff and the OTWeapons. And this is the necessary guide for all of that.",
+  "landing_text": "The very much needed guide for Others, Others Removed and OTWeapons.",
   "version": 1,
   "model": "others:others_guide",
-  "creativeTab": "others:stuff"
+  "creativeTab": "others"
 }

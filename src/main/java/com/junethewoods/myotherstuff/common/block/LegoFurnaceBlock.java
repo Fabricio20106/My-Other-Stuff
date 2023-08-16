@@ -1,6 +1,6 @@
 package com.junethewoods.myotherstuff.common.block;
 
-import com.junethewoods.myotherstuff.core.tileentity.LegoFurnaceTileEntity;
+import com.junethewoods.myotherstuff.core.blockentity.LegoFurnaceBlockEntity;
 import net.minecraft.block.AbstractFurnaceBlock;
 import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.entity.player.PlayerEntity;
@@ -19,17 +19,17 @@ public class LegoFurnaceBlock extends AbstractFurnaceBlock implements ITileEntit
     }
 
     @Override
-    protected void openContainer(World worldIn, BlockPos pos, PlayerEntity player) {
-        TileEntity tileentity = worldIn.getBlockEntity(pos);
-        if (tileentity instanceof LegoFurnaceTileEntity) {
-            player.openMenu((INamedContainerProvider)tileentity);
+    protected void openContainer(World world, BlockPos pos, PlayerEntity player) {
+        TileEntity blockEntity = world.getBlockEntity(pos);
+        if (blockEntity instanceof LegoFurnaceBlockEntity) {
+            player.openMenu((INamedContainerProvider) blockEntity);
             player.awardStat(Stats.INTERACT_WITH_FURNACE);
         }
     }
 
     @Nullable
     @Override
-    public TileEntity newBlockEntity(IBlockReader worldIn) {
-        return new LegoFurnaceTileEntity();
+    public TileEntity newBlockEntity(IBlockReader reader) {
+        return new LegoFurnaceBlockEntity();
     }
 }

@@ -1,4 +1,4 @@
-package com.junethewoods.myotherstuff.core.datagen.client;
+package com.junethewoods.myotherstuff.core.data.client;
 
 import com.junethewoods.myotherstuff.core.MyOtherStuff;
 import net.minecraft.data.DataGenerator;
@@ -7,9 +7,9 @@ import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
-public class OthersItemModelProvider extends ItemModelProvider {
-    public OthersItemModelProvider(DataGenerator dataGenerator, ExistingFileHelper existingFileHelper) {
-        super(dataGenerator, MyOtherStuff.MOD_ID, existingFileHelper);
+public class OTItemModelProvider extends ItemModelProvider {
+    public OTItemModelProvider(DataGenerator generator, ExistingFileHelper fileHelper) {
+        super(generator, MyOtherStuff.MOD_ID, fileHelper);
     }
 
     protected void registerModels() {
@@ -21,6 +21,7 @@ public class OthersItemModelProvider extends ItemModelProvider {
         ModelFile generated = getExistingFile(mcLoc("item/generated"));
         ModelFile handheld = getExistingFile(mcLoc("item/handheld"));
         ModelFile handheldRod = getExistingFile(mcLoc("item/handheld_rod"));
+
         standard(handheld, "amethyst_sword");
         standard(handheld, "enchanting_sword");
         standard(handheld, "end_rod_sword");

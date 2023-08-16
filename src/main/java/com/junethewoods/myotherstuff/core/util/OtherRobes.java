@@ -1,7 +1,7 @@
 package com.junethewoods.myotherstuff.core.util;
 
 import com.junethewoods.myotherstuff.core.MyOtherStuff;
-import com.junethewoods.myotherstuff.core.init.StuffInit;
+import com.junethewoods.myotherstuff.core.init.OTItems;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.Items;
@@ -15,58 +15,58 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import java.util.function.Supplier;
 
 public enum OtherRobes implements IArmorMaterial {
-    blup(MyOtherStuff.MOD_ID + ":blup", 15, new int[]{2, 5, 6, 2}, 50, SoundEvents.ARMOR_EQUIP_LEATHER, 3.0F, 0.0F, () -> {return Ingredient.of(StuffInit.blue_leather.get());}),
-    crystal(MyOtherStuff.MOD_ID + ":crystal", 15, new int[]{2, 5, 6, 2}, 50, SoundEvents.ARMOR_EQUIP_LEATHER, 3.0F, 0.0F, () -> {return Ingredient.of(StuffInit.crystal.get()); }),
-    empresary(MyOtherStuff.MOD_ID + ":empresary2", 15, new int[]{2, 5, 6, 2}, 50, SoundEvents.ARMOR_EQUIP_LEATHER, 3.0F, 0.0F, () -> {return Ingredient.of(StuffInit.blue_leather.get()); }),
-    galaxy(MyOtherStuff.MOD_ID + ":galaxy", 15, new int[]{2, 5, 6, 2}, 50, SoundEvents.ARMOR_EQUIP_LEATHER, 3.0F, 0.0F, () -> {return Ingredient.of(StuffInit.galaxy_cloth.get()); }),
-    green(MyOtherStuff.MOD_ID + ":green", 15, new int[]{2, 5, 6, 2}, 50, SoundEvents.ARMOR_EQUIP_LEATHER, 3.0F, 0.0F, () -> {return Ingredient.of(Items.GREEN_WOOL); }),
-    number(MyOtherStuff.MOD_ID + ":number", 15, new int[]{2, 5, 6, 2}, 50, SoundEvents.ARMOR_EQUIP_LEATHER, 3.0F, 0.0F, () -> {return Ingredient.of(Items.BLUE_WOOL); }),
-    orange(MyOtherStuff.MOD_ID + ":orange", 15, new int[]{2, 5, 6, 2}, 50, SoundEvents.ARMOR_EQUIP_LEATHER, 3.0F, 0.0F, () -> {return Ingredient.of(Items.ORANGE_WOOL); }),
-    pales(MyOtherStuff.MOD_ID + ":pales", 15, new int[]{2, 5, 6, 2}, 50, SoundEvents.ARMOR_EQUIP_LEATHER, 3.0F, 0.0F, () -> {return Ingredient.of(Items.BLUE_DYE); }),
-    speed(MyOtherStuff.MOD_ID + ":speed", 15, new int[]{2, 5, 6, 2}, 50, SoundEvents.ARMOR_EQUIP_LEATHER, 3.0F, 0.0F, () -> {return Ingredient.of(Items.REDSTONE); }),
-    husk(MyOtherStuff.MOD_ID + ":husk", 15, new int[]{2, 5, 6, 2}, 50, SoundEvents.ARMOR_EQUIP_TURTLE, 3.0F, 0.0F, () -> {return Ingredient.of(Items.YELLOW_WOOL); }),
-    abu(MyOtherStuff.MOD_ID + ":abu", 15, new int[]{2, 5, 6, 2}, 50, SoundEvents.ARMOR_EQUIP_GENERIC, 0.0F, 0.0F, () -> {return Ingredient.of(StuffInit.blue_leather.get()); }),
-    kimono(MyOtherStuff.MOD_ID + ":kimono", 15, new int[]{2, 5, 6, 2}, 50, SoundEvents.ARMOR_EQUIP_GENERIC, 0.0F, 0.0F, () -> {return Ingredient.of(StuffInit.blue_leather.get()); });
+    BLUP(MyOtherStuff.MOD_ID + ":blup", 15, new int[] {2, 5, 6, 2}, 50, SoundEvents.ARMOR_EQUIP_LEATHER, 3, 0, () -> Ingredient.of(OTItems.BLUE_LEATHER.get())),
+    MAGENTIC_CRYSTAL(MyOtherStuff.MOD_ID + ":crystal", 15, new int[] {2, 5, 6, 2}, 50, SoundEvents.ARMOR_EQUIP_LEATHER, 3, 0, () -> Ingredient.of(OTItems.MAGENTIC_CRYSTAL.get())),
+    EMPRESARY_2(MyOtherStuff.MOD_ID + ":empresary2", 15, new int[] {2, 5, 6, 2}, 50, SoundEvents.ARMOR_EQUIP_LEATHER, 3, 0, () -> Ingredient.of(OTItems.BLUE_LEATHER.get())),
+    GALAXY(MyOtherStuff.MOD_ID + ":galaxy", 15, new int[] {2, 5, 6, 2}, 50, SoundEvents.ARMOR_EQUIP_LEATHER, 3, 0, () -> Ingredient.of(OTItems.GALAXY_CLOTH.get())),
+    GREEN(MyOtherStuff.MOD_ID + ":green", 15, new int[] {2, 5, 6, 2}, 50, SoundEvents.ARMOR_EQUIP_LEATHER, 3, 0, () -> Ingredient.of(Items.GREEN_WOOL)),
+    NUMBER_1(MyOtherStuff.MOD_ID + ":number", 15, new int[] {2, 5, 6, 2}, 50, SoundEvents.ARMOR_EQUIP_LEATHER, 3, 0, () -> Ingredient.of(Items.BLUE_WOOL)),
+    ORANGE(MyOtherStuff.MOD_ID + ":orange", 15, new int[] {2, 5, 6, 2}, 50, SoundEvents.ARMOR_EQUIP_LEATHER, 3, 0, () -> Ingredient.of(Items.ORANGE_WOOL)),
+    STRIPES(MyOtherStuff.MOD_ID + ":pales", 15, new int[] {2, 5, 6, 2}, 50, SoundEvents.ARMOR_EQUIP_LEATHER, 3, 0, () -> Ingredient.of(Items.BLUE_DYE)),
+    SPEED_BOOTS(MyOtherStuff.MOD_ID + ":speed", 15, new int[] {2, 5, 6, 2}, 50, SoundEvents.ARMOR_EQUIP_LEATHER, 3, 0, () -> Ingredient.of(Items.REDSTONE)),
+    HUSK(MyOtherStuff.MOD_ID + ":husk", 15, new int[] {2, 5, 6, 2}, 50, SoundEvents.ARMOR_EQUIP_TURTLE, 3, 0, () -> Ingredient.of(Items.YELLOW_WOOL)),
+    ABU(MyOtherStuff.MOD_ID + ":abu", 15, new int[] {2, 5, 6, 2}, 50, SoundEvents.ARMOR_EQUIP_GENERIC, 0, 0, () -> Ingredient.of(OTItems.BLUE_LEATHER.get())),
+    KIMONO(MyOtherStuff.MOD_ID + ":kimono", 15, new int[] {2, 5, 6, 2}, 50, SoundEvents.ARMOR_EQUIP_GENERIC, 0, 0, () -> Ingredient.of(OTItems.BLUE_LEATHER.get()));
 
-    private static final int[] MAX_DAMAGE_ARRAY = new int[]{13, 15, 16, 11};
+    private static final int[] MAX_DAMAGE_ARRAY = new int[] {13, 15, 16, 11};
     private final String name;
     private final int maxDamageFactor;
-    private final int[] damageReductionAmountArray;
-    private final int enchantability;
-    private final SoundEvent soundEvent;
+    private final int[] defensePerSlot;
+    private final int enchantmentValue;
+    private final SoundEvent equipSound;
     private final float toughness;
-    private final float knockbackResistance;
-    private final LazyValue<Ingredient> repairMaterial;
+    private final float knockbackRes;
+    private final LazyValue<Ingredient> repairIngredient;
 
-    OtherRobes(String name, int maxDamageFactor, int[] damageReductionAmountArray, int enchantability, SoundEvent soundEvent, float toughness, float knockbackResistance, Supplier<Ingredient> repairMaterial) {
+    OtherRobes(String name, int maxDamageFactor, int[] defensePerSlot, int enchantmentValue, SoundEvent equipSound, float toughness, float knockbackRes, Supplier<Ingredient> repairIngredient) {
         this.name = name;
         this.maxDamageFactor = maxDamageFactor;
-        this.damageReductionAmountArray = damageReductionAmountArray;
-        this.enchantability = enchantability;
-        this.soundEvent = soundEvent;
+        this.defensePerSlot = defensePerSlot;
+        this.enchantmentValue = enchantmentValue;
+        this.equipSound = equipSound;
         this.toughness = toughness;
-        this.knockbackResistance = knockbackResistance;
-        this.repairMaterial = new LazyValue<>(repairMaterial);
+        this.knockbackRes = knockbackRes;
+        this.repairIngredient = new LazyValue<>(repairIngredient);
     }
 
-    public int getDurabilityForSlot(EquipmentSlotType slotIn) {
-        return MAX_DAMAGE_ARRAY[slotIn.getIndex()] * this.maxDamageFactor;
+    public int getDurabilityForSlot(EquipmentSlotType slot) {
+        return MAX_DAMAGE_ARRAY[slot.getIndex()] * this.maxDamageFactor;
     }
 
-    public int getDefenseForSlot(EquipmentSlotType slotIn) {
-        return this.damageReductionAmountArray[slotIn.getIndex()];
+    public int getDefenseForSlot(EquipmentSlotType slot) {
+        return this.defensePerSlot[slot.getIndex()];
     }
 
     public int getEnchantmentValue() {
-        return this.enchantability;
+        return this.enchantmentValue;
     }
 
     public SoundEvent getEquipSound() {
-        return this.soundEvent;
+        return this.equipSound;
     }
 
     public Ingredient getRepairIngredient() {
-        return this.repairMaterial.get();
+        return this.repairIngredient.get();
     }
 
     @OnlyIn(Dist.CLIENT)
@@ -78,10 +78,8 @@ public enum OtherRobes implements IArmorMaterial {
         return this.toughness;
     }
 
-    /**
-     * Gets the percentage of knockback resistance provided by armor of the material.
-     */
+    // Gets the percentage of knockback resistance provided by armor of the material.
     public float getKnockbackResistance() {
-        return this.knockbackResistance;
+        return this.knockbackRes;
     }
 }

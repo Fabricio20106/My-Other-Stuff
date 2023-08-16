@@ -1,15 +1,15 @@
 package com.junethewoods.myotherstuff.common.block;
 
-import com.junethewoods.myotherstuff.core.init.StuffInit;
+import com.junethewoods.myotherstuff.core.init.OTItems;
 import net.minecraft.block.*;
 import net.minecraft.util.IItemProvider;
 
 public class BlueCarrotBlock extends CarrotBlock {
-    public BlueCarrotBlock(Properties p_i48433_1_) {
-        super(p_i48433_1_);
+    public BlueCarrotBlock(Properties properties) {
+        super(properties);
     }
 
     public IItemProvider getBaseSeedId() {
-        return StuffInit.blue_carrot.get();
+        return OTItems.BLUE_CARROT.get();
     }
 }

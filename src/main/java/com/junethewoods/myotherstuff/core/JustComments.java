@@ -1,6 +1,10 @@
 package com.junethewoods.myotherstuff.core;
 
 public class JustComments {
+    // 16773874 <- inno decimal color fff2f2 <- inno hexadecimal color
+    // WeaponryInit.weapons.register(Registring);
+    // .maxStackSize(1)
+
     //public static final RegistryObject<Item> faquinha = StuffInit.items.register("faquinha", () -> new ShovelItem(ItemTier.IRON, 1.5F, -3.0F, new Item.Properties().group(WeaponryInitTab.instance)));
     //public static final RegistryObject<Item> neko_headphone = StuffInit.items.register("neko_headphone", () -> new ArmorItem(OtherRobes.kimono, EquipmentSlotType.HEAD, new Item.Properties().group(WeaponryInitTab.instance)));
     //public static final RegistryObject<Item> sun_bonnet = StuffInit.items.register("sun_bonnet", () -> new ArmorItem(OtherRobes.abu, EquipmentSlotType.HEAD, new Item.Properties().group(WeaponryInitTab.instance)));

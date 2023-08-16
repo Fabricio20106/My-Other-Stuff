@@ -1,7 +1,7 @@
 @ParametersAreNonnullByDefault
 @MethodsReturnNonnullByDefault
 @Deprecated
-package com.junethewoods.myotherstuff.core.tileentity;
+package com.junethewoods.myotherstuff.core.blockentity;
 
 import mcp.MethodsReturnNonnullByDefault;
 

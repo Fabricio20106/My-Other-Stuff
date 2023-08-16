@@ -6,9 +6,9 @@ import net.minecraft.item.ItemStack;
 
 import javax.annotation.Nullable;
 
-public class OthersElytraItem extends ElytraItem {
-    public OthersElytraItem(Properties builder) {
-        super(builder);
+public class OTElytraItem extends ElytraItem {
+    public OTElytraItem(Properties properties) {
+        super(properties);
     }
 
     @Nullable

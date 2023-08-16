@@ -1,16 +1,16 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-        "g g",
-        "g g",
-        "ggg"
-    ],
-    "key": {
-        "g": {
-            "item": "minecraft:gold_ingot"
-        }
-    },
-    "result": {
-        "item": "others:golden_cauldron"
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "g g",
+    "g g",
+    "ggg"
+  ],
+  "key": {
+    "g": {
+      "tag": "forge:ingots/gold"
     }
+  },
+  "result": {
+    "item": "others:golden_cauldron"
+  }
 }

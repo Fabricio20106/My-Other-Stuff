@@ -1,6 +1,5 @@
 package com.junethewoods.myotherstuff.common.block;
 
-import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.container.INamedContainerProvider;
@@ -17,23 +16,23 @@ import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.World;
 
 public class SmithingTable1Block extends BaseTableBlock {
-    private static final ITextComponent container_name = new TranslationTextComponent("container.purplier_smithing");
+    private static final ITextComponent CONTAINER_NAME = new TranslationTextComponent("container.purplier_smithing");
 
-    public SmithingTable1Block(AbstractBlock.Properties properties) {
+    public SmithingTable1Block(Properties properties) {
         super(properties);
     }
 
-    public INamedContainerProvider getMenuProvider(BlockState state, World worldIn, BlockPos pos) {
-        return new SimpleNamedContainerProvider((id, inventory, player) -> new SmithingTableContainer(id, inventory, IWorldPosCallable.create(worldIn, pos)), container_name);
-    }
-
-    public ActionResultType use(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit) {
-        if (worldIn.isClientSide) {
+    public ActionResultType use(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockRayTraceResult rayTraceResult) {
+        if (world.isClientSide) {
             return ActionResultType.SUCCESS;
         } else {
-            player.openMenu(state.getMenuProvider(worldIn, pos));
+            player.openMenu(state.getMenuProvider(world, pos));
             player.awardStat(Stats.INTERACT_WITH_SMITHING_TABLE);
             return ActionResultType.CONSUME;
         }
+    }
+
+    public INamedContainerProvider getMenuProvider(BlockState state, World world, BlockPos pos) {
+        return new SimpleNamedContainerProvider((id, inventory, player) -> new SmithingTableContainer(id, inventory, IWorldPosCallable.create(world, pos)), CONTAINER_NAME);
     }
 }

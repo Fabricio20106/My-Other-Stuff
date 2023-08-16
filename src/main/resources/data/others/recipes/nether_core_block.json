@@ -1,20 +1,16 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern":
-    [
-        "eee",
-        "eee",
-        "eee"
-    ],
-    "key":
-    {
-        "e":
-        {
-            "item": "others:nether_core"
-        }
-    },
-    "result":
-    {
-        "item": "others:nether_core_block"
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "eee",
+    "eee",
+    "eee"
+  ],
+  "key": {
+    "e": {
+      "item": "others:nether_core"
     }
+  },
+  "result": {
+    "item": "others:nether_core_block"
+  }
 }

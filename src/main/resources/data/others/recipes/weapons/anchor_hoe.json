@@ -10,7 +10,7 @@
       "item": "minecraft:crying_obsidian"
     },
     "s": {
-      "item": "forge:rods/wooden"
+      "tag": "forge:rods/wooden"
     }
   },
   "result": {

@@ -3,5 +3,6 @@
   "ingredient": {
     "item": "others:blue_block"
   },
-  "result": "others:blue_stairs"
+  "result": "others:blue_stairs",
+  "count": 1
 }

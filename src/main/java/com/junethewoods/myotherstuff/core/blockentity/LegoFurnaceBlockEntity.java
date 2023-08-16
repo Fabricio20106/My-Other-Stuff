@@ -1,4 +1,4 @@
-package com.junethewoods.myotherstuff.core.tileentity;
+package com.junethewoods.myotherstuff.core.blockentity;
 
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.container.Container;
@@ -9,8 +9,8 @@ import net.minecraft.tileentity.TileEntityType;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
 
-public class LegoFurnaceTileEntity extends AbstractFurnaceTileEntity {
-    public LegoFurnaceTileEntity() {
+public class LegoFurnaceBlockEntity extends AbstractFurnaceTileEntity {
+    public LegoFurnaceBlockEntity() {
         super(TileEntityType.FURNACE, IRecipeType.SMELTING);
     }
 

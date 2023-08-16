@@ -1,38 +1,62 @@
 {
-    "music_disc.blockades": 
-    {
-        "category": "record",
-        "subtitle": "music_disc.blockades",
-        "sounds": [{ "name": "others:music_disc/blockades", "stream": true}]
-    },
-    "music_disc.first_date":
-    {
-        "category": "record",
-        "subtitle": "music_disc.first_date",
-        "sounds": [{ "name": "others:music_disc/first_date", "stream": true}]
-    },
-    "music_disc.omae_wa_mu":
-    {
-        "category": "record",
-        "subtitle": "music_disc.omae_wa_mu",
-        "sounds": [{ "name": "others:music_disc/omae_wa_mu", "stream": true}]
-    },
-    "music_disc.sfos":
-        {
-            "category": "record",
-            "subtitle": "music_disc.sfos",
-            "sounds": [{ "name": "others:music_disc/sfos", "stream": true}]
-        },
-    "music_disc.traces":
-        {
-            "category": "record",
-            "subtitle": "music_disc.traces",
-            "sounds": [{ "name": "others:music_disc/traces", "stream": true}]
-        },
-    "block.deepslate_break":
-        {
-            "category": "block",
-            "subtitle": "block.deepslate_break",
-            "sounds": [{ "name": "others:block/deepslate_break", "stream": true}]
-        }
+  "music_disc.blockades": {
+    "category": "record",
+    "subtitle": "music_disc.blockades",
+    "sounds": [
+      {
+        "name": "others:music_disc/blockades",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc.first_date": {
+    "category": "record",
+    "subtitle": "music_disc.first_date",
+    "sounds": [
+      {
+        "name": "others:music_disc/first_date",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc.omae_wa_mu": {
+    "category": "record",
+    "subtitle": "music_disc.omae_wa_mu",
+    "sounds": [
+      {
+        "name": "others:music_disc/omae_wa_mu",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc.sfos": {
+    "category": "record",
+    "subtitle": "music_disc.sfos",
+    "sounds": [
+      {
+        "name": "others:music_disc/sfos",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc.traces": {
+    "category": "record",
+    "subtitle": "music_disc.traces",
+    "sounds": [
+      {
+        "name": "others:music_disc/traces",
+        "stream": true
+      }
+    ]
+  },
+  "block.deepslate.break": {
+    "category": "block",
+    "subtitle": "block.deepslate.break",
+    "sounds": [
+      {
+        "name": "others:block/deepslate/break",
+        "stream": true
+      }
+    ]
+  }
 }

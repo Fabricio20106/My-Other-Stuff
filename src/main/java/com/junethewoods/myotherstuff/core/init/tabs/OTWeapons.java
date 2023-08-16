@@ -1,6 +1,6 @@
 package com.junethewoods.myotherstuff.core.init.tabs;
 
-import com.junethewoods.myotherstuff.core.init.WeaponryInit;
+import com.junethewoods.myotherstuff.core.init.OTWeaponry;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 
@@ -13,6 +13,6 @@ public class OTWeapons extends ItemGroup {
 
     @Override
     public ItemStack makeIcon() {
-        return new ItemStack(WeaponryInit.AMETHYST_SWORD.get());
+        return new ItemStack(OTWeaponry.AMETHYST_SWORD.get());
     }
 }

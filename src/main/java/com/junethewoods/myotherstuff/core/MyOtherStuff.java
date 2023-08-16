@@ -1,11 +1,11 @@
 package com.junethewoods.myotherstuff.core;
 
-import com.junethewoods.myotherstuff.client.renderer.entity.layer.OthersElytraLayer;
-import com.junethewoods.myotherstuff.core.init.BlockInit;
-import com.junethewoods.myotherstuff.core.init.StuffInit;
-import com.junethewoods.myotherstuff.core.init.WeaponryInit;
-import com.junethewoods.myotherstuff.core.worldgen.OreGeneration;
-import com.junethewoods.myotherstuff.core.misc.OtherSounds;
+import com.junethewoods.myotherstuff.client.renderer.entity.layer.OTElytraLayer;
+import com.junethewoods.myotherstuff.core.init.OTBlocks;
+import com.junethewoods.myotherstuff.core.init.OTItems;
+import com.junethewoods.myotherstuff.core.init.OTWeaponry;
+import com.junethewoods.myotherstuff.core.worldgen.OTOreGeneration;
+import com.junethewoods.myotherstuff.core.util.OTSounds;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
@@ -27,74 +27,60 @@ import java.util.logging.Logger;
 
 @Mod(MyOtherStuff.MOD_ID)
 public class MyOtherStuff {
-    // 16773874 <- inno decimal color fff2f2 <- inno hexadecimal color
-    // WeaponryInit.weapons.register(Registring);
-    // .maxStackSize(1)
-
     public static final Logger LOGGER = LogManager.getLogManager().getLogger(MyOtherStuff.MOD_ID);
-
     public static final String MOD_ID = "others";
-
-    public static final String PREFIX = MOD_ID + ":";
+    public static final String MOD_PREFIX = MOD_ID + ":";
 
     public MyOtherStuff() {
-        IEventBus registering = FMLJavaModLoadingContext.get().getModEventBus();
-        IEventBus eventBus = MinecraftForge.EVENT_BUS;
-        registering.addListener(this::commonSetup);
-        registering.addListener(this::clientSetup);
-        eventBus.register(this);
-        eventBus.addListener(EventPriority.HIGH, OreGeneration::genCrystalOre);
-        eventBus.addListener(EventPriority.HIGH, OreGeneration::genInnoOre);
-        eventBus.addListener(EventPriority.HIGH, OreGeneration::genDiaemeraldOre);
-        eventBus.addListener(EventPriority.HIGH, OreGeneration::genPurpleOre);
-        /*Some Other Stuff*/
-        register();
+        IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+        IEventBus forgeEventBus = MinecraftForge.EVENT_BUS;
+        modEventBus.addListener(this::commonSetup);
+        modEventBus.addListener(this::clientSetup);
 
-        StuffInit.ITEMS.register(registering);
-        WeaponryInit.ITEMS.register(registering);
-        BlockInit.BLOCKS.register(registering);
-        StuffInit.classLoad();
-        BlockInit.classLoad();
-        OtherSounds.classLoad();
-        OtherSounds.registerSounds();
+        OTItems.ITEMS.register(modEventBus);
+        OTWeaponry.ITEMS.register(modEventBus);
+        OTBlocks.BLOCKS.register(modEventBus);
+        OTSounds.registerSounds();
+
+        forgeEventBus.register(this);
+        forgeEventBus.addListener(EventPriority.HIGH, OTOreGeneration::generateMagenticCrystalOres);
+        forgeEventBus.addListener(EventPriority.HIGH, OTOreGeneration::generateInnoOres);
+        forgeEventBus.addListener(EventPriority.HIGH, OTOreGeneration::generateDiaemeraldOres);
+        forgeEventBus.addListener(EventPriority.HIGH, OTOreGeneration::generatePurpleOres);
     }
 
     public static ResourceLocation resourceLoc(String name) {
         return new ResourceLocation(MOD_ID, name);
     }
 
-    public static void register() {}
-
     public void commonSetup(final FMLCommonSetupEvent event) {
-        Minecraft.getInstance().getEntityRenderDispatcher().getSkinMap().values().forEach(player -> player.addLayer(new OthersElytraLayer<>(player)));
+        Minecraft.getInstance().getEntityRenderDispatcher().getSkinMap().values().forEach(player -> player.addLayer(new OTElytraLayer<>(player)));
 
-        ItemModelsProperties.register(StuffInit.blaze_elytra.get(), new ResourceLocation("broken"), (stack, clientWorld, livEntity) ->
-                ElytraItem.isFlyEnabled(stack) ? 0 : 1);
+        ItemModelsProperties.register(OTItems.BLAZE_ELYTRA.get(), new ResourceLocation("broken"), (stack, world, livEntity) -> ElytraItem.isFlyEnabled(stack) ? 0 : 1);
     }
 
     public void clientSetup(final FMLClientSetupEvent event) {
-        RenderTypeLookup.setRenderLayer(BlockInit.acacia_leaves.get(), RenderType.cutout());
-        RenderTypeLookup.setRenderLayer(BlockInit.blue_glass.get(), RenderType.cutout());
-        RenderTypeLookup.setRenderLayer(BlockInit.bluewhite_glass.get(), RenderType.cutout());
-        RenderTypeLookup.setRenderLayer(BlockInit.end_crystal_glass.get(), RenderType.cutout());
-        RenderTypeLookup.setRenderLayer(BlockInit.blue_glass_pane.get(), RenderType.cutout());
-        RenderTypeLookup.setRenderLayer(BlockInit.bluewhite_glass_pane.get(), RenderType.cutout());
-        RenderTypeLookup.setRenderLayer(BlockInit.end_crystal_glass_pane.get(), RenderType.cutout());
-        RenderTypeLookup.setRenderLayer(BlockInit.golden_beacon.get(), RenderType.cutout());
-        RenderTypeLookup.setRenderLayer(BlockInit.azalea.get(), RenderType.cutout());
-        RenderTypeLookup.setRenderLayer(BlockInit.swamp_oak_sapling.get(), RenderType.cutout());
-        RenderTypeLookup.setRenderLayer(BlockInit.tall_birch_sapling.get(), RenderType.cutout());
-        RenderTypeLookup.setRenderLayer(BlockInit.oak_bush_sapling.get(), RenderType.cutout());
-        RenderTypeLookup.setRenderLayer(BlockInit.potted_tall_birch_sapling.get(), RenderType.cutout());
-        RenderTypeLookup.setRenderLayer(BlockInit.potted_swamp_oak_sapling.get(), RenderType.cutout());
-        RenderTypeLookup.setRenderLayer(BlockInit.potted_oak_bush_sapling.get(), RenderType.cutout());
-        RenderTypeLookup.setRenderLayer(BlockInit.potted_grass.get(), RenderType.cutout());
-        RenderTypeLookup.setRenderLayer(BlockInit.potted_inno_flower.get(), RenderType.cutout());
-        RenderTypeLookup.setRenderLayer(BlockInit.orange_potted_inno_flower.get(), RenderType.cutout());
-        RenderTypeLookup.setRenderLayer(BlockInit.orange_flower_pot.get(), RenderType.cutout());
-        RenderTypeLookup.setRenderLayer(BlockInit.orange_flower_pot_1.get(), RenderType.cutout());
-        RenderTypeLookup.setRenderLayer(BlockInit.blue_carrots.get(), RenderType.cutout());
-        RenderTypeLookup.setRenderLayer(BlockInit.blue_wall.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(OTBlocks.ACACIA_LEAVES.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(OTBlocks.BLUE_GLASS.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(OTBlocks.BLUEWHITE_GLASS.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(OTBlocks.END_CRYSTAL_GLASS.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(OTBlocks.BLUE_GLASS_PANE.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(OTBlocks.BLUEWHITE_GLASS_PANE.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(OTBlocks.END_CRYSTAL_GLASS_PANE.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(OTBlocks.GOLDEN_BEACON.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(OTBlocks.AZALEA.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(OTBlocks.SWAMP_OAK_SAPLING.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(OTBlocks.TALL_BIRCH_SAPLING.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(OTBlocks.JUNGLE_BUSH_SAPLING.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(OTBlocks.POTTED_TALL_BIRCH_SAPLING.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(OTBlocks.POTTED_SWAMP_OAK_SAPLING.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(OTBlocks.POTTED_JUNGLE_BUSH_SAPLING.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(OTBlocks.POTTED_GRASS.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(OTBlocks.POTTED_INNO_FLOWER.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(OTBlocks.ORANGE_POTTED_INNO_FLOWER.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(OTBlocks.ORANGE_FLOWER_POT.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(OTBlocks.ORANGE_FLOWER_POT_1.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(OTBlocks.BLUE_CARROTS.get(), RenderType.cutout());
     }
 
     @SubscribeEvent

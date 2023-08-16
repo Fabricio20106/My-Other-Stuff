@@ -1,16 +1,16 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-        "ccc",
-        "ccc",
-        "ccc"
-    ],
-    "key": {
-        "c": {
-            "item": "others:crystal"
-        }
-    },
-    "result": {
-        "item": "others:crystal_block"
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ccc",
+    "ccc",
+    "ccc"
+  ],
+  "key": {
+    "c": {
+      "item": "others:crystal"
     }
+  },
+  "result": {
+    "item": "others:crystal_block"
+  }
 }
