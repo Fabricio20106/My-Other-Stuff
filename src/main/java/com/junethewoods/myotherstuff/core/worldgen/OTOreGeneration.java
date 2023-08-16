@@ -26,7 +26,7 @@ public class OTOreGeneration {
     }
 
     public static void generatePurpleOres(final BiomeLoadingEvent event) {
-        if (!(event.getCategory().equals(Biome.Category.NETHER) || event.getCategory().equals(Biome.Category.THEEND))) {
+        if (event.getCategory().equals(Biome.Category.NETHER)) {
             generateOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.NETHER_ORE_REPLACEABLES, OTBlocks.PURPLE_ORE.get().defaultBlockState(), 8, 32, 72, 4);
         }
     }
