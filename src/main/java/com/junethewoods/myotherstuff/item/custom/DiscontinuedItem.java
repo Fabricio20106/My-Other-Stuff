@@ -3,7 +3,6 @@ package com.junethewoods.myotherstuff.item.custom;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.util.text.TranslationTextComponent;
@@ -22,7 +21,7 @@ public class DiscontinuedItem extends Item {
 
     @Override
     public ITextComponent getName(ItemStack stack) {
-        String trimmedName = modName.toLowerCase().replace(" ", "");
+        String trimmedName = modName.toLowerCase().replace(" ", "").replace("'", "");
         String modName = "message.others.mod." + trimmedName;
 
         return new TranslationTextComponent(modName, getOriginalName(stack));

@@ -46,3 +46,13 @@
     //public static final RegistryObject<Item> creeper_chest = StuffInit.items.register("creeper_chest", () -> new ArmorItem(OtherRobes.creeper, EquipmentSlotType.CHEST, new Item.Properties().group(WeaponryInitTab.instance)));
     //public static final RegistryObject<Item> husk_head = StuffInit.items.register("husk_head", () -> new ArmorItem(OtherRobes.husk, EquipmentSlotType.HEAD, new Item.Properties().group(WeaponryInitTab.instance)));
     //public static final RegistryObject<Item> villager_head = StuffInit.items.register("villager_head", () -> new ArmorItem(OtherArmors.villager, EquipmentSlotType.HEAD, new Item.Properties().group(WeaponryInitTab.instance)));
+
+    /*private TextFormatting getTitleColor(ItemStack stack) {
+        TextFormatting titleColor = TextFormatting.GRAY;
+        Rarity rarity = stack.getRarity();
+
+        if (rarity == Rarity.UNCOMMON) titleColor = TextFormatting.GOLD;
+        if (rarity == Rarity.RARE) titleColor = TextFormatting.DARK_AQUA;
+        if (rarity == Rarity.EPIC) titleColor = TextFormatting.DARK_PURPLE;
+        return titleColor;
+    }*/

@@ -23,7 +23,7 @@ public class DiscontinuedBlockItem extends BlockItem {
 
     @Override
     public ITextComponent getName(ItemStack stack) {
-        String trimmedName = modName.toLowerCase().replace(" ", "");
+        String trimmedName = modName.toLowerCase().replace(" ", "").replace("'", "");
         String modName = "message.others.mod." + trimmedName;
 
         return new TranslationTextComponent(modName, getOriginalName(stack));

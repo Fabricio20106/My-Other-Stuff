@@ -17,6 +17,8 @@ public class OTBlockStateProvider extends BlockStateProvider {
         simpleBlock(OTBlocks.RAW_FIRST_BLOCK.get());
         simpleBlock(OTBlocks.RAW_INNO_BLOCK.get());
         simpleBlock(OTBlocks.RAW_NETHER_BLOCK.get());
+        simpleBlock(OTBlocks.CHISELED_BLUE_TILES.get(), models().cubeTop("chiseled_blue_tiles", modLoc("block/chiseled_blue_tiles"), modLoc("block/blue_block")));
+        simpleBlock(OTBlocks.DEEPSLATE_DIAEMERALD_ORE.get());
         stairsBlock((StairsBlock) OTBlocks.BLUE_TILE_STAIRS.get(), modLoc("block/blue_block"));
     }
 }

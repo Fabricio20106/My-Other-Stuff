@@ -24,6 +24,7 @@ public class OTItems {
 
     // Blocks
     public static final RegistryObject<Item> BLUE_TILES = ITEMS.register("blue_block", () -> new BlockItem(OTBlocks.BLUE_TILES.get(), new Item.Properties().tab(OTTab.TAB)));
+    public static final RegistryObject<Item> CHISELED_BLUE_TILES = ITEMS.register("chiseled_blue_tiles", () -> new BlockItem(OTBlocks.CHISELED_BLUE_TILES.get(), new Item.Properties().tab(OTTab.TAB)));
     public static final RegistryObject<Item> BLUE_TILE_STAIRS = ITEMS.register("blue_stairs", () -> new BlockItem(OTBlocks.BLUE_TILE_STAIRS.get(), new Item.Properties().tab(OTTab.TAB)));
     public static final RegistryObject<Item> BLUE_TILE_SLAB = ITEMS.register("blue_slab", () -> new BlockItem(OTBlocks.BLUE_TILE_SLAB.get(), new Item.Properties().tab(OTTab.TAB)));
     public static final RegistryObject<Item> BLUE_TILE_WALL = ITEMS.register("blue_wall", () -> new BlockItem(OTBlocks.BLUE_TILE_WALL.get(), new Item.Properties().tab(OTTab.TAB)));
@@ -57,6 +58,7 @@ public class OTItems {
     public static final RegistryObject<Item> SWAMP_OAK_SAPLING = ITEMS.register("swamp_oak_sapling", () -> new BlockItem(OTBlocks.SWAMP_OAK_SAPLING.get(), new Item.Properties().tab(OTTab.TAB)));
     public static final RegistryObject<Item> JUNGLE_BUSH_SAPLING = ITEMS.register("oak_bush_sapling", () -> new BlockItem(OTBlocks.JUNGLE_BUSH_SAPLING.get(), new Item.Properties().tab(OTTab.TAB)));
     public static final RegistryObject<Item> DIAEMERALD_ORE = ITEMS.register("diaemerald_ore", () -> new BlockItem(OTBlocks.DIAEMERALD_ORE.get(), new Item.Properties().tab(OTTab.TAB)));
+    public static final RegistryObject<Item> DEEPSLATE_DIAEMERALD_ORE = ITEMS.register("deepslate_diaemerald_ore", () -> new BlockItem(OTBlocks.DEEPSLATE_DIAEMERALD_ORE.get(), new Item.Properties().tab(OTTab.TAB)));
     public static final RegistryObject<Item> DIAEMERALD_BLOCK = ITEMS.register("diaemerald_block", () -> new BlockItem(OTBlocks.DIAEMERALD_BLOCK.get(), new Item.Properties().tab(OTTab.TAB)));
     public static final RegistryObject<Item> MAGENTIC_CRYSTAL_ORE = ITEMS.register("crystal_ore", () -> new BlockItem(OTBlocks.CRYSTAL_ORE.get(), new Item.Properties().tab(OTTab.TAB)));
     public static final RegistryObject<Item> DEEPSLATE_MAGENTIC_CRYSTAL_ORE = ITEMS.register("deepslate_crystal_ore", () -> new BlockItem(OTBlocks.DEEPSLATE_CRYSTAL_ORE.get(), new Item.Properties().tab(OTTab.TAB)));
@@ -281,7 +283,7 @@ public class OTItems {
     public static final RegistryObject<Item> INNO_CORE = ITEMS.register("inno_core", () -> new DiscontinuedItem(new Item.Properties(), "F10 Elements"));
     public static final RegistryObject<Item> NETHER_CORE = ITEMS.register("nether_core", () -> new DiscontinuedItem(new Item.Properties(), "F10 Elements"));
     public static final RegistryObject<Item> RUBY = ITEMS.register("ruby", () -> new Item(new Item.Properties().tab(OTTab.TAB)));
-    public static final RegistryObject<Item> ENCHANTED_KNOWLEDGE_BOOK = ITEMS.register("knowledge_enchanted_book", () -> new DiscontinuedItem(new Item.Properties().stacksTo(1), "Variants"));
+    public static final RegistryObject<Item> ENCHANTED_KNOWLEDGE_BOOK = ITEMS.register("knowledge_enchanted_book", () -> new DiscontinuedFoiledItem(new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON), "Variants"));
     public static final RegistryObject<Item> SOUL_BLAZE_ROD = ITEMS.register("soul_blaze_rod", () -> new DiscontinuedItem(new Item.Properties(), "Variants"));
     public static final RegistryObject<Item> SOUL_BLAZE_POWDER = ITEMS.register("soul_blaze_powder", () -> new DiscontinuedItem(new Item.Properties(), "Variants"));
     public static final RegistryObject<Item> ILLUSIONER_SPAWN_EGG = ITEMS.register("illusioner_spawn_egg", () -> new SpawnEggItem(EntityType.ILLUSIONER, 1267859, 733781, (new Item.Properties()).tab(OTTab.TAB)));

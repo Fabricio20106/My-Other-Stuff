@@ -16,6 +16,8 @@ public class OTItemModelProvider extends ItemModelProvider {
         withExistingParent("raw_inno_block");
         withExistingParent("raw_purple_block");
         withExistingParent("raw_first_block");
+        withExistingParent("chiseled_blue_tiles");
+        withExistingParent("deepslate_diaemerald_ore");
         withExistingParent("blue_stairs");
 
         ModelFile generated = getExistingFile(mcLoc("item/generated"));

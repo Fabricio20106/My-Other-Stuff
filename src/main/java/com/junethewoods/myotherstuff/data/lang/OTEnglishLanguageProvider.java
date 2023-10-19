@@ -19,6 +19,7 @@ public class OTEnglishLanguageProvider extends LanguageProvider {
     @Override
     protected void addTranslations() {
         add(OTBlocks.BLUE_TILES, "Blue Tiles");
+        add(OTBlocks.CHISELED_BLUE_TILES, "Chiseled Blue Tiles");
         add(OTBlocks.BLUE_TILE_STAIRS, "Blue Tile Stairs");
         add(OTBlocks.BLUE_TILE_SLAB, "Blue Tile Slab");
         add(OTBlocks.BLUE_TILE_WALL, "Blue Tile Wall");
@@ -35,10 +36,10 @@ public class OTEnglishLanguageProvider extends LanguageProvider {
         add(OTBlocks.BEACON_BEAM_BLOCK, "Beacon Beam Block");
         add(OTBlocks.BEACON_BEAM_SLAB, "Beacon Beam Slab");
         add(OTBlocks.BLUE_GLASS, "Blue Glass");
-        add(OTBlocks.BLUEWHITE_GLASS, "Bluewhite Glass");
+        add(OTBlocks.BLUEWHITE_GLASS, "Cyan Glass");
         add(OTBlocks.END_CRYSTAL_GLASS, "End Crystal Glass");
         add(OTBlocks.END_CRYSTAL_GLASS_PANE, "End Crystal Glass Pane");
-        add(OTBlocks.BLUEWHITE_GLASS_PANE, "Bluewhite Glass Pane");
+        add(OTBlocks.BLUEWHITE_GLASS_PANE, "Cyan Glass Pane");
         add(OTBlocks.BLUE_GLASS_PANE, "Blue Glass Pane");
         add(OTBlocks.DRAWN_COMMAND_BLOCK, "Drawn Command Block");
         add(OTBlocks.DRAWN_CRAFTING_TABLE, "Drawn Crafting Table");
@@ -52,34 +53,35 @@ public class OTEnglishLanguageProvider extends LanguageProvider {
         add(OTBlocks.JUNGLE_BUSH_SAPLING, "Jungle Bush Sapling");
         add(OTBlocks.SWAMP_OAK_SAPLING, "Swamp Oak Sapling");
         add(OTBlocks.TALL_BIRCH_SAPLING, "Tall Birch Sapling");
-        add(OTBlocks.INNO_FLOWER, "Inno Flower (from F10 Elements)");
+        add(OTBlocks.INNO_FLOWER, "Inno Flower");
         add(OTBlocks.DECORATED_FLOWER_POT, "Decorated Flower Pot");
         add(OTBlocks.STRIPED_DECORATED_FLOWER_POT, "Decorated Flower Pot (Striped)");
-        add(OTBlocks.DECORATED_POTTED_INNO_FLOWER, "Potted Inno Flower (Decorated Flower Pot) (from F10 Elements)");
-        add(OTBlocks.POTTED_INNO_FLOWER, "Potted Inno Flower (from F10 Elements)");
+        add(OTBlocks.DECORATED_POTTED_INNO_FLOWER, "Potted Inno Flower (Decorated Flower Pot)");
+        add(OTBlocks.POTTED_INNO_FLOWER, "Potted Inno Flower");
         add(OTBlocks.POTTED_TALL_BIRCH_SAPLING, "Potted Tall Birch Sapling");
         add(OTBlocks.POTTED_SWAMP_OAK_SAPLING, "Potted Swamp Oak Sapling");
         add(OTBlocks.POTTED_JUNGLE_BUSH_SAPLING, "Potted Jungle Bush Sapling");
         add(OTBlocks.POTTED_GRASS, "Potted Grass");
         add(OTBlocks.DIAEMERALD_ORE, "Diaemerald Ore");
+        add(OTBlocks.DEEPSLATE_DIAEMERALD_ORE, "Deepslate Diaemerald Ore");
         add(OTBlocks.DIAEMERALD_BLOCK, "Block of Diaemerald");
         add(OTBlocks.CRYSTAL_ORE, "Magentic Crystal Ore");
         add(OTBlocks.DEEPSLATE_CRYSTAL_ORE, "Deepslate Magentic Crystal Ore");
         add(OTBlocks.CRYSTAL_BLOCK, "Block of Magentic Crystal");
-        add(OTBlocks.INNO_ORE, "Inno Ore (from F10 Elements)");
-        add(OTBlocks.INNO_BLOCK, "Block of Inno (from F10 Elements)");
-        add(OTBlocks.RAW_INNO_BLOCK, "Block of Raw Inno (from F10 Elements)");
-        add(OTBlocks.NETHER_ORE, "Nether Ore (from F10 Elements)");
-        add(OTBlocks.NETHER_BLOCK, "Block of Nether (from F10 Elements)");
-        add(OTBlocks.RAW_NETHER_BLOCK, "Block of Raw Nether (from F10 Elements)");
-        add(OTBlocks.BRIGHT_FIRST_BLOCK, "Block of Bright First (from F10 Elements)");
-        add(OTBlocks.DARK_FIRST_BLOCK, "Block of Dark First (from F10 Elements)");
-        add(OTBlocks.FIRST_BLOCK, "Block of First (from F10 Elements)");
-        add(OTBlocks.RAW_FIRST_BLOCK, "Block of Raw First (from F10 Elements)");
+        add(OTBlocks.INNO_ORE, "Inno Ore");
+        add(OTBlocks.INNO_BLOCK, "Block of Inno");
+        add(OTBlocks.RAW_INNO_BLOCK, "Block of Raw Inno");
+        add(OTBlocks.NETHER_ORE, "Nether Ore");
+        add(OTBlocks.NETHER_BLOCK, "Block of Nether");
+        add(OTBlocks.RAW_NETHER_BLOCK, "Block of Raw Nether");
+        add(OTBlocks.BRIGHT_FIRST_BLOCK, "Block of Bright First");
+        add(OTBlocks.DARK_FIRST_BLOCK, "Block of Dark First");
+        add(OTBlocks.FIRST_BLOCK, "Block of First");
+        add(OTBlocks.RAW_FIRST_BLOCK, "Block of Raw First");
         add(OTBlocks.PHOENIX_GEM_BLOCK, "Block of Phoenix Gem");
         add(OTBlocks.PLASTEEL_BLOCK, "Block of Plasteel");
-        add(OTBlocks.INNO_CORE_BLOCK, "Block of Inno Core (from F10 Elements)");
-        add(OTBlocks.NETHER_CORE_BLOCK, "Block of Nether Core (from F10 Elements)");
+        add(OTBlocks.INNO_CORE_BLOCK, "Block of Inno Core");
+        add(OTBlocks.NETHER_CORE_BLOCK, "Block of Nether Core");
 
         add("container.lego_furnace", "LEGO Smelting");
         add("container.purplier_smithing", "Purplier Smithing");
@@ -273,8 +275,8 @@ public class OTEnglishLanguageProvider extends LanguageProvider {
         item(OTItems.RAW_FIRST, "Raw First");
         item(OTItems.RAW_NETHER, "Raw Nether");
         item(OTItems.RAW_INNO, "Raw Inno");
-        item(OTItems.MAGENTIC_INGOT, "Light Magenta Iron Ingot");
-        item(OTItems.MAGENTIC_NUGGET, "Light Magenta Iron Nugget");
+        item(OTItems.MAGENTIC_INGOT, "Magentic Ingot");
+        item(OTItems.MAGENTIC_NUGGET, "Magentic Nugget");
         item(OTItems.INNO_CORE, "Inno Core");
         item(OTItems.NETHER_CORE, "Nether Core");
         item(OTItems.RUBY, "Ruby");
@@ -342,7 +344,7 @@ public class OTEnglishLanguageProvider extends LanguageProvider {
 
         add("message.others.mod.variants", "%s\u00A77 (Variants)");
         add("message.others.mod.f10elements", "%s\u00A77 (F10 Elements)");
-        add("message.others.mod.fabricio2010pack", "%s\u00A77 (Fabricio2010's Pack)");
+        add("message.others.mod.fabricio2010spack", "%s\u00A77 (Fabricio2010's Pack)");
         add("message.others.mod.rimcraft", "%s\u00A77 (Rimcraft)");
         add("message.others.mod.gachalife", "%s\u00A77 (Gacha Life)");
     }
