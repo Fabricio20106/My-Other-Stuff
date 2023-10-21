@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:gems/diaemerald",
+    "#forge:gems/magentic",
+    "#forge:gems/ruby",
+    "#forge:gems/phoenix"
+  ]
+}

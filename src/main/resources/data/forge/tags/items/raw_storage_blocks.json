@@ -1,8 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "#forge:raw_storage_blocks/inno",
-    "#forge:raw_storage_blocks/purple",
-    "#forge:raw_storage_blocks/first"
-  ]
-}

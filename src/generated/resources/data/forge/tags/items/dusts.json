@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:dusts/coal",
+    "#forge:dusts/diamond",
+    "#forge:dusts/emerald",
+    "#forge:dusts/gold",
+    "#forge:dusts/iron",
+    "#forge:dusts/lapis",
+    "#forge:dusts/netherite",
+    "#forge:dusts/netherite_scrap",
+    "#forge:dusts/quartz"
+  ]
+}

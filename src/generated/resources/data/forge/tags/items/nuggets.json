@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:nuggets/diaemerald",
+    "#forge:nuggets/magentic",
+    "#forge:nuggets/bright_first",
+    "#forge:nuggets/first",
+    "#forge:nuggets/dark_first",
+    "#forge:nuggets/inno",
+    "#forge:nuggets/nether"
+  ]
+}

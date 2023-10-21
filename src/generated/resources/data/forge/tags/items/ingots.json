@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:ingots/magentic",
+    "#forge:ingots/bright_first",
+    "#forge:ingots/first",
+    "#forge:ingots/dark_first",
+    "#forge:ingots/inno",
+    "#forge:ingots/nether"
+  ]
+}

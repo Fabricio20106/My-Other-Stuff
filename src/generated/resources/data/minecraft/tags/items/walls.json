@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "others:bright_blue_tile_wall",
+    "others:blue_wall",
+    "others:dark_blue_tile_wall",
+    "others:inno_tile_wall",
+    "others:nether_tile_wall"
+  ]
+}

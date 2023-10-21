@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "others:inno_ore",
+    "others:inno_block",
+    "others:inno_core_block",
+    "others:raw_inno_block",
+    "others:purple_ore",
+    "others:purple_block",
+    "others:nether_core_block",
+    "others:raw_purple_block",
+    "others:bright_first_block",
+    "others:first_block",
+    "others:dark_first_block",
+    "others:raw_first_block",
+    "others:inno_flower",
+    "others:potted_inno_flower",
+    "others:orange_potted_inno_flower"
+  ]
+}

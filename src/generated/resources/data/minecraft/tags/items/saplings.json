@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "others:swamp_oak_sapling",
+    "others:tall_birch_sapling",
+    "others:oak_bush_sapling",
+    "others:azalea"
+  ]
+}

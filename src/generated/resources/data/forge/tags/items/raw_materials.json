@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:raw_materials/first",
+    "#forge:raw_materials/inno",
+    "#forge:raw_materials/nether"
+  ]
+}

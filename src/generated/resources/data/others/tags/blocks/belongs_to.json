@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "#others:belongs_to/variants",
+    "#others:belongs_to/mob_taker",
+    "#others:belongs_to/gacha_life",
+    "#others:belongs_to/f10elements",
+    "#others:belongs_to/fabricio2010pack",
+    "#others:belongs_to/rimcraft"
+  ]
+}

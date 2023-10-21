@@ -51,10 +51,10 @@ public class OTEnglishLanguageProvider extends LanguageProvider {
         add(OTBlocks.BEACON_BEAM_BLOCK, "Beacon Beam Block");
         add(OTBlocks.BEACON_BEAM_SLAB, "Beacon Beam Slab");
         add(OTBlocks.BLUE_GLASS, "Blue Glass");
-        add(OTBlocks.BLUEWHITE_GLASS, "Cyan Glass");
+        add(OTBlocks.CYAN_GLASS, "Cyan Glass");
         add(OTBlocks.END_CRYSTAL_GLASS, "End Crystal Glass");
         add(OTBlocks.END_CRYSTAL_GLASS_PANE, "End Crystal Glass Pane");
-        add(OTBlocks.BLUEWHITE_GLASS_PANE, "Cyan Glass Pane");
+        add(OTBlocks.CYAN_GLASS_PANE, "Cyan Glass Pane");
         add(OTBlocks.BLUE_GLASS_PANE, "Blue Glass Pane");
         add(OTBlocks.DRAWN_COMMAND_BLOCK, "Drawn Command Block");
         add(OTBlocks.DRAWN_CRAFTING_TABLE, "Drawn Crafting Table");
@@ -80,9 +80,9 @@ public class OTEnglishLanguageProvider extends LanguageProvider {
         add(OTBlocks.DIAEMERALD_ORE, "Diaemerald Ore");
         add(OTBlocks.DEEPSLATE_DIAEMERALD_ORE, "Deepslate Diaemerald Ore");
         add(OTBlocks.DIAEMERALD_BLOCK, "Block of Diaemerald");
-        add(OTBlocks.CRYSTAL_ORE, "Magentic Crystal Ore");
-        add(OTBlocks.DEEPSLATE_CRYSTAL_ORE, "Deepslate Magentic Crystal Ore");
-        add(OTBlocks.CRYSTAL_BLOCK, "Block of Magentic Crystal");
+        add(OTBlocks.MAGENTIC_CRYSTAL_ORE, "Magentic Crystal Ore");
+        add(OTBlocks.DEEPSLATE_MAGENTIC_CRYSTAL_ORE, "Deepslate Magentic Crystal Ore");
+        add(OTBlocks.MAGENTIC_CRYSTAL_BLOCK, "Block of Magentic Crystal");
         add(OTBlocks.INNO_ORE, "Inno Ore");
         add(OTBlocks.INNO_BLOCK, "Block of Inno");
         add(OTBlocks.RAW_INNO_BLOCK, "Block of Raw Inno");

@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "others:lined_bedrock",
+    "others:lined_bedrock_slab",
+    "others:beacon_laser_block",
+    "others:beacon_laser_slab",
+    "others:fur_block",
+    "others:end_crystal_glass",
+    "others:end_crystal_glass_pane"
+  ]
+}

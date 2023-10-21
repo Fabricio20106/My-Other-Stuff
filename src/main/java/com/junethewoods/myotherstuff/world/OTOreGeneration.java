@@ -21,7 +21,7 @@ public class OTOreGeneration {
 
     public static void generateMagenticCrystalOres(final BiomeLoadingEvent event) {
         if (!(event.getCategory().equals(Biome.Category.NETHER) || event.getCategory().equals(Biome.Category.THEEND))) {
-            generateOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.NATURAL_STONE, OTBlocks.CRYSTAL_ORE.get().defaultBlockState(), 5, 8, 36, 8);
+            generateOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.NATURAL_STONE, OTBlocks.MAGENTIC_CRYSTAL_ORE.get().defaultBlockState(), 5, 8, 36, 8);
         }
     }
 

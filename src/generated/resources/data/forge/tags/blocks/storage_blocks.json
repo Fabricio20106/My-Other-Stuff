@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:storage_blocks/diaemerald",
+    "#forge:storage_blocks/magentic",
+    "#forge:storage_blocks/bright_first",
+    "#forge:storage_blocks/first",
+    "#forge:storage_blocks/raw_first",
+    "#forge:storage_blocks/dark_first",
+    "#forge:storage_blocks/inno",
+    "#forge:storage_blocks/inno_core",
+    "#forge:storage_blocks/raw_inno",
+    "#forge:storage_blocks/nether",
+    "#forge:storage_blocks/nether_core",
+    "#forge:storage_blocks/raw_nether",
+    "#forge:storage_blocks/plasteel",
+    "#forge:storage_blocks/phoenix"
+  ]
+}

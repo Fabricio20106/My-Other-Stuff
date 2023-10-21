@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "others:granite_bricks",
+    "others:slate_bricks",
+    "others:plasteel_block"
+  ]
+}

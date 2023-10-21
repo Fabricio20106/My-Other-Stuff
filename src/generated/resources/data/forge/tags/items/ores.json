@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:ores/diaemerald",
+    "#forge:ores/magentic",
+    "#forge:ores/inno",
+    "#forge:ores/nether"
+  ]
+}

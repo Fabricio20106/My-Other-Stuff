@@ -57,10 +57,10 @@ public class MyOtherStuff {
     public void clientSetup(final FMLClientSetupEvent event) {
         RenderTypeLookup.setRenderLayer(OTBlocks.DRAWN_ACACIA_LEAVES.get(), RenderType.cutout());
         RenderTypeLookup.setRenderLayer(OTBlocks.BLUE_GLASS.get(), RenderType.cutout());
-        RenderTypeLookup.setRenderLayer(OTBlocks.BLUEWHITE_GLASS.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(OTBlocks.CYAN_GLASS.get(), RenderType.cutout());
         RenderTypeLookup.setRenderLayer(OTBlocks.END_CRYSTAL_GLASS.get(), RenderType.cutout());
         RenderTypeLookup.setRenderLayer(OTBlocks.BLUE_GLASS_PANE.get(), RenderType.cutout());
-        RenderTypeLookup.setRenderLayer(OTBlocks.BLUEWHITE_GLASS_PANE.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(OTBlocks.CYAN_GLASS_PANE.get(), RenderType.cutout());
         RenderTypeLookup.setRenderLayer(OTBlocks.END_CRYSTAL_GLASS_PANE.get(), RenderType.cutout());
         RenderTypeLookup.setRenderLayer(OTBlocks.GOLDEN_BEACON.get(), RenderType.cutout());
         RenderTypeLookup.setRenderLayer(OTBlocks.AZALEA.get(), RenderType.cutout());

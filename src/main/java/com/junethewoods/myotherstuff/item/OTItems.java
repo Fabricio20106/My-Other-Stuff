@@ -30,12 +30,12 @@ public class OTItems {
     // Blocks
     public static final RegistryObject<Item> DIAEMERALD_ORE = ITEMS.register("diaemerald_ore", () -> new BlockItem(OTBlocks.DIAEMERALD_ORE.get(), new Item.Properties().tab(OTBlocksTab.TAB)));
     public static final RegistryObject<Item> DEEPSLATE_DIAEMERALD_ORE = ITEMS.register("deepslate_diaemerald_ore", () -> new BlockItem(OTBlocks.DEEPSLATE_DIAEMERALD_ORE.get(), new Item.Properties().tab(OTBlocksTab.TAB)));
-    public static final RegistryObject<Item> MAGENTIC_CRYSTAL_ORE = ITEMS.register("crystal_ore", () -> new BlockItem(OTBlocks.CRYSTAL_ORE.get(), new Item.Properties().tab(OTBlocksTab.TAB)));
-    public static final RegistryObject<Item> DEEPSLATE_MAGENTIC_CRYSTAL_ORE = ITEMS.register("deepslate_crystal_ore", () -> new BlockItem(OTBlocks.DEEPSLATE_CRYSTAL_ORE.get(), new Item.Properties().tab(OTBlocksTab.TAB)));
+    public static final RegistryObject<Item> MAGENTIC_CRYSTAL_ORE = ITEMS.register("crystal_ore", () -> new BlockItem(OTBlocks.MAGENTIC_CRYSTAL_ORE.get(), new Item.Properties().tab(OTBlocksTab.TAB)));
+    public static final RegistryObject<Item> DEEPSLATE_MAGENTIC_CRYSTAL_ORE = ITEMS.register("deepslate_crystal_ore", () -> new BlockItem(OTBlocks.DEEPSLATE_MAGENTIC_CRYSTAL_ORE.get(), new Item.Properties().tab(OTBlocksTab.TAB)));
     public static final RegistryObject<Item> INNO_ORE = ITEMS.register("inno_ore", () -> new DiscontinuedBlockItem(OTBlocks.INNO_ORE.get(), new Item.Properties(), "F10 Elements"));
     public static final RegistryObject<Item> NETHER_ORE = ITEMS.register("purple_ore", () -> new DiscontinuedBlockItem(OTBlocks.NETHER_ORE.get(), new Item.Properties(), "F10 Elements"));
     public static final RegistryObject<Item> DIAEMERALD_BLOCK = ITEMS.register("diaemerald_block", () -> new BlockItem(OTBlocks.DIAEMERALD_BLOCK.get(), new Item.Properties().tab(OTBlocksTab.TAB)));
-    public static final RegistryObject<Item> MAGENTIC_CRYSTAL_BLOCK = ITEMS.register("crystal_block", () -> new BlockItem(OTBlocks.CRYSTAL_BLOCK.get(), new Item.Properties().tab(OTBlocksTab.TAB)));
+    public static final RegistryObject<Item> MAGENTIC_CRYSTAL_BLOCK = ITEMS.register("crystal_block", () -> new BlockItem(OTBlocks.MAGENTIC_CRYSTAL_BLOCK.get(), new Item.Properties().tab(OTBlocksTab.TAB)));
     public static final RegistryObject<Item> INNO_BLOCK = ITEMS.register("inno_block", () -> new DiscontinuedBlockItem(OTBlocks.INNO_BLOCK.get(), new Item.Properties(), "F10 Elements"));
     public static final RegistryObject<Item> INNO_CORE_BLOCK = ITEMS.register("inno_core_block", () -> new DiscontinuedBlockItem(OTBlocks.INNO_CORE_BLOCK.get(), new Item.Properties(), "F10 Elements"));
     public static final RegistryObject<Item> RAW_INNO_BLOCK = ITEMS.register("raw_inno_block", () -> new DiscontinuedBlockItem(OTBlocks.RAW_INNO_BLOCK.get(), new Item.Properties(), "F10 Elements"));
@@ -89,8 +89,8 @@ public class OTItems {
     public static final RegistryObject<Item> GOLDEN_CAULDRON = ITEMS.register("golden_cauldron", () -> new DiscontinuedBlockItem(OTBlocks.GOLDEN_CAULDRON.get(), new Item.Properties(), "Variants"));
     public static final RegistryObject<Item> BLUE_GLASS = ITEMS.register("blue_glass", () -> new BlockItem(OTBlocks.BLUE_GLASS.get(), new Item.Properties().tab(OTBlocksTab.TAB)));
     public static final RegistryObject<Item> BLUE_GLASS_PANE = ITEMS.register("blue_glass_pane", () -> new BlockItem(OTBlocks.BLUE_GLASS_PANE.get(), new Item.Properties().tab(OTBlocksTab.TAB)));
-    public static final RegistryObject<Item> CYAN_GLASS = ITEMS.register("bluewhite_glass", () -> new BlockItem(OTBlocks.BLUEWHITE_GLASS.get(), new Item.Properties().tab(OTBlocksTab.TAB)));
-    public static final RegistryObject<Item> CYAN_CLASS_PANE = ITEMS.register("bluewhite_glass_pane", () -> new BlockItem(OTBlocks.BLUEWHITE_GLASS_PANE.get(), new Item.Properties().tab(OTBlocksTab.TAB)));
+    public static final RegistryObject<Item> CYAN_GLASS = ITEMS.register("bluewhite_glass", () -> new BlockItem(OTBlocks.CYAN_GLASS.get(), new Item.Properties().tab(OTBlocksTab.TAB)));
+    public static final RegistryObject<Item> CYAN_CLASS_PANE = ITEMS.register("bluewhite_glass_pane", () -> new BlockItem(OTBlocks.CYAN_GLASS_PANE.get(), new Item.Properties().tab(OTBlocksTab.TAB)));
     public static final RegistryObject<Item> END_CRYSTAL_GLASS = ITEMS.register("end_crystal_glass", () -> new DiscontinuedBlockItem(OTBlocks.END_CRYSTAL_GLASS.get(), new Item.Properties(), "Mob Taker"));
     public static final RegistryObject<Item> END_CRYSTAL_GLASS_PANE = ITEMS.register("end_crystal_glass_pane", () -> new DiscontinuedBlockItem(OTBlocks.END_CRYSTAL_GLASS_PANE.get(), new Item.Properties(), "Mob Taker"));
     public static final RegistryObject<Item> DRAWN_ACACIA_LEAVES = ITEMS.register("acacia_leaves_1", () -> new BlockItem(OTBlocks.DRAWN_ACACIA_LEAVES.get(), new Item.Properties().tab(OTBlocksTab.TAB)));

@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "others:bright_blue_tile_slab",
+    "others:blue_slab",
+    "others:dark_blue_tile_slab",
+    "others:inno_tile_slab",
+    "others:nether_tile_slab",
+    "others:lined_bedrock_slab",
+    "others:beacon_laser_slab"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "others:pillager_suit",
+    "others:vindicator_suit",
+    "others:evoker_suit",
+    "others:illusioner_suit",
+    "others:piglin_suit",
+    "others:piglin_brute_suit",
+    "others:zombified_piglin_suit",
+    "others:creeper_suit",
+    "others:charged_creeper_suit"
+  ]
+}
