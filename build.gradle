@@ -14,7 +14,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '1.5.2'
+version = '1.5.4'
 group = 'com.junethewoods.myotherstuff'
 archivesBaseName = 'MyOtherStuff-1.16.5'
 

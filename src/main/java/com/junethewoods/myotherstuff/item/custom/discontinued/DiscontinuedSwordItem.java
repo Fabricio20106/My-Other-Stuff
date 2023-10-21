@@ -1,10 +1,10 @@
-package com.junethewoods.myotherstuff.item.custom;
+package com.junethewoods.myotherstuff.item.custom.discontinued;
 
-import net.minecraft.block.Block;
 import net.minecraft.client.util.ITooltipFlag;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
+import net.minecraft.item.HoeItem;
+import net.minecraft.item.IItemTier;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.SwordItem;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.util.text.TranslationTextComponent;
@@ -13,11 +13,11 @@ import net.minecraft.world.World;
 import javax.annotation.Nullable;
 import java.util.List;
 
-public class DiscontinuedBlockItem extends BlockItem {
+public class DiscontinuedSwordItem extends SwordItem {
     private final String modName;
 
-    public DiscontinuedBlockItem(Block block, Properties properties, String modName) {
-        super(block, properties);
+    public DiscontinuedSwordItem(IItemTier tier, int damage, float swingSpeed, Properties properties, String modName) {
+        super(tier, damage, swingSpeed, properties);
         this.modName = modName;
     }
 
@@ -35,7 +35,7 @@ public class DiscontinuedBlockItem extends BlockItem {
 
     @Override
     public void appendHoverText(ItemStack stack, @Nullable World world, List<ITextComponent> tooltip, ITooltipFlag flag) {
-        tooltip.add(new TranslationTextComponent("message.others.discontinuation.block.main", modName).withStyle(TextFormatting.GRAY));
+        tooltip.add(new TranslationTextComponent("message.others.discontinuation.item.main", modName).withStyle(TextFormatting.GRAY));
         tooltip.add(new TranslationTextComponent("message.others.discontinuation.safety").withStyle(TextFormatting.GRAY));
         super.appendHoverText(stack, world, tooltip, flag);
     }

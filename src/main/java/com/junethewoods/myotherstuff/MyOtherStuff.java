@@ -41,9 +41,7 @@ public class MyOtherStuff {
 
         forgeEventBus.register(this);
         forgeEventBus.addListener(EventPriority.HIGH, OTOreGeneration::generateMagenticCrystalOres);
-        forgeEventBus.addListener(EventPriority.HIGH, OTOreGeneration::generateInnoOres);
         forgeEventBus.addListener(EventPriority.HIGH, OTOreGeneration::generateDiaemeraldOres);
-        forgeEventBus.addListener(EventPriority.HIGH, OTOreGeneration::generatePurpleOres);
     }
 
     public static ResourceLocation resourceLoc(String name) {

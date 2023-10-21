@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=top": {
+      "model": "others:block/bright_blue_tile_slab_top"
+    },
+    "type=bottom": {
+      "model": "others:block/bright_blue_tile_slab"
+    },
+    "type=double": {
+      "model": "others:block/bright_blue_tiles"
+    }
+  }
+}

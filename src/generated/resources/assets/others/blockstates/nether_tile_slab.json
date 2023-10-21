@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=top": {
+      "model": "others:block/nether_tile_slab_top"
+    },
+    "type=bottom": {
+      "model": "others:block/nether_tile_slab"
+    },
+    "type=double": {
+      "model": "others:block/nether_tiles"
+    }
+  }
+}

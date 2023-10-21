@@ -19,11 +19,27 @@ import net.minecraftforge.registries.ForgeRegistries;
 public class OTBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MyOtherStuff.MOD_ID);
 
+    public static final RegistryObject<Block> BRIGHT_BLUE_TILES = BLOCKS.register("bright_blue_tiles", () -> new Block(AbstractBlock.Properties.of(Material.METAL, MaterialColor.COLOR_CYAN).strength(1.5f,6).sound(SoundType.METAL).harvestTool(ToolType.PICKAXE).harvestLevel(1)));
+    public static final RegistryObject<Block> BRIGHT_BLUE_TILE_STAIRS = BLOCKS.register("bright_blue_tile_stairs", () -> new StairsBlock(() -> OTBlocks.BRIGHT_BLUE_TILES.get().defaultBlockState(), AbstractBlock.Properties.copy(BRIGHT_BLUE_TILES.get())));
+    public static final RegistryObject<Block> BRIGHT_BLUE_TILE_SLAB = BLOCKS.register("bright_blue_tile_slab", () -> new SlabBlock(AbstractBlock.Properties.copy(BRIGHT_BLUE_TILES.get())));
+    public static final RegistryObject<Block> BRIGHT_BLUE_TILE_WALL = BLOCKS.register("bright_blue_tile_wall", () -> new WallBlock(AbstractBlock.Properties.copy(BRIGHT_BLUE_TILES.get())));
     public static final RegistryObject<Block> BLUE_TILES = BLOCKS.register("blue_block", () -> new Block(AbstractBlock.Properties.of(Material.METAL, MaterialColor.COLOR_BLUE).strength(1.5f,6).sound(SoundType.METAL).harvestTool(ToolType.PICKAXE).harvestLevel(1)));
     public static final RegistryObject<Block> CHISELED_BLUE_TILES = BLOCKS.register("chiseled_blue_tiles", () -> new Block(AbstractBlock.Properties.copy(OTBlocks.BLUE_TILES.get())));
     public static final RegistryObject<Block> BLUE_TILE_STAIRS = BLOCKS.register("blue_stairs", () -> new StairsBlock(() -> OTBlocks.BLUE_TILES.get().defaultBlockState(), AbstractBlock.Properties.copy(BLUE_TILES.get())));
     public static final RegistryObject<Block> BLUE_TILE_SLAB = BLOCKS.register("blue_slab", () -> new SlabBlock(AbstractBlock.Properties.copy(BLUE_TILES.get())));
     public static final RegistryObject<Block> BLUE_TILE_WALL = BLOCKS.register("blue_wall", () -> new WallBlock(AbstractBlock.Properties.copy(BLUE_TILES.get())));
+    public static final RegistryObject<Block> DARK_BLUE_TILES = BLOCKS.register("dark_blue_tiles", () -> new Block(AbstractBlock.Properties.of(Material.METAL, MaterialColor.COLOR_BLUE).strength(1.5f,6).sound(SoundType.METAL).harvestTool(ToolType.PICKAXE).harvestLevel(1)));
+    public static final RegistryObject<Block> DARK_BLUE_TILE_STAIRS = BLOCKS.register("dark_blue_tile_stairs", () -> new StairsBlock(() -> OTBlocks.DARK_BLUE_TILES.get().defaultBlockState(), AbstractBlock.Properties.copy(DARK_BLUE_TILES.get())));
+    public static final RegistryObject<Block> DARK_BLUE_TILE_SLAB = BLOCKS.register("dark_blue_tile_slab", () -> new SlabBlock(AbstractBlock.Properties.copy(DARK_BLUE_TILES.get())));
+    public static final RegistryObject<Block> DARK_BLUE_TILE_WALL = BLOCKS.register("dark_blue_tile_wall", () -> new WallBlock(AbstractBlock.Properties.copy(DARK_BLUE_TILES.get())));
+    public static final RegistryObject<Block> INNO_TILES = BLOCKS.register("inno_tiles", () -> new Block(AbstractBlock.Properties.of(Material.METAL, MaterialColor.SNOW).strength(1.5f,6).sound(SoundType.METAL).harvestTool(ToolType.PICKAXE).harvestLevel(1)));
+    public static final RegistryObject<Block> INNO_TILE_STAIRS = BLOCKS.register("inno_tile_stairs", () -> new StairsBlock(() -> OTBlocks.INNO_TILES.get().defaultBlockState(), AbstractBlock.Properties.copy(INNO_TILES.get())));
+    public static final RegistryObject<Block> INNO_TILE_SLAB = BLOCKS.register("inno_tile_slab", () -> new SlabBlock(AbstractBlock.Properties.copy(INNO_TILES.get())));
+    public static final RegistryObject<Block> INNO_TILE_WALL = BLOCKS.register("inno_tile_wall", () -> new WallBlock(AbstractBlock.Properties.copy(INNO_TILES.get())));
+    public static final RegistryObject<Block> NETHER_TILES = BLOCKS.register("nether_tiles", () -> new Block(AbstractBlock.Properties.of(Material.METAL, MaterialColor.COLOR_PURPLE).strength(1.5f,6).sound(SoundType.METAL).harvestTool(ToolType.PICKAXE).harvestLevel(1)));
+    public static final RegistryObject<Block> NETHER_TILE_STAIRS = BLOCKS.register("nether_tile_stairs", () -> new StairsBlock(() -> OTBlocks.NETHER_TILES.get().defaultBlockState(), AbstractBlock.Properties.copy(NETHER_TILES.get())));
+    public static final RegistryObject<Block> NETHER_TILE_SLAB = BLOCKS.register("nether_tile_slab", () -> new SlabBlock(AbstractBlock.Properties.copy(NETHER_TILES.get())));
+    public static final RegistryObject<Block> NETHER_TILE_WALL = BLOCKS.register("nether_tile_wall", () -> new WallBlock(AbstractBlock.Properties.copy(NETHER_TILES.get())));
     public static final RegistryObject<Block> SCREEN_MONITOR = BLOCKS.register("screen_monitor", () -> new MonitorBlock(AbstractBlock.Properties.of(Material.STONE).strength(1f, 1200F).harvestTool(ToolType.PICKAXE).harvestLevel(1)));
     public static final RegistryObject<Block> MONITOR = BLOCKS.register("monitor", () -> new MonitorBlock(AbstractBlock.Properties.of(Material.STONE).strength(1f, 1200F).harvestTool(ToolType.PICKAXE).harvestLevel(1)));
     public static final RegistryObject<Block> FUR_BLOCK = BLOCKS.register("fur_block", () -> new Block(AbstractBlock.Properties.copy(Blocks.WHITE_WOOL)));

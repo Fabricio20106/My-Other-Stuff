@@ -1,4 +1,4 @@
-package com.junethewoods.myotherstuff.item.custom;
+package com.junethewoods.myotherstuff.item.custom.discontinued;
 
 import net.minecraft.item.ItemStack;
 

@@ -19,6 +19,22 @@ public class OTItemModelProvider extends ItemModelProvider {
         withExistingParent("chiseled_blue_tiles");
         withExistingParent("deepslate_diaemerald_ore");
         withExistingParent("blue_stairs");
+        withExistingParent("bright_blue_tiles");
+        withExistingParent("bright_blue_tile_stairs");
+        withExistingParent("bright_blue_tile_slab");
+        withExistingParent("bright_blue_tile_wall", modLoc("block/bright_blue_tile_wall_inventory"));
+        withExistingParent("dark_blue_tiles");
+        withExistingParent("dark_blue_tile_stairs");
+        withExistingParent("dark_blue_tile_slab");
+        withExistingParent("dark_blue_tile_wall", modLoc("block/dark_blue_tile_wall_inventory"));
+        withExistingParent("inno_tiles");
+        withExistingParent("inno_tile_stairs");
+        withExistingParent("inno_tile_slab");
+        withExistingParent("inno_tile_wall", modLoc("block/inno_tile_wall_inventory"));
+        withExistingParent("nether_tiles");
+        withExistingParent("nether_tile_stairs");
+        withExistingParent("nether_tile_slab");
+        withExistingParent("nether_tile_wall", modLoc("block/nether_tile_wall_inventory"));
 
         ModelFile generated = getExistingFile(mcLoc("item/generated"));
         ModelFile handheld = getExistingFile(mcLoc("item/handheld"));
@@ -27,6 +43,11 @@ public class OTItemModelProvider extends ItemModelProvider {
         standard(generated, "magentic_crystal_helmet");
         standard(generated, "magentic_crystal_leggings");
         standard(generated, "magentic_crystal_boots");
+        standard(handheld, "magentic_crystal_sword");
+        standard(handheld, "magentic_crystal_pickaxe");
+        standard(handheld, "magentic_crystal_shovel");
+        standard(handheld, "magentic_crystal_axe");
+        standard(handheld, "magentic_crystal_hoe");
         standard(handheld, "diaemerald_sword");
         standard(handheld, "diaemerald_shovel");
         standard(handheld, "diaemerald_axe");

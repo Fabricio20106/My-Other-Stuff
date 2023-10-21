@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "side": "others:block/inno_tiles",
+    "bottom": "others:block/inno_tiles",
+    "top": "others:block/inno_tiles"
+  }
+}

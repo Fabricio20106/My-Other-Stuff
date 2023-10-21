@@ -1,7 +1,8 @@
-package com.junethewoods.myotherstuff.item.custom;
+package com.junethewoods.myotherstuff.item.custom.discontinued;
 
 import net.minecraft.client.util.ITooltipFlag;
-import net.minecraft.item.Item;
+import net.minecraft.item.HoeItem;
+import net.minecraft.item.IItemTier;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TextFormatting;
@@ -11,11 +12,11 @@ import net.minecraft.world.World;
 import javax.annotation.Nullable;
 import java.util.List;
 
-public class DiscontinuedItem extends Item {
+public class DiscontinuedHoeItem extends HoeItem {
     private final String modName;
 
-    public DiscontinuedItem(Properties properties, String modName) {
-        super(properties);
+    public DiscontinuedHoeItem(IItemTier tier, int damage, float swingSpeed, Properties properties, String modName) {
+        super(tier, damage, swingSpeed, properties);
         this.modName = modName;
     }
 

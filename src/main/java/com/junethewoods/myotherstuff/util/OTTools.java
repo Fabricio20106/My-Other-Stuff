@@ -10,11 +10,12 @@ import net.minecraft.util.LazyValue;
 import java.util.function.Supplier;
 
 public enum OTTools implements IItemTier {
-    DIAEMERALD(3, 725, 15, 5, 50, () -> Ingredient.of(OTItems.DIAEMERALD.get())),
+    DIAEMERALD(3, 725, 7, 3.5f, 10, () -> Ingredient.of(OTItems.DIAEMERALD.get())),
+    MAGENTIC_CRYSTAL(2, 861, 7, 2.5f, 12, () -> Ingredient.of(OTItems.MAGENTIC_CRYSTAL.get())),
     PLASTEEL(4, 450, 15, 5, 50, () -> Ingredient.EMPTY),
     ARTIFICIAL(4, 600, 15, 5, 50, () -> Ingredient.of(OTItems.COAL_DUST.get())),
-    ALT_GOLD(2, 600, 15, 5, 50, () -> Ingredient.of(Items.GOLD_INGOT)),
-    PURPLE(3, 750, 15, 5, 50, () -> Ingredient.of(OTItems.NETHER_INGOT.get())),
+    WOVEN_GOLD(2, 600, 15, 5, 50, () -> Ingredient.of(Items.GOLD_INGOT)),
+    NETHER(3, 750, 15, 5, 50, () -> Ingredient.of(OTItems.NETHER_INGOT.get())),
     INNO(3, 750, 15, 5, 50, () -> Ingredient.of(OTItems.INNO_INGOT.get())),
     LEGO(2, 450, 15, 5, 20, () -> Ingredient.of(OTItems.LEGO_PIECES.get())),
     ANCHOR(4, 2031, 9, 4, 50, () -> Ingredient.of(Blocks.CRYING_OBSIDIAN)),

@@ -17,12 +17,28 @@ public class OTEnglishLanguageProvider extends LanguageProvider {
 
     @Override
     protected void addTranslations() {
+        add(OTBlocks.BRIGHT_BLUE_TILES, "Bright Blue Tiles");
+        add(OTBlocks.BRIGHT_BLUE_TILE_STAIRS, "Bright Blue Tile Stairs");
+        add(OTBlocks.BRIGHT_BLUE_TILE_SLAB, "Bright Blue Tile Slab");
+        add(OTBlocks.BRIGHT_BLUE_TILE_WALL, "Bright Blue Tile Wall");
         add(OTBlocks.BLUE_TILES, "Blue Tiles");
         add(OTBlocks.CHISELED_BLUE_TILES, "Chiseled Blue Tiles");
         add(OTBlocks.BLUE_TILE_STAIRS, "Blue Tile Stairs");
         add(OTBlocks.BLUE_TILE_SLAB, "Blue Tile Slab");
         add(OTBlocks.BLUE_TILE_WALL, "Blue Tile Wall");
-        add(OTBlocks.BLUE_CARROTS, "Blue Carrots");
+        add(OTBlocks.DARK_BLUE_TILES, "Dark Blue Tiles");
+        add(OTBlocks.DARK_BLUE_TILE_STAIRS, "Dark Blue Tile Stairs");
+        add(OTBlocks.DARK_BLUE_TILE_SLAB, "Dark Blue Tile Slab");
+        add(OTBlocks.DARK_BLUE_TILE_WALL, "Dark Blue Tile Wall");
+        add(OTBlocks.INNO_TILES, "Inno Tiles");
+        add(OTBlocks.INNO_TILE_STAIRS, "Inno Tile Stairs");
+        add(OTBlocks.INNO_TILE_SLAB, "Inno Tile Slab");
+        add(OTBlocks.INNO_TILE_WALL, "Inno Tile Wall");
+        add(OTBlocks.NETHER_TILES, "Nether Tiles");
+        add(OTBlocks.NETHER_TILE_STAIRS, "Nether Tile Stairs");
+        add(OTBlocks.NETHER_TILE_SLAB, "Nether Tile Slab");
+        add(OTBlocks.NETHER_TILE_WALL, "Nether Tile Wall");
+        add(OTBlocks.BLUE_CARROTS, "Blue Carrot");
         add(OTBlocks.SCREEN_MONITOR, "Screen Monitor");
         add(OTBlocks.MONITOR, "Monitor");
         add(OTBlocks.DRAWN_ACACIA_LEAVES, "Drawn Acacia Leaves");
@@ -204,6 +220,11 @@ public class OTEnglishLanguageProvider extends LanguageProvider {
         item(OTItems.SPRINKLED_DONUT, "Sprinkled Donut");
         item(OTItems.SUGAR_COOKIE, "Sugar Cookie");
         item(OTItems.COOKIE, "Cookie");
+        item(OTItems.MAGENTIC_CRYSTAL_SWORD, "Magentic Crystal Sword");
+        item(OTItems.MAGENTIC_CRYSTAL_PICKAXE, "Magentic Crystal Pickaxe");
+        item(OTItems.MAGENTIC_CRYSTAL_SHOVEL, "Magentic Crystal Shovel");
+        item(OTItems.MAGENTIC_CRYSTAL_AXE, "Magentic Crystal Axe");
+        item(OTItems.MAGENTIC_CRYSTAL_HOE, "Magentic Crystal Hoe");
         item(OTItems.DIAEMERALD_SWORD, "Diaemerald Sword");
         item(OTItems.DIAEMERALD_PICKAXE, "Diaemerald Pickaxe");
         item(OTItems.DIAEMERALD_SHOVEL, "Diaemerald Shovel");
@@ -231,7 +252,6 @@ public class OTEnglishLanguageProvider extends LanguageProvider {
         item(OTItems.MULTILASER_SPEAKERS, "Multilaser Speakers");
         item(OTItems.GREEN_APPLE, "Green Apple");
         item(OTItems.CUPCAKE, "Cupcake");
-        item(OTItems.BLUE_CARROT, "Blue Carrot");
         item(OTItems.BLAZE_ARROW, "Blaze Arrow");
         item(OTItems.BAMBOO_ARROW, "Bamboo Arrow");
         item(OTItems.SPEAKER_CIRCUIT_PIECE, "Circuit Piece (Speaker)");

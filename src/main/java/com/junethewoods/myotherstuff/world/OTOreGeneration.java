@@ -19,21 +19,9 @@ public class OTOreGeneration {
         }
     }
 
-    public static void generateInnoOres(final BiomeLoadingEvent event) {
-        if (!(event.getCategory().equals(Biome.Category.NETHER) || event.getCategory().equals(Biome.Category.THEEND))) {
-            generateOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.NATURAL_STONE, OTBlocks.INNO_ORE.get().defaultBlockState(), 8, 20, 64, 4);
-        }
-    }
-
-    public static void generatePurpleOres(final BiomeLoadingEvent event) {
-        if (event.getCategory().equals(Biome.Category.NETHER)) {
-            generateOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.NETHER_ORE_REPLACEABLES, OTBlocks.NETHER_ORE.get().defaultBlockState(), 8, 32, 72, 4);
-        }
-    }
-
     public static void generateMagenticCrystalOres(final BiomeLoadingEvent event) {
         if (!(event.getCategory().equals(Biome.Category.NETHER) || event.getCategory().equals(Biome.Category.THEEND))) {
-            generateOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.NATURAL_STONE, OTBlocks.CRYSTAL_ORE.get().defaultBlockState(), 6, 8, 36, 7);
+            generateOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.NATURAL_STONE, OTBlocks.CRYSTAL_ORE.get().defaultBlockState(), 5, 8, 36, 8);
         }
     }
 
