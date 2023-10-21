@@ -14,9 +14,9 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 
 import java.util.function.Supplier;
 
-public enum OtherRobes implements IArmorMaterial {
+public enum OTRobes implements IArmorMaterial {
     BLUP(MyOtherStuff.MOD_ID + ":blup", 15, new int[] {2, 5, 6, 2}, 50, SoundEvents.ARMOR_EQUIP_LEATHER, 3, 0, () -> Ingredient.of(OTItems.BLUE_LEATHER.get())),
-    MAGENTIC_CRYSTAL(MyOtherStuff.MOD_ID + ":crystal", 15, new int[] {2, 5, 6, 2}, 50, SoundEvents.ARMOR_EQUIP_LEATHER, 3, 0, () -> Ingredient.of(OTItems.MAGENTIC_CRYSTAL.get())),
+    MAGENTIC_CRYSTAL(MyOtherStuff.MOD_ID + ":magentic_crystal", 15, new int[] {2, 5, 6, 2}, 50, SoundEvents.ARMOR_EQUIP_LEATHER, 3, 0, () -> Ingredient.of(OTItems.MAGENTIC_CRYSTAL.get())),
     EMPRESARY_2(MyOtherStuff.MOD_ID + ":empresary2", 15, new int[] {2, 5, 6, 2}, 50, SoundEvents.ARMOR_EQUIP_LEATHER, 3, 0, () -> Ingredient.of(OTItems.BLUE_LEATHER.get())),
     GALAXY(MyOtherStuff.MOD_ID + ":galaxy", 15, new int[] {2, 5, 6, 2}, 50, SoundEvents.ARMOR_EQUIP_LEATHER, 3, 0, () -> Ingredient.of(OTItems.GALAXY_CLOTH.get())),
     GREEN(MyOtherStuff.MOD_ID + ":green", 15, new int[] {2, 5, 6, 2}, 50, SoundEvents.ARMOR_EQUIP_LEATHER, 3, 0, () -> Ingredient.of(Items.GREEN_WOOL)),
@@ -38,7 +38,7 @@ public enum OtherRobes implements IArmorMaterial {
     private final float knockbackRes;
     private final LazyValue<Ingredient> repairIngredient;
 
-    OtherRobes(String name, int maxDamageFactor, int[] defensePerSlot, int enchantmentValue, SoundEvent equipSound, float toughness, float knockbackRes, Supplier<Ingredient> repairIngredient) {
+    OTRobes(String name, int maxDamageFactor, int[] defensePerSlot, int enchantmentValue, SoundEvent equipSound, float toughness, float knockbackRes, Supplier<Ingredient> repairIngredient) {
         this.name = name;
         this.maxDamageFactor = maxDamageFactor;
         this.defensePerSlot = defensePerSlot;

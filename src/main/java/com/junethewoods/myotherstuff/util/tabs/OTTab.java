@@ -5,7 +5,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 
 public class OTTab extends ItemGroup {
-    public static final OTTab TAB = new OTTab(ItemGroup.TABS.length, "others");
+    public static final OTTab TAB = new OTTab(ItemGroup.TABS.length, "others.items");
 
     public OTTab(int index, String label) {super(index, label);}
 

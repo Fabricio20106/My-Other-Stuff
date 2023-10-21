@@ -3,7 +3,6 @@ package com.junethewoods.myotherstuff;
 import com.junethewoods.myotherstuff.entity.renderer.OTElytraLayer;
 import com.junethewoods.myotherstuff.block.OTBlocks;
 import com.junethewoods.myotherstuff.item.OTItems;
-import com.junethewoods.myotherstuff.item.OTWeaponry;
 import com.junethewoods.myotherstuff.world.OTOreGeneration;
 import com.junethewoods.myotherstuff.sound.OTSounds;
 import net.minecraft.client.Minecraft;
@@ -37,7 +36,6 @@ public class MyOtherStuff {
         modEventBus.addListener(this::clientSetup);
 
         OTItems.ITEMS.register(modEventBus);
-        OTWeaponry.ITEMS.register(modEventBus);
         OTBlocks.BLOCKS.register(modEventBus);
         OTSounds.registerSounds();
 

@@ -24,6 +24,14 @@ public class OTItemModelProvider extends ItemModelProvider {
         ModelFile handheld = getExistingFile(mcLoc("item/handheld"));
         ModelFile handheldRod = getExistingFile(mcLoc("item/handheld_rod"));
 
+        standard(generated, "magentic_crystal_helmet");
+        standard(generated, "magentic_crystal_leggings");
+        standard(generated, "magentic_crystal_boots");
+        standard(handheld, "diaemerald_sword");
+        standard(handheld, "diaemerald_shovel");
+        standard(handheld, "diaemerald_axe");
+        standard(handheld, "diaemerald_hoe");
+        standard(handheld, "soul_lantern_sword");
         standard(handheld, "amethyst_sword");
         standard(handheld, "enchanting_sword");
         standard(handheld, "end_rod_sword");

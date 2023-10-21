@@ -12,7 +12,7 @@ import java.util.function.Supplier;
 public enum OTTools implements IItemTier {
     DIAEMERALD(3, 725, 15, 5, 50, () -> Ingredient.of(OTItems.DIAEMERALD.get())),
     PLASTEEL(4, 450, 15, 5, 50, () -> Ingredient.EMPTY),
-    ARTIFICIAL(4, 600, 15, 5, 50, () -> Ingredient.of(OTItems.COAL_POWDER.get())),
+    ARTIFICIAL(4, 600, 15, 5, 50, () -> Ingredient.of(OTItems.COAL_DUST.get())),
     ALT_GOLD(2, 600, 15, 5, 50, () -> Ingredient.of(Items.GOLD_INGOT)),
     PURPLE(3, 750, 15, 5, 50, () -> Ingredient.of(OTItems.NETHER_INGOT.get())),
     INNO(3, 750, 15, 5, 50, () -> Ingredient.of(OTItems.INNO_INGOT.get())),

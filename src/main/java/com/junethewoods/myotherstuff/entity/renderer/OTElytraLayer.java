@@ -27,6 +27,6 @@ public class OTElytraLayer<T extends LivingEntity, M extends EntityModel<T>> ext
 
     @Override
     public ResourceLocation getElytraTexture(ItemStack stack, T entity) {
-        return stack.getItem() == OTItems.FAST_ELYTRA.get() ? FAST_ELYTRA_LOCATION : stack.getItem() == OTItems.BLAZE_ELYTRA.get() ? BLAZE_ELYTRA_LOCATION : stack.getItem() == OTItems.DRAGON_WING.get() ? DRAGON_ELYTRA_LOCATION : stack.getItem() == OTItems.VEX_WING.get() ? VEX_ELYTRA_LOCATION : super.getElytraTexture(stack, entity);
+        return stack.getItem() == OTItems.FAST_ELYTRA.get() ? FAST_ELYTRA_LOCATION : stack.getItem() == OTItems.BLAZE_ELYTRA.get() ? BLAZE_ELYTRA_LOCATION : stack.getItem() == OTItems.ENDER_DRAGON_WINGS.get() ? DRAGON_ELYTRA_LOCATION : stack.getItem() == OTItems.VEX_WINGS.get() ? VEX_ELYTRA_LOCATION : super.getElytraTexture(stack, entity);
     }
 }
