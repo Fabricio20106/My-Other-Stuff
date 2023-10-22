@@ -35,6 +35,7 @@ public class OTItemModelProvider extends ItemModelProvider {
         withExistingParent("nether_tile_stairs");
         withExistingParent("nether_tile_slab");
         withExistingParent("nether_tile_wall", modLoc("block/nether_tile_wall_inventory"));
+        withExistingParent("flowering_azalea");
 
         ModelFile generated = getExistingFile(mcLoc("item/generated"));
         ModelFile handheld = getExistingFile(mcLoc("item/handheld"));

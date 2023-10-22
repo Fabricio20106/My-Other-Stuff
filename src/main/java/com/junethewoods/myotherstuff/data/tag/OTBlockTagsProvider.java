@@ -76,14 +76,15 @@ public class OTBlockTagsProvider extends BlockTagsProvider {
                 .add(OTBlocks.POTTED_JUNGLE_BUSH_SAPLING.get()).add(OTBlocks.POTTED_GRASS.get());
         this.tag(BlockTags.GUARDED_BY_PIGLINS).add(OTBlocks.GOLDEN_BEACON.get()).add(OTBlocks.GOLDEN_CAULDRON.get());
         this.tag(BlockTags.LEAVES).add(OTBlocks.DRAWN_ACACIA_LEAVES.get());
-        this.tag(BlockTags.SAPLINGS).add(OTBlocks.SWAMP_OAK_SAPLING.get()).add(OTBlocks.TALL_BIRCH_SAPLING.get()).add(OTBlocks.JUNGLE_BUSH_SAPLING.get()).add(OTBlocks.AZALEA.get());
+        this.tag(BlockTags.SAPLINGS).add(OTBlocks.SWAMP_OAK_SAPLING.get()).add(OTBlocks.TALL_BIRCH_SAPLING.get()).add(OTBlocks.JUNGLE_BUSH_SAPLING.get()).add(OTBlocks.AZALEA.get())
+                .add(OTBlocks.FLOWERING_AZALEA.get());
         this.tag(BlockTags.STAIRS).add(OTBlocks.BRIGHT_BLUE_TILE_STAIRS.get()).add(OTBlocks.BLUE_TILE_STAIRS.get()).add(OTBlocks.DARK_BLUE_TILE_STAIRS.get()).add(OTBlocks.INNO_TILE_STAIRS.get())
                 .add(OTBlocks.NETHER_TILE_STAIRS.get());
         this.tag(BlockTags.SLABS).add(OTBlocks.BRIGHT_BLUE_TILE_SLAB.get()).add(OTBlocks.BLUE_TILE_SLAB.get()).add(OTBlocks.DARK_BLUE_TILE_SLAB.get()).add(OTBlocks.INNO_TILE_SLAB.get())
                 .add(OTBlocks.NETHER_TILE_SLAB.get()).add(OTBlocks.BORDERED_BEDROCK_SLAB.get()).add(OTBlocks.BEACON_BEAM_SLAB.get());
         this.tag(BlockTags.WALLS).add(OTBlocks.BRIGHT_BLUE_TILE_WALL.get()).add(OTBlocks.BLUE_TILE_WALL.get()).add(OTBlocks.DARK_BLUE_TILE_WALL.get()).add(OTBlocks.INNO_TILE_WALL.get())
                 .add(OTBlocks.NETHER_TILE_WALL.get());
-        this.tag(BlockTags.SMALL_FLOWERS).add(OTBlocks.INNO_FLOWER.get());
+        this.tag(BlockTags.SMALL_FLOWERS).add(OTBlocks.INNO_FLOWER.get()).add(OTBlocks.FLOWERING_AZALEA.get());
         this.tag(BlockTags.WITHER_IMMUNE).add(OTBlocks.DRAWN_COMMAND_BLOCK.get());
         this.tag(BlockTags.DRAGON_IMMUNE).add(OTBlocks.DRAWN_COMMAND_BLOCK.get());
         this.tag(BlockTags.WOOL).add(OTBlocks.FUR_BLOCK.get());

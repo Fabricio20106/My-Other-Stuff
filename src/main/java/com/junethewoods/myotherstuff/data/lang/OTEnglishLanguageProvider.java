@@ -43,6 +43,7 @@ public class OTEnglishLanguageProvider extends LanguageProvider {
         add(OTBlocks.MONITOR, "Monitor");
         add(OTBlocks.DRAWN_ACACIA_LEAVES, "Drawn Acacia Leaves");
         add(OTBlocks.AZALEA, "Azalea");
+        add(OTBlocks.FLOWERING_AZALEA, "Flowering Azalea");
         add(OTBlocks.GRANITE_BRICKS, "Granite Bricks");
         add(OTBlocks.SLATE_BRICKS, "Slate Bricks");
         add(OTBlocks.FUR_BLOCK, "Fur Block");

@@ -127,14 +127,15 @@ public class OTItemTagsProvider extends ItemTagsProvider {
                 .add(OTItems.ANGEL_RING.get()).add(OTItems.BELL.get()).add(OTItems.ANTIQUE_GOLD_DUST.get()).add(OTItems.GOLD_DUST.get()).add(OTItems.ALICE_AI_SWORD.get())
                 .add(OTItems.HASTE_PICKAXE.get());
         this.tag(ItemTags.LEAVES).add(OTItems.DRAWN_ACACIA_LEAVES.get());
-        this.tag(ItemTags.SAPLINGS).add(OTItems.SWAMP_OAK_SAPLING.get()).add(OTItems.TALL_BIRCH_SAPLING.get()).add(OTItems.JUNGLE_BUSH_SAPLING.get()).add(OTItems.AZALEA.get());
+        this.tag(ItemTags.SAPLINGS).add(OTItems.SWAMP_OAK_SAPLING.get()).add(OTItems.TALL_BIRCH_SAPLING.get()).add(OTItems.JUNGLE_BUSH_SAPLING.get()).add(OTItems.AZALEA.get())
+                .add(OTItems.FLOWERING_AZALEA.get());
         this.tag(ItemTags.STAIRS).add(OTItems.BRIGHT_BLUE_TILE_STAIRS.get()).add(OTItems.BLUE_TILE_STAIRS.get()).add(OTItems.DARK_BLUE_TILE_STAIRS.get()).add(OTItems.INNO_TILE_STAIRS.get())
                 .add(OTItems.NETHER_TILE_STAIRS.get());
         this.tag(ItemTags.SLABS).add(OTItems.BRIGHT_BLUE_TILE_SLAB.get()).add(OTItems.BLUE_TILE_SLAB.get()).add(OTItems.DARK_BLUE_TILE_SLAB.get()).add(OTItems.INNO_TILE_SLAB.get())
                 .add(OTItems.NETHER_TILE_SLAB.get()).add(OTItems.BORDERED_BEDROCK_SLAB.get()).add(OTItems.BEACON_BEAM_SLAB.get());
         this.tag(ItemTags.WALLS).add(OTItems.BRIGHT_BLUE_TILE_WALL.get()).add(OTItems.BLUE_TILE_WALL.get()).add(OTItems.DARK_BLUE_TILE_WALL.get()).add(OTItems.INNO_TILE_WALL.get())
                 .add(OTItems.NETHER_TILE_WALL.get());
-        this.tag(ItemTags.SMALL_FLOWERS).add(OTItems.INNO_FLOWER.get());
+        this.tag(ItemTags.SMALL_FLOWERS).add(OTItems.INNO_FLOWER.get()).add(OTItems.FLOWERING_AZALEA.get());
         this.tag(ItemTags.WOOL).add(OTItems.FUR_BLOCK.get());
         this.tag(ItemTags.CREEPER_DROP_MUSIC_DISCS).add(OTItems.MUSIC_DISC_FIRST_DATE.get()).add(OTItems.MUSIC_DISC_OMAE_WA_MU.get()).add(OTItems.MUSIC_DISC_A_SKY_FULL_OF_STARS.get())
                 .add(OTItems.MUSIC_DISC_TRACES.get()).add(OTItems.MUSIC_DISC_UNDERWATER_TRACKS.get()).add(OTItems.MUSIC_DISC_CREATIVE_TRACKS.get()).add(OTItems.MUSIC_DISC_BLOCKADES.get());

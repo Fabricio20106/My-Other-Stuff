@@ -1,0 +1,7 @@
+{
+  "parent": "others:block/template_azalea",
+  "textures": {
+    "top": "others:block/flowering_azalea_top",
+    "side": "others:block/flowering_azalea_side"
+  }
+}

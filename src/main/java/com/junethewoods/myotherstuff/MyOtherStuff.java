@@ -64,6 +64,7 @@ public class MyOtherStuff {
         RenderTypeLookup.setRenderLayer(OTBlocks.END_CRYSTAL_GLASS_PANE.get(), RenderType.cutout());
         RenderTypeLookup.setRenderLayer(OTBlocks.GOLDEN_BEACON.get(), RenderType.cutout());
         RenderTypeLookup.setRenderLayer(OTBlocks.AZALEA.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(OTBlocks.FLOWERING_AZALEA.get(), RenderType.cutout());
         RenderTypeLookup.setRenderLayer(OTBlocks.SWAMP_OAK_SAPLING.get(), RenderType.cutout());
         RenderTypeLookup.setRenderLayer(OTBlocks.TALL_BIRCH_SAPLING.get(), RenderType.cutout());
         RenderTypeLookup.setRenderLayer(OTBlocks.JUNGLE_BUSH_SAPLING.get(), RenderType.cutout());

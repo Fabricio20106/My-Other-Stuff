@@ -95,6 +95,7 @@ public class OTItems {
     public static final RegistryObject<Item> END_CRYSTAL_GLASS_PANE = ITEMS.register("end_crystal_glass_pane", () -> new DiscontinuedBlockItem(OTBlocks.END_CRYSTAL_GLASS_PANE.get(), new Item.Properties(), "Mob Taker"));
     public static final RegistryObject<Item> DRAWN_ACACIA_LEAVES = ITEMS.register("acacia_leaves_1", () -> new BlockItem(OTBlocks.DRAWN_ACACIA_LEAVES.get(), new Item.Properties().tab(OTBlocksTab.TAB)));
     public static final RegistryObject<Item> AZALEA = ITEMS.register("azalea", () -> new BlockItem(OTBlocks.AZALEA.get(), new Item.Properties().tab(OTBlocksTab.TAB)));
+    public static final RegistryObject<Item> FLOWERING_AZALEA = ITEMS.register("flowering_azalea", () -> new BlockItem(OTBlocks.FLOWERING_AZALEA.get(), new Item.Properties().tab(OTBlocksTab.TAB)));
     public static final RegistryObject<Item> SWAMP_OAK_SAPLING = ITEMS.register("swamp_oak_sapling", () -> new BlockItem(OTBlocks.SWAMP_OAK_SAPLING.get(), new Item.Properties().tab(OTBlocksTab.TAB)));
     public static final RegistryObject<Item> TALL_BIRCH_SAPLING = ITEMS.register("tall_birch_sapling", () -> new BlockItem(OTBlocks.TALL_BIRCH_SAPLING.get(), new Item.Properties().tab(OTBlocksTab.TAB)));
     public static final RegistryObject<Item> JUNGLE_BUSH_SAPLING = ITEMS.register("oak_bush_sapling", () -> new BlockItem(OTBlocks.JUNGLE_BUSH_SAPLING.get(), new Item.Properties().tab(OTBlocksTab.TAB)));
