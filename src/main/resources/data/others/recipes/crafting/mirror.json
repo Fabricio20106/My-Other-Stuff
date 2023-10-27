@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#C#",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:ingots/gold"
+    },
+    "C": {
+      "tag": "forge:glass/colorless"
+    }
+  },
+  "result": {
+    "item": "others:mirror"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/nether"
+    }
+  ],
+  "result": {
+    "item": "others:purple_nugget",
+    "count": 9
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "G#G",
+    "#C#",
+    "G#G"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:ingots/iron"
+    },
+    "C": {
+      "tag": "forge:storage_blocks/redstone"
+    },
+    "G": {
+      "item": "minecraft:gray_concrete"
+    }
+  },
+  "result": {
+    "item": "others:energy_cube"
+  }
+}

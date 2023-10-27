@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "inreallife:cloths"
+    },
+    {
+      "tag": "inreallife:cloths"
+    },
+    {
+      "tag": "inreallife:cloths"
+    },
+    {
+      "tag": "inreallife:cloths"
+    }
+  ],
+  "result": {
+    "item": "others:galaxy_cloth",
+    "count": 4
+  }
+}

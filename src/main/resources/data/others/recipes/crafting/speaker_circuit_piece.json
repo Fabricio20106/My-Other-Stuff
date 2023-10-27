@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#C",
+    "G "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:note_block"
+    },
+    "C": {
+      "tag": "forge:dusts/coal"
+    },
+    "G": {
+      "tag": "forge:dusts/redstone"
+    }
+  },
+  "result": {
+    "item": "others:circuit_piece_speaker"
+  }
+}

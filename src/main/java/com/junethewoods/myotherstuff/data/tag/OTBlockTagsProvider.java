@@ -94,6 +94,9 @@ public class OTBlockTagsProvider extends BlockTagsProvider {
         this.tag(BlockTags.CARPETS).add(OTBlocks.MOSS_CARPET.get());
         this.tag(BlockTags.ENDERMAN_HOLDABLE).add(OTBlocks.ROOTED_DIRT.get());
         this.tag(BlockTags.BAMBOO_PLANTABLE_ON).add(OTBlocks.ROOTED_DIRT.get());
+        this.tag(BlockTags.INFINIBURN_OVERWORLD).addTag(OTTags.Blocks.STORAGE_BLOCKS_PHOENIX);
+        this.tag(BlockTags.INFINIBURN_NETHER).addTag(OTTags.Blocks.STORAGE_BLOCKS_PHOENIX);
+        this.tag(BlockTags.INFINIBURN_END).addTag(OTTags.Blocks.STORAGE_BLOCKS_PHOENIX);
 
         // Adding tags from OTTags to Others' tags.
         this.tag(OTTags.Blocks.BELONGS_TO).addTag(OTTags.Blocks.BELONGS_TO_VARIANTS).addTag(OTTags.Blocks.BELONGS_TO_MOB_TAKER).addTag(OTTags.Blocks.BELONGS_TO_GACHA_LIFE)

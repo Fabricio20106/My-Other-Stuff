@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "#C#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:oak_leaves"
+    },
+    "C": {
+      "tag": "forge:rods/wooden"
+    }
+  },
+  "result": {
+    "item": "others:oak_bush_sapling"
+  }
+}

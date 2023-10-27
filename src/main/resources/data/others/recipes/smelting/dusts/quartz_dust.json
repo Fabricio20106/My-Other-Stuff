@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "tag": "forge:gems/quartz"
+  },
+  "result": "others:quartz_powder",
+  "experience": 0,
+  "cookingtime": 200
+}

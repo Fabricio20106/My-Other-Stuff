@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "tag": "forge:ingots/netherite"
+  },
+  "result": "others:netherite_powder",
+  "experience": 0,
+  "cookingtime": 200
+}

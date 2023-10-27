@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "others:magentic",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:nuggets/magentic"
+    }
+  },
+  "result": {
+    "item": "others:light_magenta_ingot"
+  }
+}

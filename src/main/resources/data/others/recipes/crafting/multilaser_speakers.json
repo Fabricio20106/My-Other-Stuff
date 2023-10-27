@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "C#",
+    "G#"
+  ],
+  "key": {
+    "#": {
+      "tag": "minecraft:planks"
+    },
+    "C": {
+      "item": "others:circuit_piece_speaker"
+    },
+    "G": {
+      "tag": "forge:dusts/redstone"
+    }
+  },
+  "result": {
+    "item": "others:multilaser_speakers",
+    "count": 2
+  }
+}

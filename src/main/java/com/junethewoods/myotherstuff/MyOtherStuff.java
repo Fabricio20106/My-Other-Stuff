@@ -56,6 +56,8 @@ public class MyOtherStuff {
         Minecraft.getInstance().getEntityRenderDispatcher().getSkinMap().values().forEach(player -> player.addLayer(new OTElytraLayer<>(player)));
 
         ItemModelsProperties.register(OTItems.BLAZE_ELYTRA.get(), new ResourceLocation("broken"), (stack, world, livEntity) -> ElytraItem.isFlyEnabled(stack) ? 0 : 1);
+
+        //OTVanillaCompatibilities.registerCompatibilities();
     }
 
     public void clientSetup(final FMLClientSetupEvent event) {

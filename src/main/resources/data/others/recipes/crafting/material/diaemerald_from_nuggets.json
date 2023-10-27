@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "others:diaemerald",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:nuggets/diaemerald"
+    }
+  },
+  "result": {
+    "item": "others:diaemerald"
+  }
+}

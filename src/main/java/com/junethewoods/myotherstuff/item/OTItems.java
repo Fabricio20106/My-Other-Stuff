@@ -153,7 +153,7 @@ public class OTItems {
     public static final RegistryObject<Item> LEGO_PIECES = ITEMS.register("lego_pieces", () -> new Item(new Item.Properties().tab(OTTab.TAB)));
     public static final RegistryObject<Item> SLOW_FALL_FEATHERS = ITEMS.register("slow_fall_feathers", () -> new Item(new Item.Properties().tab(OTTab.TAB)));
     public static final RegistryObject<Item> HEROES_EMERALD = ITEMS.register("heroes_emerald", () -> new Item(new Item.Properties().tab(OTTab.TAB)));
-    public static final RegistryObject<Item> MIRROR = ITEMS.register("mirror", () -> new Item(new Item.Properties().tab(OTTab.TAB)));
+    public static final RegistryObject<Item> MIRROR = ITEMS.register("mirror", () -> new Item(new Item.Properties().durability(800).tab(OTTab.TAB)));
     public static final RegistryObject<Item> LEVITATING_CLOUD = ITEMS.register("levitation", () -> new Item(new Item.Properties().tab(OTTab.TAB)));
     public static final RegistryObject<Item> ARMOR_STAND = ITEMS.register("armor_stand", () -> new ArmorStandItem(new Item.Properties().stacksTo(16).tab(OTTab.TAB)));
     public static final RegistryObject<Item> BELL = ITEMS.register("bell", () -> new Item(new Item.Properties().tab(OTTab.TAB)));

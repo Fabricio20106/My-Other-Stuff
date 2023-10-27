@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smelting",
-  "ingredient": {
-    "tag": "forge:ores/crystal"
-  },
-  "result": "others:crystal",
-  "experience": 0.7,
-  "cookingtime": 200
-}

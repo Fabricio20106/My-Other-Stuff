@@ -6,6 +6,7 @@ import com.junethewoods.myotherstuff.util.OTTags;
 import net.minecraft.data.BlockTagsProvider;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.ItemTagsProvider;
+import net.minecraft.item.Items;
 import net.minecraft.tags.ItemTags;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -153,5 +154,8 @@ public class OTItemTagsProvider extends ItemTagsProvider {
         this.tag(OTTags.Items.CAVES_AND_CLIFFS_CONTENT).add(OTItems.AZALEA_LEAVES.get()).add(OTItems.FLOWERING_AZALEA_LEAVES.get()).add(OTItems.AZALEA.get())
                 .add(OTItems.FLOWERING_AZALEA.get()).add(OTItems.MOSS_BLOCK.get()).add(OTItems.MOSS_CARPET.get()).add(OTItems.ROOTED_DIRT.get()).add(OTItems.HANGING_ROOTS.get())
                 .add(OTItems.AZALEA_HELM.get()).add(OTItems.AMETHYST_SWORD.get()).add(OTItems.LIGHTNING_SWORD.get()).add(OTItems.COPPER_DUST.get());
+        this.tag(OTTags.Items.MONITORS).add(OTItems.MONITOR.get()).add(OTItems.SCREEN_MONITOR.get());
+        this.tag(OTTags.Items.CRAFTING_TABLES).add(Items.CRAFTING_TABLE).add(OTItems.CRAFTER.get()).add(OTItems.DRAWN_CRAFTING_TABLE.get());
+        this.tag(OTTags.Items.SMITHING_TABLES).add(Items.SMITHING_TABLE).add(OTItems.DRAWN_SMITHING_TABLE.get());
     }
 }

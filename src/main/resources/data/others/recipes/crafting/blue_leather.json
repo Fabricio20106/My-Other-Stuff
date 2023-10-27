@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#C#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:leather"
+    },
+    "C": {
+      "tag": "forge:dyes/blue"
+    }
+  },
+  "result": {
+    "item": "others:blue_leather",
+    "count": 8
+  }
+}

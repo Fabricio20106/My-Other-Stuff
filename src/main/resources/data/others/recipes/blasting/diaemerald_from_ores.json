@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "tag": "forge:ores/diaemerald"
+  },
+  "result": "others:diaemerald",
+  "experience": 1,
+  "cookingtime": 100
+}

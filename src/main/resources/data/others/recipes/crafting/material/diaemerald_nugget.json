@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:gems/diaemerald"
+    }
+  ],
+  "result": {
+    "item": "others:diaemerald_nugget",
+    "count": 9
+  }
+}

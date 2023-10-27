@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "others:base_angel_ring"
+    },
+    {
+      "item": "minecraft:bat_spawn_egg"
+    }
+  ],
+  "result": {
+    "item": "others:bat_angel_ring"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "tag": "forge:ores/nether"
+  },
+  "result": "others:purple_ingot",
+  "experience": 2,
+  "cookingtime": 200
+}

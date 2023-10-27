@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "others:beacon_laser_block"
-  },
-  "result": "others:beacon_laser_slab",
-  "count": 2
-}

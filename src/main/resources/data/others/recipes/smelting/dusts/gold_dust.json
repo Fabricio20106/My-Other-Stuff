@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "tag": "forge:ingots/gold"
+  },
+  "result": "others:gold_powder",
+  "experience": 0,
+  "cookingtime": 200
+}

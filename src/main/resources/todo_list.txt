@@ -1,12 +1,12 @@
 To-Do List for Others:
 
-- Add Copper Dusts;
+- Add Copper Dusts [done];
 - Add new recipes & fix existing ones;
-- Make Drawn Crafting Tables and Crafters able to have their menus opened;
+- Make Drawn Crafting Tables and Crafters able to have their menus opened [done];
 - Add Drawn Savannas & Drawn Acacia Trees;
 - Phoenix Gem, Phoenix Staff & Phoenix Gem Block;
 - Loading textures for Bamboo Bow, Bamboo Crossbow, Blaze Bow, Blaze Crossbow, Diamond Crossbow & Ender Crossbow;
-- Tall Birch, Swamp Oak & Jungle Bush Saplings;
+- Tall Birch, Swamp Oak & Jungle Bush Saplings [done];
 - Retextures:
    - Monitor & Screen Monitor;
    - CPU;

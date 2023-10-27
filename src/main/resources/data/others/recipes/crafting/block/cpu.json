@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC",
+    "CGC",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:dusts/redstone"
+    },
+    "C": {
+      "item": "minecraft:gray_concrete"
+    },
+    "G": [
+      {
+        "tag": "forge:chests"
+      }
+    ]
+  },
+  "result": {
+    "item": "others:cpu"
+  }
+}

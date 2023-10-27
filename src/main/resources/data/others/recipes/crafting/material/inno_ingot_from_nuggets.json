@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "others:inno_ingot",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "others:inno_nugget"
+    }
+  },
+  "result": {
+    "item": "others:inno_ingot"
+  }
+}

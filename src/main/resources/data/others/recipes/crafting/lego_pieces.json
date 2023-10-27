@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "CC"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:nuggets/iron"
+    },
+    "C": {
+      "tag": "forge:dusts/iron"
+    }
+  },
+  "result": {
+    "item": "others:lego_pieces",
+    "count": 16
+  }
+}

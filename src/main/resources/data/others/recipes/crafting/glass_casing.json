@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "# #"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:glass/colorless"
+    }
+  },
+  "result": {
+    "item": "others:glass_casing",
+    "count": 3
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "tag": "forge:gems/emerald"
+  },
+  "result": "others:emerald_powder",
+  "experience": 0,
+  "cookingtime": 100
+}

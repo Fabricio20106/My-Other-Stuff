@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "tag": "forge:gems/lapis"
+  },
+  "result": "others:lapis_lazuli_powder",
+  "experience": 0,
+  "cookingtime": 200
+}

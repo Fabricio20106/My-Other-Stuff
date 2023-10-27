@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "inno_dye",
+  "ingredients": [
+    {
+      "item": "others:inno_flower"
+    }
+  ],
+  "result": {
+    "item": "others:inno_dye"
+  }
+}

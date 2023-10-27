@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/magentic"
+    }
+  ],
+  "result": {
+    "item": "others:light_magenta_nugget",
+    "count": 9
+  }
+}

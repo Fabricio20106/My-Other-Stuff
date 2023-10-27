@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC",
+    "CGC",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:dusts/redstone"
+    },
+    "C": {
+      "tag": "forge:ingots/iron"
+    },
+    "G": [
+      {
+        "item": "minecraft:light_blue_stained_glass_pane"
+      },
+      {
+        "item": "minecraft:cyan_stained_glass_pane"
+      },
+      {
+        "item": "minecraft:blue_stained_glass_pane"
+      },
+      {
+        "item": "others:blue_glass_pane"
+      },
+      {
+        "item": "others:bluewhite_glass_pane"
+      }
+    ]
+  },
+  "result": {
+    "item": "others:screen_monitor"
+  }
+}

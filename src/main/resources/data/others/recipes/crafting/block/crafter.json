@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#C#",
+    "G@G"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:ingots/iron"
+    },
+    "C": {
+      "tag": "others:crafting_tables"
+    },
+    "G": {
+      "tag": "forge:dusts/redstone"
+    },
+    "@": {
+      "item": "minecraft:gray_concrete"
+    }
+  },
+  "result": {
+    "item": "others:autocrafter"
+  }
+}

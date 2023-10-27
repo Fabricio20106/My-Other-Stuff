@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "others:blue_block"
-  },
-  "result": "others:blue_wall",
-  "count": 1
-}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/inno"
+    }
+  ],
+  "result": {
+    "item": "others:inno_nugget",
+    "count": 9
+  }
+}

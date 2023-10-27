@@ -92,6 +92,9 @@ public class OTTags {
         public static final ITag.INamedTag<Item> BELONGS_TO_RIMCRAFT = mod("belongs_to/rimcraft");
 
         public static final ITag.INamedTag<Item> CAVES_AND_CLIFFS_CONTENT = mod("caves_and_cliffs_content");
+        public static final ITag.INamedTag<Item> CRAFTING_TABLES = mod("crafting_tables");
+        public static final ITag.INamedTag<Item> SMITHING_TABLES = mod("smithing_tables");
+        public static final ITag.INamedTag<Item> MONITORS = mod("monitors");
 
         // Tags from other mods
         // In Real Life - Sophie Clothes

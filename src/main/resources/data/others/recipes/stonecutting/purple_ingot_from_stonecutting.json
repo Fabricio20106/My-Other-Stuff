@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "others:purple_block"
-  },
-  "result": "others:purple_ingot",
-  "count": 9
-}

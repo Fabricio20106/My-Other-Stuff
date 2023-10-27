@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "others:first_ingot",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "others:first_nugget"
+    }
+  },
+  "result": {
+    "item": "others:first_ingot"
+  }
+}

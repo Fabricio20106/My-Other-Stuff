@@ -234,6 +234,9 @@ e1ff813a829f688c38a94fc2779e2d0571fd6c1b data/minecraft/tags/blocks/enderman_hol
 113a1b52d393df128a28e3af040767dc52c04c2b data/minecraft/tags/blocks/flower_pots.json
 2e95e0320f393697285f84a566031306789ce1a7 data/minecraft/tags/blocks/flowers.json
 88853033939db48d7bac7358662f5ad2bc4044ed data/minecraft/tags/blocks/guarded_by_piglins.json
+0e5802bf1020201ce7846f34948cc4d2947fbe34 data/minecraft/tags/blocks/infiniburn_end.json
+0e5802bf1020201ce7846f34948cc4d2947fbe34 data/minecraft/tags/blocks/infiniburn_nether.json
+0e5802bf1020201ce7846f34948cc4d2947fbe34 data/minecraft/tags/blocks/infiniburn_overworld.json
 0773f18450929741837e4e9b31bb8dcf5a4a49b8 data/minecraft/tags/blocks/leaves.json
 be5d85fb4762515853fea64f90ac92447c1297a1 data/minecraft/tags/blocks/saplings.json
 cc00edd8d5c05127aef5934d47cddc6b8336763f data/minecraft/tags/blocks/slabs.json
@@ -273,5 +276,8 @@ a299d5acb2d7797b71b1e39b7bd984a81a489c1e data/others/tags/blocks/belongs_to/f10e
 03e2c5243a4aab736f03690eea73ff217d9cb208 data/others/tags/items/belongs_to/rimcraft.json
 88853033939db48d7bac7358662f5ad2bc4044ed data/others/tags/items/belongs_to/variants.json
 2545eeb05fd4b36a2a0f61ddedf8b5687c953442 data/others/tags/items/caves_and_cliffs_content.json
+55e54ad5df6648c688351ad555fc2293a35f7baf data/others/tags/items/crafting_tables.json
 bf998af98384e436b9a32b3058d5d2c212dbbe22 data/others/tags/items/minifigures.json
+fcf11884b720214e3aad80e6239e90adf46870dc data/others/tags/items/monitors.json
+9557d616d740821c890f7c175aed6fe055744769 data/others/tags/items/smithing_tables.json
 baba7c6e9322fe512e09674ad1bbb4d1442cf38c data/others/tags/items/suits.json
