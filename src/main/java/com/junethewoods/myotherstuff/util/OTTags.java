@@ -68,6 +68,7 @@ public class OTTags {
         public static final ITag.INamedTag<Item> DUSTS_EMERALD = forge("dusts/emerald");
         public static final ITag.INamedTag<Item> DUSTS_GOLD = forge("dusts/gold");
         public static final ITag.INamedTag<Item> DUSTS_IRON = forge("dusts/iron");
+        public static final ITag.INamedTag<Item> DUSTS_COPPER = forge("dusts/copper");
         public static final ITag.INamedTag<Item> DUSTS_LAPIS = forge("dusts/lapis");
         public static final ITag.INamedTag<Item> DUSTS_NETHERITE = forge("dusts/netherite");
         public static final ITag.INamedTag<Item> DUSTS_NETHERITE_SCRAP = forge("dusts/netherite_scrap");
@@ -143,6 +144,8 @@ public class OTTags {
         public static final ITag.INamedTag<Block> BELONGS_TO_RIMCRAFT = mod("belongs_to/rimcraft");
 
         public static final ITag.INamedTag<Block> CAVES_AND_CLIFFS_CONTENT = mod("caves_and_cliffs_content");
+        public static final ITag.INamedTag<Block> CRAFTING_TABLES = mod("crafting_tables");
+        public static final ITag.INamedTag<Block> SMITHING_TABLES = mod("smithing_tables");
 
         public static ITag.INamedTag<Block> forge(String name) {
             return BlockTags.bind(new ResourceLocation("forge", name).toString());

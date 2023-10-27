@@ -54,6 +54,7 @@ public class OTItemTagsProvider extends ItemTagsProvider {
         this.tag(OTTags.Items.DUSTS_EMERALD).add(OTItems.EMERALD_DUST.get()).add(OTItems.ANTIQUE_EMERALD_DUST.get());
         this.tag(OTTags.Items.DUSTS_GOLD).add(OTItems.GOLD_DUST.get()).add(OTItems.ANTIQUE_GOLD_DUST.get());
         this.tag(OTTags.Items.DUSTS_IRON).add(OTItems.IRON_DUST.get()).add(OTItems.ANTIQUE_IRON_DUST.get());
+        this.tag(OTTags.Items.DUSTS_COPPER).add(OTItems.COPPER_DUST.get());
         this.tag(OTTags.Items.DUSTS_LAPIS).add(OTItems.LAPIS_LAZULI_DUST.get());
         this.tag(OTTags.Items.DUSTS_NETHERITE).add(OTItems.NETHERITE_DUST.get());
         this.tag(OTTags.Items.DUSTS_NETHERITE_SCRAP).add(OTItems.NETHERITE_SCRAP_DUST.get());
@@ -115,7 +116,8 @@ public class OTItemTagsProvider extends ItemTagsProvider {
                 .addTag(OTTags.Items.NUGGETS_DARK_FIRST).addTag(OTTags.Items.NUGGETS_INNO).addTag(OTTags.Items.NUGGETS_NETHER);
         this.tag(OTTags.Items.RAW_MATERIALS).addTag(OTTags.Items.RAW_MATERIALS_FIRST).addTag(OTTags.Items.RAW_MATERIALS_INNO).addTag(OTTags.Items.RAW_MATERIALS_NETHER);
         this.tag(Tags.Items.DUSTS).addTag(OTTags.Items.DUSTS_COAL).addTag(OTTags.Items.DUSTS_DIAMOND).addTag(OTTags.Items.DUSTS_EMERALD).addTag(OTTags.Items.DUSTS_GOLD)
-                .addTag(OTTags.Items.DUSTS_IRON).addTag(OTTags.Items.DUSTS_LAPIS).addTag(OTTags.Items.DUSTS_NETHERITE).addTag(OTTags.Items.DUSTS_NETHERITE_SCRAP).addTag(OTTags.Items.DUSTS_QUARTZ);
+                .addTag(OTTags.Items.DUSTS_IRON).addTag(OTTags.Items.DUSTS_COPPER).addTag(OTTags.Items.DUSTS_LAPIS).addTag(OTTags.Items.DUSTS_NETHERITE)
+                .addTag(OTTags.Items.DUSTS_NETHERITE_SCRAP).addTag(OTTags.Items.DUSTS_QUARTZ);
         this.tag(Tags.Items.RODS).addTag(OTTags.Items.RODS_SOUL_BLAZE);
         this.tag(OTTags.Items.CLOTHS).addTag(OTTags.Items.CLOTHS_REINFORCED);
         this.tag(Tags.Items.DYES).addTag(OTTags.Items.DYES_INNO);
@@ -150,6 +152,6 @@ public class OTItemTagsProvider extends ItemTagsProvider {
         this.tag(OTTags.Items.CORES).addTag(OTTags.Items.CORES_INNO).addTag(OTTags.Items.CORES_NETHER);
         this.tag(OTTags.Items.CAVES_AND_CLIFFS_CONTENT).add(OTItems.AZALEA_LEAVES.get()).add(OTItems.FLOWERING_AZALEA_LEAVES.get()).add(OTItems.AZALEA.get())
                 .add(OTItems.FLOWERING_AZALEA.get()).add(OTItems.MOSS_BLOCK.get()).add(OTItems.MOSS_CARPET.get()).add(OTItems.ROOTED_DIRT.get()).add(OTItems.HANGING_ROOTS.get())
-                .add(OTItems.AZALEA_HELM.get()).add(OTItems.AMETHYST_SWORD.get()).add(OTItems.LIGHTNING_SWORD.get());
+                .add(OTItems.AZALEA_HELM.get()).add(OTItems.AMETHYST_SWORD.get()).add(OTItems.LIGHTNING_SWORD.get()).add(OTItems.COPPER_DUST.get());
     }
 }

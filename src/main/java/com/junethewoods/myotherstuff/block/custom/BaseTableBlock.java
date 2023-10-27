@@ -1,25 +1,25 @@
 package com.junethewoods.myotherstuff.block.custom;
 
+import com.junethewoods.myotherstuff.block.entity.inventory.OTWorkbenchContainer;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.container.INamedContainerProvider;
 import net.minecraft.inventory.container.SimpleNamedContainerProvider;
-import net.minecraft.inventory.container.WorkbenchContainer;
 import net.minecraft.util.ActionResultType;
 import net.minecraft.util.Hand;
 import net.minecraft.util.IWorldPosCallable;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.util.text.ITextComponent;
-import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.World;
 
-public class BaseTableBlock extends Block {
-    private static final ITextComponent CONTAINER_NAME = new TranslationTextComponent("container.base");
+public abstract class BaseTableBlock extends Block {
+    public final ITextComponent containerName;
 
-    public BaseTableBlock(Properties properties) {
+    public BaseTableBlock(Properties properties, ITextComponent containerName) {
         super(properties);
+        this.containerName = containerName;
     }
 
     public ActionResultType use(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockRayTraceResult rayTraceResult) {
@@ -32,6 +32,6 @@ public class BaseTableBlock extends Block {
     }
 
     public INamedContainerProvider getMenuProvider(BlockState state, World world, BlockPos pos) {
-        return new SimpleNamedContainerProvider((id, inventory, player) -> new WorkbenchContainer(id, inventory, IWorldPosCallable.create(world, pos)), CONTAINER_NAME);
+        return new SimpleNamedContainerProvider((id, inventory, player) -> new OTWorkbenchContainer(id, inventory, IWorldPosCallable.create(world, pos)), containerName);
     }
 }

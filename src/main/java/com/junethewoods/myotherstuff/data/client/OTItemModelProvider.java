@@ -74,9 +74,8 @@ public class OTItemModelProvider extends ItemModelProvider {
         standard(handheld, "weak_enchanting_sword");
         standard(handheld, "witch_sword");
         standard(handheldRod, "wooden_fishing_sword");
-        standard(generated, "glistering_pumpkin_pie");
-        standard(generated, "soul_firework_rocket");
         getBuilder("hanging_roots").parent(generated).texture("layer0", "block/hanging_roots");
+        standard(generated, "copper_dust");
     }
 
     private ItemModelBuilder standard(ModelFile parent, String name) {

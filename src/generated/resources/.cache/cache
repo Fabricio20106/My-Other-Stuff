@@ -26,7 +26,7 @@ f159bd395c34d78dbebcc623e67fccd6e8fe1ca8 assets/others/blockstates/nether_tile_s
 eb437798720f5efababb739c93c860632b66e4f2 assets/others/blockstates/raw_inno_block.json
 40a68f6114a0b727c6b17bc59f37dbec9a47e9f9 assets/others/blockstates/raw_purple_block.json
 fb5cb13a7ecc7c1a91b6acbc79caee62e707a8ae assets/others/blockstates/rooted_dirt.json
-ddf51909208befff9889c2b62fd9ae51f553a849 assets/others/lang/en_us.json
+9b597bcd32380a06bc4a312b3b00e4af57aff99e assets/others/lang/en_us.json
 4ae91f631dc51b84735caaef07c3ef3aa7df291e assets/others/models/block/azalea_leaves.json
 a24edf6812824904f861b7c52238e7e159d5174e assets/others/models/block/blue_stairs.json
 9fe556c9f18126d6ab141159fc05b83062bf0495 assets/others/models/block/blue_stairs_inner.json
@@ -85,6 +85,7 @@ b0cdaa78468aeb01e676375cba95a6df2a52104d assets/others/models/item/bright_blue_t
 d690c101824d69789171135262e82db9dde2c83b assets/others/models/item/bright_blue_tile_wall.json
 05e9e2bd256129c2b78caacf1b8c09bd64fc76f2 assets/others/models/item/bright_blue_tiles.json
 42a159c19dde43ad38024326ee88aef0659b0405 assets/others/models/item/chiseled_blue_tiles.json
+294495f8a1b0eeb3b042c206ab21bc7fdd4a5714 assets/others/models/item/copper_dust.json
 553357328ed0c9f371a1bf532a0eddea6cf6510c assets/others/models/item/dark_blue_tile_slab.json
 0d30d17976643b2f8109c7c915d293c8c88ce337 assets/others/models/item/dark_blue_tile_stairs.json
 c1a4d6ee7fa28fb37afc523ddcc33d2317ec18f3 assets/others/models/item/dark_blue_tile_wall.json
@@ -100,7 +101,6 @@ b74195ed4cfbfeb234ca54d2f1fad110bd13e604 assets/others/models/item/end_rod_sword
 6a53a3de6235ad4e9041cf5c61942819890a325b assets/others/models/item/flowering_azalea.json
 3ef62a80bee53f9e5a4e6fbac10d579e4c9e4aa8 assets/others/models/item/flowering_azalea_leaves.json
 fd2aa148c71efce8bf34b3aad6cf841776aa4151 assets/others/models/item/glass_sword.json
-905ea86c5b7715ade6ee51b886c84dd412e6a068 assets/others/models/item/glistering_pumpkin_pie.json
 345c814b7c325d85b8034b2394a6d898ecca5284 assets/others/models/item/hanging_roots.json
 28d92311ec71944ab31d39a5437d536edcb875eb assets/others/models/item/honey_bottle_sword.json
 0044e022d7d381e07febf8926b8c459c74daa906 assets/others/models/item/inno_tile_slab.json
@@ -128,7 +128,6 @@ d64e0c612a2f79129fe7478d0973b0fa14fe359d assets/others/models/item/raw_inno_bloc
 493d55f5e95e668d8d1a790caf6e14b227497eed assets/others/models/item/raw_purple_block.json
 59ff13d95177ceebeb426674c483a3a0adc48c95 assets/others/models/item/rooted_dirt.json
 671317ced196f6cc1ed1e367935262091078f486 assets/others/models/item/shears_iron_sword.json
-411c91cde19e8b6fde21cbaa0dae29dfb416f6d5 assets/others/models/item/soul_firework_rocket.json
 5f5a8c8297dbceb1b9b3c03025cc814952f8348a assets/others/models/item/soul_lantern_sword.json
 88bcf930ed15bd93ea1d7717a0294583130a1a29 assets/others/models/item/strider_sword.json
 064e4935c73d959fd7779e4a0e3f6b58e3a88227 assets/others/models/item/trident_pickaxe.json
@@ -164,8 +163,9 @@ dac50da2477baeb8b5c4629b2f9cf7549326a52a data/forge/tags/items/cores.json
 abfa926ab7f89307cda36b35caae49e72b454208 data/forge/tags/items/cores/inno.json
 58815aa401c4437c9610f42d5625883b0b28ca34 data/forge/tags/items/cores/nether.json
 343829965e658cb0088ed48cebb4b6a3088242c0 data/forge/tags/items/crops/blue_carrots.json
-05c6635e8ffa38037124188e93fd5975ad6f8b8e data/forge/tags/items/dusts.json
+c6c1aff804ebf50841bebefa2633f0b0758f3539 data/forge/tags/items/dusts.json
 87002df8676f3333b0e90da6a74149de5ec330e5 data/forge/tags/items/dusts/coal.json
+dbc630496f476ba7e078c03308e558837db2ae24 data/forge/tags/items/dusts/copper.json
 167b7a2d62ec6f3de439cacf7ffb109707049784 data/forge/tags/items/dusts/diamond.json
 cd11fcc1e490cdd9f021deab7deec91296eae0a2 data/forge/tags/items/dusts/emerald.json
 513317ed67e322adf614508f7177beec1388214e data/forge/tags/items/dusts/gold.json
@@ -263,6 +263,8 @@ a299d5acb2d7797b71b1e39b7bd984a81a489c1e data/others/tags/blocks/belongs_to/f10e
 03e2c5243a4aab736f03690eea73ff217d9cb208 data/others/tags/blocks/belongs_to/rimcraft.json
 88853033939db48d7bac7358662f5ad2bc4044ed data/others/tags/blocks/belongs_to/variants.json
 535507852cd00bf0ca85d75596d4be60455baf27 data/others/tags/blocks/caves_and_cliffs_content.json
+55e54ad5df6648c688351ad555fc2293a35f7baf data/others/tags/blocks/crafting_tables.json
+9557d616d740821c890f7c175aed6fe055744769 data/others/tags/blocks/smithing_tables.json
 7e95769aab11d5317bf3c71973293ff970637682 data/others/tags/items/belongs_to.json
 2944b3f86405498fae847333ef1e04cd664d368d data/others/tags/items/belongs_to/f10elements.json
 343829965e658cb0088ed48cebb4b6a3088242c0 data/others/tags/items/belongs_to/fabricio2010pack.json
@@ -270,6 +272,6 @@ a299d5acb2d7797b71b1e39b7bd984a81a489c1e data/others/tags/blocks/belongs_to/f10e
 8ccf2104ff08a975e768049c0fdbf5110b589eda data/others/tags/items/belongs_to/mob_taker.json
 03e2c5243a4aab736f03690eea73ff217d9cb208 data/others/tags/items/belongs_to/rimcraft.json
 88853033939db48d7bac7358662f5ad2bc4044ed data/others/tags/items/belongs_to/variants.json
-edb4421687269048e3f8e7de9963e816a16419be data/others/tags/items/caves_and_cliffs_content.json
+2545eeb05fd4b36a2a0f61ddedf8b5687c953442 data/others/tags/items/caves_and_cliffs_content.json
 bf998af98384e436b9a32b3058d5d2c212dbbe22 data/others/tags/items/minifigures.json
 baba7c6e9322fe512e09674ad1bbb4d1442cf38c data/others/tags/items/suits.json

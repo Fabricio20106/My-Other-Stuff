@@ -1,5 +1,6 @@
 package com.junethewoods.myotherstuff;
 
+import com.junethewoods.myotherstuff.block.entity.OTBlockEntities;
 import com.junethewoods.myotherstuff.entity.renderer.OTElytraLayer;
 import com.junethewoods.myotherstuff.block.OTBlocks;
 import com.junethewoods.myotherstuff.item.OTItems;
@@ -8,6 +9,7 @@ import com.junethewoods.myotherstuff.sound.OTSounds;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
+import net.minecraft.client.renderer.tileentity.BeaconTileEntityRenderer;
 import net.minecraft.item.ElytraItem;
 import net.minecraft.item.ItemModelsProperties;
 import net.minecraft.util.ResourceLocation;
@@ -15,6 +17,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.client.registry.ClientRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -37,6 +40,7 @@ public class MyOtherStuff {
 
         OTItems.ITEMS.register(modEventBus);
         OTBlocks.BLOCKS.register(modEventBus);
+        OTBlockEntities.BLOCK_ENTITIES.register(modEventBus);
         OTSounds.registerSounds();
 
         forgeEventBus.register(this);
@@ -82,6 +86,8 @@ public class MyOtherStuff {
         RenderTypeLookup.setRenderLayer(OTBlocks.DECORATED_FLOWER_POT.get(), RenderType.cutout());
         RenderTypeLookup.setRenderLayer(OTBlocks.STRIPED_DECORATED_FLOWER_POT.get(), RenderType.cutout());
         RenderTypeLookup.setRenderLayer(OTBlocks.BLUE_CARROTS.get(), RenderType.cutout());
+
+        ClientRegistry.bindTileEntityRenderer(OTBlockEntities.GOLDEN_BEACON.get(), BeaconTileEntityRenderer::new);
     }
 
     @SubscribeEvent

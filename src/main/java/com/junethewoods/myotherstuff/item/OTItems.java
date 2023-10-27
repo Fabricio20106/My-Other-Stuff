@@ -141,6 +141,7 @@ public class OTItems {
     public static final RegistryObject<Item> ANTIQUE_GOLD_DUST = ITEMS.register("antique_gold_powder", () -> new Item(new Item.Properties().tab(OTTab.TAB)));
     public static final RegistryObject<Item> IRON_DUST = ITEMS.register("iron_powder", () -> new Item(new Item.Properties().tab(OTTab.TAB)));
     public static final RegistryObject<Item> ANTIQUE_IRON_DUST = ITEMS.register("antique_iron_powder", () -> new Item(new Item.Properties().tab(OTTab.TAB)));
+    public static final RegistryObject<Item> COPPER_DUST = ITEMS.register("copper_dust", () -> new Item(new Item.Properties().tab(OTTab.TAB)));
     public static final RegistryObject<Item> LAPIS_LAZULI_DUST = ITEMS.register("lapis_lazuli_powder", () -> new Item(new Item.Properties().tab(OTTab.TAB)));
     public static final RegistryObject<Item> NETHERITE_DUST = ITEMS.register("netherite_powder", () -> new Item(new Item.Properties().fireResistant().tab(OTTab.TAB)));
     public static final RegistryObject<Item> NETHERITE_SCRAP_DUST = ITEMS.register("netherite_scrap_powder", () -> new Item(new Item.Properties().fireResistant().tab(OTTab.TAB)));

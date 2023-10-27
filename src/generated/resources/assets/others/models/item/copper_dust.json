@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "others:item/glistering_pumpkin_pie"
+    "layer0": "others:item/copper_dust"
   }
 }

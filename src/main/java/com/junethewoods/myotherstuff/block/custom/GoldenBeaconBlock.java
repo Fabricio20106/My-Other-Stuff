@@ -1,6 +1,6 @@
 package com.junethewoods.myotherstuff.block.custom;
 
-import com.junethewoods.myotherstuff.block.entity.GoldenBeaconBlockEntity;
+import com.junethewoods.myotherstuff.block.entity.custom.GoldenBeaconBlockEntity;
 import net.minecraft.block.BlockRenderType;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.ContainerBlock;

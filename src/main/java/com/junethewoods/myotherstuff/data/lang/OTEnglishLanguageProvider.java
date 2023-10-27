@@ -107,10 +107,11 @@ public class OTEnglishLanguageProvider extends LanguageProvider {
         add(OTBlocks.INNO_CORE_BLOCK, "Block of Inno Core");
         add(OTBlocks.NETHER_CORE_BLOCK, "Block of Nether Core");
 
-        add("container.lego_furnace", "LEGO Smelting");
-        add("container.purplier_smithing", "Purplier Smithing");
-        add("container.crafting_one", "Crafting (1)");
-        add("container.autocrafter", "Autocrafting");
+        add("container.lego_furnace", "Drawn Smelting");
+        add("container.purplier_smithing", "Drawn Smithing");
+        add("container.crafting_one", "Drawn Crafting");
+        add("container.autocrafter", "Auto Crafting");
+
         add("itemGroup.others.items", "My Other Stuff - Items");
         add("itemGroup.others.weapons", "My Other Stuff - Weapons");
         add("itemGroup.others.blocks", "My Other Stuff - Blocks");
@@ -213,6 +214,7 @@ public class OTEnglishLanguageProvider extends LanguageProvider {
         item(OTItems.REDSTONE_DUST, "Redstone Dust");
         item(OTItems.GOLD_DUST, "Gold Dust");
         item(OTItems.IRON_DUST, "Iron Dust");
+        item(OTItems.COPPER_DUST, "Copper Dust");
         item(OTItems.LAPIS_LAZULI_DUST, "Lapis Lazuli Dust");
         item(OTItems.NETHERITE_DUST, "Netherite Dust");
         item(OTItems.NETHERITE_SCRAP_DUST, "Netherite Scrap Dust");

@@ -1,6 +1,6 @@
 package com.junethewoods.myotherstuff.block.custom;
 
-import com.junethewoods.myotherstuff.block.entity.LegoFurnaceBlockEntity;
+import com.junethewoods.myotherstuff.block.entity.custom.LegoFurnaceBlockEntity;
 import net.minecraft.block.AbstractFurnaceBlock;
 import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.entity.player.PlayerEntity;
@@ -29,7 +29,7 @@ public class LegoFurnaceBlock extends AbstractFurnaceBlock implements ITileEntit
 
     @Nullable
     @Override
-    public TileEntity newBlockEntity(IBlockReader reader) {
+    public TileEntity newBlockEntity(IBlockReader world) {
         return new LegoFurnaceBlockEntity();
     }
 }

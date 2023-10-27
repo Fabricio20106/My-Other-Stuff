@@ -30,11 +30,11 @@ public class CPUBlock extends HorizontalBlock {
         return this.defaultBlockState().setValue(HORIZONTAL_FACING, context.getHorizontalDirection().getOpposite());
     }
 
-    public BlockState rotate(BlockState state, Rotation rot) {
-        return state.setValue(HORIZONTAL_FACING, rot.rotate(state.getValue(HORIZONTAL_FACING)));
+    public BlockState rotate(BlockState state, Rotation rotation) {
+        return state.setValue(HORIZONTAL_FACING, rotation.rotate(state.getValue(HORIZONTAL_FACING)));
     }
 
-    public BlockState mirror(BlockState state, Mirror mirrorIn) {
-        return state.rotate(mirrorIn.getRotation(state.getValue(HORIZONTAL_FACING)));
+    public BlockState mirror(BlockState state, Mirror mirror) {
+        return state.rotate(mirror.getRotation(state.getValue(HORIZONTAL_FACING)));
     }
 }

@@ -1,5 +1,6 @@
-package com.junethewoods.myotherstuff.block.entity;
+package com.junethewoods.myotherstuff.block.entity.custom;
 
+import com.junethewoods.myotherstuff.block.entity.OTBlockEntities;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.container.Container;
 import net.minecraft.inventory.container.FurnaceContainer;
@@ -11,7 +12,12 @@ import net.minecraft.util.text.TranslationTextComponent;
 
 public class LegoFurnaceBlockEntity extends AbstractFurnaceTileEntity {
     public LegoFurnaceBlockEntity() {
-        super(TileEntityType.FURNACE, IRecipeType.SMELTING);
+        super(OTBlockEntities.DRAWN_FURNACE.get(), IRecipeType.SMELTING);
+    }
+
+    @Override
+    public TileEntityType<?> getType() {
+        return OTBlockEntities.DRAWN_FURNACE.get();
     }
 
     protected ITextComponent getDefaultName() {

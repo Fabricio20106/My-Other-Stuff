@@ -3,6 +3,7 @@ package com.junethewoods.myotherstuff.data.tag;
 import com.junethewoods.myotherstuff.MyOtherStuff;
 import com.junethewoods.myotherstuff.block.OTBlocks;
 import com.junethewoods.myotherstuff.util.OTTags;
+import net.minecraft.block.Blocks;
 import net.minecraft.data.BlockTagsProvider;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.tags.BlockTags;
@@ -100,5 +101,7 @@ public class OTBlockTagsProvider extends BlockTagsProvider {
         this.tag(OTTags.Blocks.CAVES_AND_CLIFFS_CONTENT).add(OTBlocks.AZALEA_LEAVES.get()).add(OTBlocks.FLOWERING_AZALEA_LEAVES.get()).add(OTBlocks.AZALEA.get())
                 .add(OTBlocks.FLOWERING_AZALEA.get()).add(OTBlocks.POTTED_AZALEA.get()).add(OTBlocks.POTTED_FLOWERING_AZALEA.get()).add(OTBlocks.MOSS_BLOCK.get())
                 .add(OTBlocks.MOSS_CARPET.get()).add(OTBlocks.ROOTED_DIRT.get()).add(OTBlocks.HANGING_ROOTS.get());
+        this.tag(OTTags.Blocks.CRAFTING_TABLES).add(Blocks.CRAFTING_TABLE).add(OTBlocks.CRAFTER.get()).add(OTBlocks.DRAWN_CRAFTING_TABLE.get());
+        this.tag(OTTags.Blocks.SMITHING_TABLES).add(Blocks.SMITHING_TABLE).add(OTBlocks.DRAWN_SMITHING_TABLE.get());
     }
 }
