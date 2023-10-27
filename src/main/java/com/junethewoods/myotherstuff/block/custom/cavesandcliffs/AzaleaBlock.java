@@ -1,7 +1,9 @@
-package com.junethewoods.myotherstuff.block.custom;
+package com.junethewoods.myotherstuff.block.custom.cavesandcliffs;
 
+import com.junethewoods.myotherstuff.block.OTBlocks;
+import com.junethewoods.myotherstuff.block.tree.AzaleaTree;
+import com.junethewoods.myotherstuff.block.tree.FloweringAzaleaTree;
 import net.minecraft.block.*;
-import net.minecraft.block.trees.OakTree;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.shapes.ISelectionContext;
 import net.minecraft.util.math.shapes.VoxelShape;
@@ -9,12 +11,14 @@ import net.minecraft.util.math.shapes.VoxelShapes;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.World;
 import net.minecraft.world.server.ServerWorld;
+import net.minecraftforge.common.Tags;
 
 import java.util.Random;
 
 public class AzaleaBlock extends BushBlock implements IGrowable {
-    private static final OakTree TREE_GROWER = new OakTree();
-    private static final VoxelShape SHAPE = VoxelShapes.or(Block.box(0.0D, 8.0D, 0.0D, 16.0D, 16.0D, 16.0D), Block.box(6.0D, 0.0D, 6.0D, 10.0D, 8.0D, 10.0D));
+    private static final AzaleaTree AZALEA_TREE = new AzaleaTree();
+    private static final FloweringAzaleaTree FLOWERING_AZALEA_TREE = new FloweringAzaleaTree();
+    private static final VoxelShape SHAPE = VoxelShapes.or(Block.box(0, 8, 0, 16, 16, 16), Block.box(6, 0, 6, 10, 8, 10));
 
     public AzaleaBlock(Properties properties) {
         super(properties);
@@ -27,7 +31,7 @@ public class AzaleaBlock extends BushBlock implements IGrowable {
 
     @Override
     protected boolean mayPlaceOn(BlockState state, IBlockReader world, BlockPos pos) {
-        return state.is(Blocks.CLAY) || super.mayPlaceOn(state, world, pos);
+        return state.is(Blocks.CLAY) || state.is(Tags.Blocks.DIRT) || state.is(OTBlocks.MOSS_BLOCK.get()) || super.mayPlaceOn(state, world, pos);
     }
 
     @Override
@@ -42,6 +46,10 @@ public class AzaleaBlock extends BushBlock implements IGrowable {
 
     @Override
     public void performBonemeal(ServerWorld world, Random rand, BlockPos pos, BlockState state) {
-        TREE_GROWER.growTree(world, world.getChunkSource().getGenerator(), pos, state, rand);
+        if (rand.nextFloat() <= 0.5) {
+            FLOWERING_AZALEA_TREE.growTree(world, world.getChunkSource().getGenerator(), pos, state, rand);
+        } else {
+            AZALEA_TREE.growTree(world, world.getChunkSource().getGenerator(), pos, state, rand);
+        }
     }
 }

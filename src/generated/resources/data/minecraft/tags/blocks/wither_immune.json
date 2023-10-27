@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "others:command_block_1"
+    "others:command_block_1",
+    "others:lined_bedrock",
+    "others:lined_bedrock_slab"
   ]
 }

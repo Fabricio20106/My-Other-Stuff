@@ -36,6 +36,11 @@ public class OTItemModelProvider extends ItemModelProvider {
         withExistingParent("nether_tile_slab");
         withExistingParent("nether_tile_wall", modLoc("block/nether_tile_wall_inventory"));
         withExistingParent("flowering_azalea");
+        withExistingParent("rooted_dirt");
+        withExistingParent("moss_block");
+        withExistingParent("moss_carpet");
+        withExistingParent("azalea_leaves");
+        withExistingParent("flowering_azalea_leaves");
 
         ModelFile generated = getExistingFile(mcLoc("item/generated"));
         ModelFile handheld = getExistingFile(mcLoc("item/handheld"));
@@ -71,6 +76,7 @@ public class OTItemModelProvider extends ItemModelProvider {
         standard(handheldRod, "wooden_fishing_sword");
         standard(generated, "glistering_pumpkin_pie");
         standard(generated, "soul_firework_rocket");
+        getBuilder("hanging_roots").parent(generated).texture("layer0", "block/hanging_roots");
     }
 
     private ItemModelBuilder standard(ModelFile parent, String name) {

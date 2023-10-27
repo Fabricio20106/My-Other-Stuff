@@ -1,4 +1,4 @@
-package com.junethewoods.myotherstuff.world;
+package com.junethewoods.myotherstuff.world.ore;
 
 import com.junethewoods.myotherstuff.block.OTBlocks;
 import net.minecraft.block.BlockState;

@@ -23,6 +23,13 @@ public class OTBlockStateProvider extends BlockStateProvider {
         simpleBlock(OTBlocks.DEEPSLATE_DIAEMERALD_ORE.get());
         stairsBlock((StairsBlock) OTBlocks.BLUE_TILE_STAIRS.get(), modLoc("block/blue_block"));
 
+        simpleBlock(OTBlocks.ROOTED_DIRT.get());
+        simpleBlock(OTBlocks.HANGING_ROOTS.get(), models().cross("hanging_roots", modLoc("block/hanging_roots")));
+        simpleBlock(OTBlocks.MOSS_BLOCK.get());
+        simpleBlock(OTBlocks.MOSS_CARPET.get(), models().carpet("moss_carpet", modLoc("block/moss_block")));
+        simpleBlock(OTBlocks.AZALEA_LEAVES.get());
+        simpleBlock(OTBlocks.FLOWERING_AZALEA_LEAVES.get());
+
         simpleBlock(OTBlocks.BRIGHT_BLUE_TILES.get());
         stairsBlock((StairsBlock) OTBlocks.BRIGHT_BLUE_TILE_STAIRS.get(), modLoc("block/bright_blue_tiles"));
         slabBlock((SlabBlock) OTBlocks.BRIGHT_BLUE_TILE_SLAB.get(), modLoc("block/bright_blue_tiles"), modLoc("block/bright_blue_tiles"));

@@ -61,6 +61,7 @@ public class OTBlockTagsProvider extends BlockTagsProvider {
                 .addTag(OTTags.Blocks.STORAGE_BLOCKS_RAW_NETHER).addTag(OTTags.Blocks.STORAGE_BLOCKS_PLASTEEL).addTag(OTTags.Blocks.STORAGE_BLOCKS_PHOENIX);
         this.tag(Tags.Blocks.GLASS_COLORLESS).add(OTBlocks.BLUE_GLASS.get()).add(OTBlocks.CYAN_GLASS.get());
         this.tag(Tags.Blocks.GLASS_PANES_COLORLESS).add(OTBlocks.BLUE_GLASS_PANE.get()).add(OTBlocks.CYAN_GLASS_PANE.get());
+        this.tag(Tags.Blocks.DIRT).add(OTBlocks.ROOTED_DIRT.get()).add(OTBlocks.MOSS_BLOCK.get());
 
         // Adding tags from OTTags to Minecraft tags.
         this.tag(BlockTags.CROPS).addTag(OTTags.Blocks.CROPS_BLUE_CARROTS);
@@ -73,9 +74,9 @@ public class OTBlockTagsProvider extends BlockTagsProvider {
                 .addTag(OTTags.Blocks.STORAGE_BLOCKS_RAW_NETHER).addTag(OTTags.Blocks.STORAGE_BLOCKS_PLASTEEL).addTag(OTTags.Blocks.STORAGE_BLOCKS_PHOENIX);
         this.tag(BlockTags.FLOWER_POTS).add(OTBlocks.DECORATED_FLOWER_POT.get()).add(OTBlocks.STRIPED_DECORATED_FLOWER_POT.get()).add(OTBlocks.POTTED_INNO_FLOWER.get())
                 .add(OTBlocks.DECORATED_POTTED_INNO_FLOWER.get()).add(OTBlocks.POTTED_SWAMP_OAK_SAPLING.get()).add(OTBlocks.POTTED_TALL_BIRCH_SAPLING.get())
-                .add(OTBlocks.POTTED_JUNGLE_BUSH_SAPLING.get()).add(OTBlocks.POTTED_GRASS.get());
+                .add(OTBlocks.POTTED_JUNGLE_BUSH_SAPLING.get()).add(OTBlocks.POTTED_GRASS.get()).add(OTBlocks.POTTED_AZALEA.get()).add(OTBlocks.POTTED_FLOWERING_AZALEA.get());
         this.tag(BlockTags.GUARDED_BY_PIGLINS).add(OTBlocks.GOLDEN_BEACON.get()).add(OTBlocks.GOLDEN_CAULDRON.get());
-        this.tag(BlockTags.LEAVES).add(OTBlocks.DRAWN_ACACIA_LEAVES.get());
+        this.tag(BlockTags.LEAVES).add(OTBlocks.AZALEA_LEAVES.get()).add(OTBlocks.FLOWERING_AZALEA_LEAVES.get()).add(OTBlocks.DRAWN_ACACIA_LEAVES.get());
         this.tag(BlockTags.SAPLINGS).add(OTBlocks.SWAMP_OAK_SAPLING.get()).add(OTBlocks.TALL_BIRCH_SAPLING.get()).add(OTBlocks.JUNGLE_BUSH_SAPLING.get()).add(OTBlocks.AZALEA.get())
                 .add(OTBlocks.FLOWERING_AZALEA.get());
         this.tag(BlockTags.STAIRS).add(OTBlocks.BRIGHT_BLUE_TILE_STAIRS.get()).add(OTBlocks.BLUE_TILE_STAIRS.get()).add(OTBlocks.DARK_BLUE_TILE_STAIRS.get()).add(OTBlocks.INNO_TILE_STAIRS.get())
@@ -85,12 +86,19 @@ public class OTBlockTagsProvider extends BlockTagsProvider {
         this.tag(BlockTags.WALLS).add(OTBlocks.BRIGHT_BLUE_TILE_WALL.get()).add(OTBlocks.BLUE_TILE_WALL.get()).add(OTBlocks.DARK_BLUE_TILE_WALL.get()).add(OTBlocks.INNO_TILE_WALL.get())
                 .add(OTBlocks.NETHER_TILE_WALL.get());
         this.tag(BlockTags.SMALL_FLOWERS).add(OTBlocks.INNO_FLOWER.get()).add(OTBlocks.FLOWERING_AZALEA.get());
-        this.tag(BlockTags.WITHER_IMMUNE).add(OTBlocks.DRAWN_COMMAND_BLOCK.get());
-        this.tag(BlockTags.DRAGON_IMMUNE).add(OTBlocks.DRAWN_COMMAND_BLOCK.get());
+        this.tag(BlockTags.FLOWERS).add(OTBlocks.FLOWERING_AZALEA_LEAVES.get());
+        this.tag(BlockTags.WITHER_IMMUNE).add(OTBlocks.DRAWN_COMMAND_BLOCK.get()).add(OTBlocks.BORDERED_BEDROCK.get()).add(OTBlocks.BORDERED_BEDROCK_SLAB.get());
+        this.tag(BlockTags.DRAGON_IMMUNE).add(OTBlocks.DRAWN_COMMAND_BLOCK.get()).add(OTBlocks.BORDERED_BEDROCK.get()).add(OTBlocks.BORDERED_BEDROCK_SLAB.get());
         this.tag(BlockTags.WOOL).add(OTBlocks.FUR_BLOCK.get());
+        this.tag(BlockTags.CARPETS).add(OTBlocks.MOSS_CARPET.get());
+        this.tag(BlockTags.ENDERMAN_HOLDABLE).add(OTBlocks.ROOTED_DIRT.get());
+        this.tag(BlockTags.BAMBOO_PLANTABLE_ON).add(OTBlocks.ROOTED_DIRT.get());
 
         // Adding tags from OTTags to Others' tags.
         this.tag(OTTags.Blocks.BELONGS_TO).addTag(OTTags.Blocks.BELONGS_TO_VARIANTS).addTag(OTTags.Blocks.BELONGS_TO_MOB_TAKER).addTag(OTTags.Blocks.BELONGS_TO_GACHA_LIFE)
                 .addTag(OTTags.Blocks.BELONGS_TO_F10_ELEMENTS).addTag(OTTags.Blocks.BELONGS_TO_F10_PACK).addTag(OTTags.Blocks.BELONGS_TO_RIMCRAFT);
+        this.tag(OTTags.Blocks.CAVES_AND_CLIFFS_CONTENT).add(OTBlocks.AZALEA_LEAVES.get()).add(OTBlocks.FLOWERING_AZALEA_LEAVES.get()).add(OTBlocks.AZALEA.get())
+                .add(OTBlocks.FLOWERING_AZALEA.get()).add(OTBlocks.POTTED_AZALEA.get()).add(OTBlocks.POTTED_FLOWERING_AZALEA.get()).add(OTBlocks.MOSS_BLOCK.get())
+                .add(OTBlocks.MOSS_CARPET.get()).add(OTBlocks.ROOTED_DIRT.get()).add(OTBlocks.HANGING_ROOTS.get());
     }
 }

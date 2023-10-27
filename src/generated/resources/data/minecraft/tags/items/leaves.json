@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "others:azalea_leaves",
+    "others:flowering_azalea_leaves",
     "others:acacia_leaves_1"
   ]
 }

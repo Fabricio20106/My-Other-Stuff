@@ -1,0 +1,13 @@
+To-Do List for Others:
+
+- Add Copper Dusts;
+- Add new recipes & fix existing ones;
+- Make Drawn Crafting Tables and Crafters able to have their menus opened;
+- Add Drawn Savannas & Drawn Acacia Trees;
+- Phoenix Gem, Phoenix Staff & Phoenix Gem Block;
+- Loading textures for Bamboo Bow, Bamboo Crossbow, Blaze Bow, Blaze Crossbow, Diamond Crossbow & Ender Crossbow;
+- Tall Birch, Swamp Oak & Jungle Bush Saplings;
+- Retextures:
+   - Monitor & Screen Monitor;
+   - CPU;
+   - (Auto) Crafter (texture will be inspired by the 1.21 crafter).

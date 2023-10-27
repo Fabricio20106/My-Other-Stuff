@@ -90,6 +90,8 @@ public class OTTags {
         public static final ITag.INamedTag<Item> BELONGS_TO_F10_PACK = mod("belongs_to/fabricio2010pack");
         public static final ITag.INamedTag<Item> BELONGS_TO_RIMCRAFT = mod("belongs_to/rimcraft");
 
+        public static final ITag.INamedTag<Item> CAVES_AND_CLIFFS_CONTENT = mod("caves_and_cliffs_content");
+
         // Tags from other mods
         // In Real Life - Sophie Clothes
         public static final ITag.INamedTag<Item> CLOTHS = otherMod("cloths", "inreallife");
@@ -139,6 +141,8 @@ public class OTTags {
         public static final ITag.INamedTag<Block> BELONGS_TO_F10_ELEMENTS = mod("belongs_to/f10elements");
         public static final ITag.INamedTag<Block> BELONGS_TO_F10_PACK = mod("belongs_to/fabricio2010pack");
         public static final ITag.INamedTag<Block> BELONGS_TO_RIMCRAFT = mod("belongs_to/rimcraft");
+
+        public static final ITag.INamedTag<Block> CAVES_AND_CLIFFS_CONTENT = mod("caves_and_cliffs_content");
 
         public static ITag.INamedTag<Block> forge(String name) {
             return BlockTags.bind(new ResourceLocation("forge", name).toString());

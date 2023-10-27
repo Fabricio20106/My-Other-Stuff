@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "others:azalea_leaves",
+    "others:flowering_azalea_leaves",
+    "others:azalea",
+    "others:flowering_azalea",
+    "others:potted_azalea_bush",
+    "others:potted_flowering_azalea_bush",
+    "others:moss_block",
+    "others:moss_carpet",
+    "others:rooted_dirt",
+    "others:hanging_roots"
+  ]
+}

@@ -126,7 +126,7 @@ public class OTItemTagsProvider extends ItemTagsProvider {
         this.tag(ItemTags.PIGLIN_LOVED).add(OTItems.GOLDEN_BEACON.get()).add(OTItems.GOLDEN_CAULDRON.get()).add(OTItems.MIRROR.get()).add(OTItems.GOLDEN_WATER_BUCKET.get())
                 .add(OTItems.ANGEL_RING.get()).add(OTItems.BELL.get()).add(OTItems.ANTIQUE_GOLD_DUST.get()).add(OTItems.GOLD_DUST.get()).add(OTItems.ALICE_AI_SWORD.get())
                 .add(OTItems.HASTE_PICKAXE.get());
-        this.tag(ItemTags.LEAVES).add(OTItems.DRAWN_ACACIA_LEAVES.get());
+        this.tag(ItemTags.LEAVES).add(OTItems.AZALEA_LEAVES.get()).add(OTItems.FLOWERING_AZALEA_LEAVES.get()).add(OTItems.DRAWN_ACACIA_LEAVES.get());
         this.tag(ItemTags.SAPLINGS).add(OTItems.SWAMP_OAK_SAPLING.get()).add(OTItems.TALL_BIRCH_SAPLING.get()).add(OTItems.JUNGLE_BUSH_SAPLING.get()).add(OTItems.AZALEA.get())
                 .add(OTItems.FLOWERING_AZALEA.get());
         this.tag(ItemTags.STAIRS).add(OTItems.BRIGHT_BLUE_TILE_STAIRS.get()).add(OTItems.BLUE_TILE_STAIRS.get()).add(OTItems.DARK_BLUE_TILE_STAIRS.get()).add(OTItems.INNO_TILE_STAIRS.get())
@@ -136,7 +136,9 @@ public class OTItemTagsProvider extends ItemTagsProvider {
         this.tag(ItemTags.WALLS).add(OTItems.BRIGHT_BLUE_TILE_WALL.get()).add(OTItems.BLUE_TILE_WALL.get()).add(OTItems.DARK_BLUE_TILE_WALL.get()).add(OTItems.INNO_TILE_WALL.get())
                 .add(OTItems.NETHER_TILE_WALL.get());
         this.tag(ItemTags.SMALL_FLOWERS).add(OTItems.INNO_FLOWER.get()).add(OTItems.FLOWERING_AZALEA.get());
+        this.tag(ItemTags.FLOWERS).add(OTItems.FLOWERING_AZALEA_LEAVES.get());
         this.tag(ItemTags.WOOL).add(OTItems.FUR_BLOCK.get());
+        this.tag(ItemTags.CARPETS).add(OTItems.MOSS_CARPET.get());
         this.tag(ItemTags.CREEPER_DROP_MUSIC_DISCS).add(OTItems.MUSIC_DISC_FIRST_DATE.get()).add(OTItems.MUSIC_DISC_OMAE_WA_MU.get()).add(OTItems.MUSIC_DISC_A_SKY_FULL_OF_STARS.get())
                 .add(OTItems.MUSIC_DISC_TRACES.get()).add(OTItems.MUSIC_DISC_UNDERWATER_TRACKS.get()).add(OTItems.MUSIC_DISC_CREATIVE_TRACKS.get()).add(OTItems.MUSIC_DISC_BLOCKADES.get());
         this.tag(ItemTags.MUSIC_DISCS).add(OTItems.MUSIC_DISC_RUBEDO.get()).add(OTItems.MUSIC_DISC_CHRYSOPOEIA.get()).add(OTItems.MUSIC_DISC_SO_BELOW.get()).add(OTItems.ABU_TUNES.get());
@@ -146,5 +148,8 @@ public class OTItemTagsProvider extends ItemTagsProvider {
         this.tag(OTTags.Items.BELONGS_TO).addTag(OTTags.Items.BELONGS_TO_VARIANTS).addTag(OTTags.Items.BELONGS_TO_MOB_TAKER).addTag(OTTags.Items.BELONGS_TO_GACHA_LIFE)
                 .addTag(OTTags.Items.BELONGS_TO_F10_ELEMENTS).addTag(OTTags.Items.BELONGS_TO_F10_PACK).addTag(OTTags.Items.BELONGS_TO_RIMCRAFT);
         this.tag(OTTags.Items.CORES).addTag(OTTags.Items.CORES_INNO).addTag(OTTags.Items.CORES_NETHER);
+        this.tag(OTTags.Items.CAVES_AND_CLIFFS_CONTENT).add(OTItems.AZALEA_LEAVES.get()).add(OTItems.FLOWERING_AZALEA_LEAVES.get()).add(OTItems.AZALEA.get())
+                .add(OTItems.FLOWERING_AZALEA.get()).add(OTItems.MOSS_BLOCK.get()).add(OTItems.MOSS_CARPET.get()).add(OTItems.ROOTED_DIRT.get()).add(OTItems.HANGING_ROOTS.get())
+                .add(OTItems.AZALEA_HELM.get()).add(OTItems.AMETHYST_SWORD.get()).add(OTItems.LIGHTNING_SWORD.get());
     }
 }

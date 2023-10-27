@@ -42,6 +42,12 @@ public class OTEnglishLanguageProvider extends LanguageProvider {
         add(OTBlocks.SCREEN_MONITOR, "Screen Monitor");
         add(OTBlocks.MONITOR, "Monitor");
         add(OTBlocks.DRAWN_ACACIA_LEAVES, "Drawn Acacia Leaves");
+        add(OTBlocks.ROOTED_DIRT, "Rooted Dirt");
+        add(OTBlocks.HANGING_ROOTS, "Hanging Roots");
+        add(OTBlocks.MOSS_CARPET, "Moss Carpet");
+        add(OTBlocks.MOSS_BLOCK, "Moss Block");
+        add(OTBlocks.AZALEA_LEAVES, "Azalea Leaves");
+        add(OTBlocks.FLOWERING_AZALEA_LEAVES, "Flowering Azalea Leaves");
         add(OTBlocks.AZALEA, "Azalea");
         add(OTBlocks.FLOWERING_AZALEA, "Flowering Azalea");
         add(OTBlocks.GRANITE_BRICKS, "Granite Bricks");
@@ -78,6 +84,8 @@ public class OTEnglishLanguageProvider extends LanguageProvider {
         add(OTBlocks.POTTED_SWAMP_OAK_SAPLING, "Potted Swamp Oak Sapling");
         add(OTBlocks.POTTED_JUNGLE_BUSH_SAPLING, "Potted Jungle Bush Sapling");
         add(OTBlocks.POTTED_GRASS, "Potted Grass");
+        add(OTBlocks.POTTED_AZALEA, "Potted Azalea");
+        add(OTBlocks.POTTED_FLOWERING_AZALEA, "Potted Flowering Azalea");
         add(OTBlocks.DIAEMERALD_ORE, "Diaemerald Ore");
         add(OTBlocks.DEEPSLATE_DIAEMERALD_ORE, "Deepslate Diaemerald Ore");
         add(OTBlocks.DIAEMERALD_BLOCK, "Block of Diaemerald");
@@ -391,16 +399,18 @@ public class OTEnglishLanguageProvider extends LanguageProvider {
         item(OTItems.WEAK_ENCHANTING_SWORD, "Weak Undying Sword");
         item(OTItems.WITCH_SWORD, "Witch Sword");
 
-        add("message.others.discontinuation.block.main", "This block is from %s and it's being removed from My Other Stuff.");
-        add("message.others.discontinuation.item.main", "This item is from %s and it's being removed from My Other Stuff.");
-        add("message.others.discontinuation.safety", "You should keep this in a museum, as you will never see this in Survival again.");
+        add("tooltip.others.discontinuation.block.main", "This block is from %s and it's being removed from My Other Stuff.");
+        add("tooltip.others.discontinuation.item.main", "This item is from %s and it's being removed from My Other Stuff.");
+        add("tooltip.others.discontinuation.safety", "You should keep this in a museum, as you will never see this in Survival again.");
 
-        add("message.others.mod.variants", "%s\u00A77 (Variants)");
-        add("message.others.mod.f10elements", "%s\u00A77 (F10 Elements)");
-        add("message.others.mod.fabricio2010spack", "%s\u00A77 (Fabricio2010's Pack)");
-        add("message.others.mod.rimcraft", "%s\u00A77 (Rimcraft)");
-        add("message.others.mod.gachalife", "%s\u00A77 (Gacha Life)");
-        add("message.others.mod.mobtaker", "%s\u00A77 (Mob Taker)");
+        add("tooltip.others.mod.variants", "%s\u00A77 (Variants)");
+        add("tooltip.others.mod.f10elements", "%s\u00A77 (F10 Elements)");
+        add("tooltip.others.mod.fabricio2010spack", "%s\u00A77 (Fabricio2010's Pack)");
+        add("tooltip.others.mod.rimcraft", "%s\u00A77 (Rimcraft)");
+        add("tooltip.others.mod.gachalife", "%s\u00A77 (Gacha Life)");
+        add("tooltip.others.mod.mobtaker", "%s\u00A77 (Mob Taker)");
+
+        add("tooltip.others.can_be_worn.azalea", "Azalea Bushes can be worn on your head slot.");
     }
 
     public void add(Supplier<? extends Block> blockSupplier, String name) {

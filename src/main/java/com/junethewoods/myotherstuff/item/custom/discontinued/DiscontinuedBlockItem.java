@@ -24,7 +24,7 @@ public class DiscontinuedBlockItem extends BlockItem {
     @Override
     public ITextComponent getName(ItemStack stack) {
         String trimmedName = modName.toLowerCase().replace(" ", "").replace("'", "");
-        String modName = "message.others.mod." + trimmedName;
+        String modName = "tooltip.others.mod." + trimmedName;
 
         return new TranslationTextComponent(modName, getOriginalName(stack));
     }
@@ -35,8 +35,8 @@ public class DiscontinuedBlockItem extends BlockItem {
 
     @Override
     public void appendHoverText(ItemStack stack, @Nullable World world, List<ITextComponent> tooltip, ITooltipFlag flag) {
-        tooltip.add(new TranslationTextComponent("message.others.discontinuation.block.main", modName).withStyle(TextFormatting.GRAY));
-        tooltip.add(new TranslationTextComponent("message.others.discontinuation.safety").withStyle(TextFormatting.GRAY));
+        tooltip.add(new TranslationTextComponent("tooltip.others.discontinuation.block.main", modName).withStyle(TextFormatting.GRAY));
+        tooltip.add(new TranslationTextComponent("tooltip.others.discontinuation.safety").withStyle(TextFormatting.GRAY));
         super.appendHoverText(stack, world, tooltip, flag);
     }
 }
