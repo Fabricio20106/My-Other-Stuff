@@ -1,7 +1,6 @@
 package com.junethewoods.myotherstuff.item.custom.discontinued;
 
 import net.minecraft.client.util.ITooltipFlag;
-import net.minecraft.item.HoeItem;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.SwordItem;

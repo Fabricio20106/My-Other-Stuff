@@ -2,6 +2,6 @@
   "parent": "minecraft:block/cube_top",
   "textures": {
     "side": "others:block/chiseled_blue_tiles",
-    "top": "others:block/blue_block"
+    "top": "others:block/blue_tiles"
   }
 }

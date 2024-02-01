@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=top": {
+      "model": "others:block/beacon_laser_slab_top"
+    },
+    "type=bottom": {
+      "model": "others:block/beacon_laser_slab"
+    },
+    "type=double": {
+      "model": "others:block/beacon_laser_block"
+    }
+  }
+}

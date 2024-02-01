@@ -11,3 +11,8 @@ To-Do List for Others:
    - Monitor & Screen Monitor;
    - CPU;
    - (Auto) Crafter (texture will be inspired by the 1.21 crafter).
+
+To Add (31/01/2024):
+
+- Add "Faquinha"
+- Downscale Angel Rings & Mining Spoon

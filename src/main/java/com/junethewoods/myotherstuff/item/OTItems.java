@@ -455,5 +455,4 @@ public class OTItems {
     public static final RegistryObject<Item> EMPRESARY2_sweatchest = ITEMS.register("empresary2_sweatchest", () -> new DiscontinuedArmorItem(OTArmors.EMPRESARY_2, EquipmentSlotType.CHEST, new Item.Properties(), "F10 Elements"));
     public static final RegistryObject<Item> empresary2_leggings = ITEMS.register("empresary2_leggings", () -> new DiscontinuedArmorItem(OTArmors.EMPRESARY_2, EquipmentSlotType.LEGS, new Item.Properties(), "F10 Elements"));
     public static final RegistryObject<Item> empresary2_boots = ITEMS.register("empresary2_boots", () -> new DiscontinuedArmorItem(OTArmors.EMPRESARY_2, EquipmentSlotType.FEET, new Item.Properties(), "F10 Elements"));
-
 }

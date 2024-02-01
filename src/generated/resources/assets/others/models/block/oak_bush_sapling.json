@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "others:block/jungle_bush_sapling"
+  }
+}

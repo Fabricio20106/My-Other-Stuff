@@ -5,7 +5,6 @@ import net.minecraft.block.Blocks;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.Items;
 import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.util.LazyValue;
 
 import java.util.function.Supplier;
 
@@ -26,7 +25,7 @@ public enum OTTools implements IItemTier {
     private final float miningSpeed;
     private final float attackDamage;
     private final int enchantmentValue;
-    private final LazyValue<Ingredient> repairIngredient;
+    private final Supplier<Ingredient> repairIngredient;
 
     OTTools(int harvestLevel, int durability, float miningSpeed, float attackDamage, int enchantmentValue, Supplier<Ingredient> repairIngredient) {
         this.harvestLevel = harvestLevel;
@@ -34,7 +33,7 @@ public enum OTTools implements IItemTier {
         this.miningSpeed = miningSpeed;
         this.attackDamage = attackDamage;
         this.enchantmentValue = enchantmentValue;
-        this.repairIngredient = new LazyValue<>(repairIngredient);
+        this.repairIngredient = repairIngredient;
     }
 
     public int getUses() {

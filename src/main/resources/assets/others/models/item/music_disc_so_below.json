@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "others:item/music_disc_so_below"
-  }
-}

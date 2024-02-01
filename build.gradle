@@ -3,7 +3,6 @@ buildscript {
         maven {
             url = 'https://files.minecraftforge.net/maven'
         }
-        jcenter()
         mavenCentral()
     }
     dependencies {
@@ -14,9 +13,9 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '1.5.7'
+version = '1.16.5-v1.5.8'
 group = 'com.junethewoods.myotherstuff'
-archivesBaseName = 'MyOtherStuff-1.16.5'
+archivesBaseName = 'MyOtherStuff'
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(8)
 
@@ -30,7 +29,7 @@ minecraft {
         client {
             workingDirectory project.file('run')
 
-            property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
+            property 'forge.logging.markers', 'SCAN,REGISTRIES'
 
             property 'forge.logging.console.level', 'debug'
 
@@ -44,7 +43,7 @@ minecraft {
         server {
             workingDirectory project.file('run')
 
-            property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
+            property 'forge.logging.markers', 'SCAN,REGISTRIES'
 
             property 'forge.logging.console.level', 'debug'
 
@@ -58,7 +57,7 @@ minecraft {
         data {
             workingDirectory project.file('run')
 
-            property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
+            property 'forge.logging.markers', 'SCAN,REGISTRIES'
 
             property 'forge.logging.console.level', 'debug'
 
@@ -85,7 +84,7 @@ dependencies {
 
 repositories {
     maven {
-        // JEI
+        // Just Enough Items
         name 'DVS1 Maven FS'
         url 'https://dvs1.progwml6.com/files/maven'
     }

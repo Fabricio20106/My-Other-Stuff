@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "side": "others:block/lined_bedrock",
+    "bottom": "others:block/lined_bedrock",
+    "top": "others:block/lined_bedrock"
+  }
+}

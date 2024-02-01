@@ -1,8 +1,8 @@
 {
   "parent": "minecraft:block/outer_stairs",
   "textures": {
-    "side": "others:block/blue_block",
-    "bottom": "others:block/blue_block",
-    "top": "others:block/blue_block"
+    "side": "others:block/blue_tiles",
+    "bottom": "others:block/blue_tiles",
+    "top": "others:block/blue_tiles"
   }
 }

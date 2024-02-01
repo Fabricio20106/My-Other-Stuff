@@ -1,16 +1,18 @@
 package com.junethewoods.myotherstuff;
 
-import com.junethewoods.myotherstuff.block.entity.OTBlockEntities;
-import com.junethewoods.myotherstuff.entity.renderer.OTElytraLayer;
 import com.junethewoods.myotherstuff.block.OTBlocks;
+import com.junethewoods.myotherstuff.blockentity.OTBlockEntities;
+import com.junethewoods.myotherstuff.entity.renderer.OTElytraLayer;
 import com.junethewoods.myotherstuff.item.OTItems;
-import com.junethewoods.myotherstuff.world.ore.OTOreGeneration;
 import com.junethewoods.myotherstuff.sound.OTSounds;
+import com.junethewoods.myotherstuff.world.ore.OTOreGeneration;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.tileentity.BeaconTileEntityRenderer;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ElytraItem;
+import net.minecraft.item.FishingRodItem;
 import net.minecraft.item.ItemModelsProperties;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
@@ -56,7 +58,19 @@ public class MyOtherStuff {
         Minecraft.getInstance().getEntityRenderDispatcher().getSkinMap().values().forEach(player -> player.addLayer(new OTElytraLayer<>(player)));
 
         ItemModelsProperties.register(OTItems.BLAZE_ELYTRA.get(), new ResourceLocation("broken"), (stack, world, livEntity) -> ElytraItem.isFlyEnabled(stack) ? 0 : 1);
+        ItemModelsProperties.register(OTItems.BAMBOO_FISHING_ROD.get(), new ResourceLocation("cast"), (stack, world, livEntity) -> {
+            if (livEntity == null) {
+                return 0;
+            } else {
+                boolean isMainHand = livEntity.getMainHandItem() == stack;
+                boolean isOffHand = livEntity.getOffhandItem() == stack;
 
+                if (livEntity.getMainHandItem().getItem() instanceof FishingRodItem) isOffHand = false;
+                return (isMainHand || isOffHand) && livEntity instanceof PlayerEntity && ((PlayerEntity) livEntity).fishing != null ? 1 : 0;
+            }
+        });
+
+        // Will probably be added in the next release.
         //OTVanillaCompatibilities.registerCompatibilities();
     }
 

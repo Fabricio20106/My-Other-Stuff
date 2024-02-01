@@ -19,6 +19,11 @@ public class OTItemTagsProvider extends ItemTagsProvider {
     }
 
     @Override
+    public String getName() {
+        return "My Other Stuff - Item Tags";
+    }
+
+    @Override
     protected void addTags() {
         // Adding items to tags from OTTags.
         this.tag(OTTags.Items.ORES_DIAEMERALD).add(OTItems.DIAEMERALD_ORE.get()).add(OTItems.DEEPSLATE_DIAEMERALD_ORE.get());

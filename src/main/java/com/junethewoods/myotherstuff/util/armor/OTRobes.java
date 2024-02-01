@@ -6,7 +6,6 @@ import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.Items;
 import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.util.LazyValue;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.SoundEvents;
 import net.minecraftforge.api.distmarker.Dist;
@@ -36,7 +35,7 @@ public enum OTRobes implements IArmorMaterial {
     private final SoundEvent equipSound;
     private final float toughness;
     private final float knockbackRes;
-    private final LazyValue<Ingredient> repairIngredient;
+    private final Supplier<Ingredient> repairIngredient;
 
     OTRobes(String name, int maxDamageFactor, int[] defensePerSlot, int enchantmentValue, SoundEvent equipSound, float toughness, float knockbackRes, Supplier<Ingredient> repairIngredient) {
         this.name = name;
@@ -46,7 +45,7 @@ public enum OTRobes implements IArmorMaterial {
         this.equipSound = equipSound;
         this.toughness = toughness;
         this.knockbackRes = knockbackRes;
-        this.repairIngredient = new LazyValue<>(repairIngredient);
+        this.repairIngredient = repairIngredient;
     }
 
     public int getDurabilityForSlot(EquipmentSlotType slot) {

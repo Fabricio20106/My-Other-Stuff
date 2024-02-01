@@ -16,6 +16,11 @@ public class OTEnglishLanguageProvider extends LanguageProvider {
     }
 
     @Override
+    public String getName() {
+        return "My Other Stuff - Language Provider (en_us)";
+    }
+
+    @Override
     protected void addTranslations() {
         add(OTBlocks.BRIGHT_BLUE_TILES, "Bright Blue Tiles");
         add(OTBlocks.BRIGHT_BLUE_TILE_STAIRS, "Bright Blue Tile Stairs");

@@ -18,6 +18,11 @@ public class OTBlockTagsProvider extends BlockTagsProvider {
     }
 
     @Override
+    public String getName() {
+        return "My Other Stuff - Block Tags";
+    }
+
+    @Override
     protected void addTags() {
         // Adding items to tags from OTTags.
         this.tag(OTTags.Blocks.ORES_DIAEMERALD).add(OTBlocks.DIAEMERALD_ORE.get()).add(OTBlocks.DEEPSLATE_DIAEMERALD_ORE.get());

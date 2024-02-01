@@ -1,6 +1,6 @@
 package com.junethewoods.myotherstuff.block.custom;
 
-import com.junethewoods.myotherstuff.block.entity.custom.LegoFurnaceBlockEntity;
+import com.junethewoods.myotherstuff.blockentity.custom.LegoFurnaceBlockEntity;
 import net.minecraft.block.AbstractFurnaceBlock;
 import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.entity.player.PlayerEntity;

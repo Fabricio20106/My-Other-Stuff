@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cross",
-  "textures": {
-    "cross": "others:item/swamp_oak_sapling"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "others:block/beacon_laser_block",
-    "top": "others:block/beacon_laser_block",
-    "side": "others:block/beacon_laser_block"
-  }
-}
