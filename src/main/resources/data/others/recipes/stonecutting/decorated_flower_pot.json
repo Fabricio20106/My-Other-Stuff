@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:orange_terracotta"
+  },
+  "result": "others:orange_flower_pot",
+  "count": 2
+}

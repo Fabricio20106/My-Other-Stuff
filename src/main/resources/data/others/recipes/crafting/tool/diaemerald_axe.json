@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CC",
+    "C#",
+    " #"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:rods/wooden"
+    },
+    "C": {
+      "tag": "forge:gems/diaemerald"
+    }
+  },
+  "result": {
+    "item": "others:diaemerald_axe"
+  }
+}

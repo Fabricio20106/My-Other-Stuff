@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "others:bee_wing",
+    "others:dragon_wing",
+    "others:red_parrot_wing",
+    "others:vex_wing",
+    "others:blaze_elytra",
+    "others:fast_elytra"
+  ]
+}

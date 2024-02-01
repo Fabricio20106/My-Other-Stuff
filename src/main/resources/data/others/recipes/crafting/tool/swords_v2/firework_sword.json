@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "C",
+    "C",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:rods/wooden"
+    },
+    "C": {
+      "item": "minecraft:firework_rocket"
+    }
+  },
+  "result": {
+    "item": "others:firework_sword"
+  }
+}

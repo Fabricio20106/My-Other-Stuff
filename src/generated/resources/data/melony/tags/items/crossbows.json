@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "others:blaze_crossbow",
+    "others:bamboo_crossbow",
+    "others:diamond_crossbow",
+    "others:ender_crossbow"
+  ]
+}

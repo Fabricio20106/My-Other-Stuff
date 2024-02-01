@@ -1,0 +1,6 @@
+{
+  "parent": "others:item/template_crossbow",
+  "textures": {
+    "layer0": "others:item/bamboo_crossbow_pulling_0"
+  }
+}

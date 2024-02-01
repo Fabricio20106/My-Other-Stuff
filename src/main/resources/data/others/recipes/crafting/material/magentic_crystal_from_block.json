@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "magentic",
+  "ingredients": [
+    {
+      "tag": "forge:storage_blocks/magentic"
+    }
+  ],
+  "result": {
+    "item": "others:crystal",
+    "count": 9
+  }
+}

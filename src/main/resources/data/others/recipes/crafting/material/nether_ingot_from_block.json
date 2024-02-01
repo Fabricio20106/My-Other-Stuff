@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "nether_ingot",
+  "ingredients": [
+    {
+      "tag": "forge:storage_blocks/nether"
+    }
+  ],
+  "result": {
+    "item": "others:purple_ingot",
+    "count": 9
+  }
+}

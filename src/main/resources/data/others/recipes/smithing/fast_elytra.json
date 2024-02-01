@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:elytra"
+  },
+  "addition": {
+    "item": "minecraft:white_concrete"
+  },
+  "result": {
+    "item": "others:fast_elytra"
+  }
+}

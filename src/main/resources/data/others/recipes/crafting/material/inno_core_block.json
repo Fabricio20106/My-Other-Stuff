@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:cores/inno"
+    }
+  },
+  "result": {
+    "item": "others:inno_core_block"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "parent": "others:item/template_bow",
+  "textures": {
+    "layer0": "others:item/blaze_bow"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "minecraft:pulling": 1.0
+      },
+      "model": "others:item/blaze_bow_pulling_0"
+    },
+    {
+      "predicate": {
+        "minecraft:pulling": 1.0,
+        "minecraft:pull": 0.65
+      },
+      "model": "others:item/blaze_bow_pulling_1"
+    },
+    {
+      "predicate": {
+        "minecraft:pulling": 1.0,
+        "minecraft:pull": 0.9
+      },
+      "model": "others:item/blaze_bow_pulling_2"
+    }
+  ]
+}

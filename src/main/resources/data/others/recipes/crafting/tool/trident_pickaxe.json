@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC",
+    " # ",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:dusts/prismarine"
+    },
+    "C": {
+      "tag": "forge:ingots/iron"
+    }
+  },
+  "result": {
+    "item": "others:trident_pickaxe"
+  }
+}

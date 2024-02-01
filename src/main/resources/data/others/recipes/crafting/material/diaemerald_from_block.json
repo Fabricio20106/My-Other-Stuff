@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "diaemerald",
+  "ingredients": [
+    {
+      "tag": "forge:storage_blocks/diaemerald"
+    }
+  ],
+  "result": {
+    "item": "others:diaemerald",
+    "count": 9
+  }
+}

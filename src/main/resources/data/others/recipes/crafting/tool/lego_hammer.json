@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC",
+    " # ",
+    " W "
+  ],
+  "key": {
+    "W": {
+      "tag": "forge:rods/wooden"
+    },
+    "C": {
+      "item": "others:lego_pieces"
+    },
+    "#": {
+      "item": "minecraft:sugar_cane"
+    }
+  },
+  "result": {
+    "item": "others:lego_hammer"
+  }
+}

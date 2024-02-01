@@ -1,8 +1,8 @@
 {
   "parent": "minecraft:block/orientable",
   "textures": {
-    "side": "others:block/monitor_side",
+    "side": "others:block/black_steel_casing",
     "front": "others:block/monitor_front",
-    "top": "others:block/monitor_side"
+    "top": "others:block/black_steel_casing"
   }
 }

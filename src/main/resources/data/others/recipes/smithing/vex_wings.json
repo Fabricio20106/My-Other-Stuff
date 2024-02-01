@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:elytra"
+  },
+  "addition": {
+    "item": "minecraft:iron_sword"
+  },
+  "result": {
+    "item": "others:vex_wing"
+  }
+}

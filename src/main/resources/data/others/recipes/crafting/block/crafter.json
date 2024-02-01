@@ -1,22 +1,22 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "###",
-    "#C#",
-    "G@G"
+    "#@#",
+    "DCD",
+    "###"
   ],
   "key": {
     "#": {
-      "tag": "forge:ingots/iron"
+      "item": "minecraft:smooth_stone"
     },
     "C": {
-      "tag": "others:crafting_tables"
+      "tag": "melony:crafting_tables"
     },
-    "G": {
-      "tag": "forge:dusts/redstone"
+    "D": {
+      "tag": "minecraft:planks"
     },
     "@": {
-      "item": "minecraft:gray_concrete"
+      "item": "minecraft:red_carpet"
     }
   },
   "result": {

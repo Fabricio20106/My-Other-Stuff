@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "others:inno_tiles"
+  },
+  "result": "others:inno_tile_slab",
+  "count": 2
+}

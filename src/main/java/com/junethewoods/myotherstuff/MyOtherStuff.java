@@ -2,10 +2,10 @@ package com.junethewoods.myotherstuff;
 
 import com.junethewoods.myotherstuff.block.OTBlocks;
 import com.junethewoods.myotherstuff.blockentity.OTBlockEntities;
+import com.junethewoods.myotherstuff.config.OTConfigs;
 import com.junethewoods.myotherstuff.entity.renderer.OTElytraLayer;
 import com.junethewoods.myotherstuff.item.OTItems;
 import com.junethewoods.myotherstuff.sound.OTSounds;
-import com.junethewoods.myotherstuff.world.ore.OTOreGeneration;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
@@ -16,11 +16,12 @@ import net.minecraft.item.FishingRodItem;
 import net.minecraft.item.ItemModelsProperties;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.client.registry.ClientRegistry;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
@@ -28,6 +29,9 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 import java.util.logging.LogManager;
 import java.util.logging.Logger;
+
+import static com.junethewoods.myotherstuff.util.OTItemPredicateProvider.addBowPredicates;
+import static com.junethewoods.myotherstuff.util.OTItemPredicateProvider.addCrossbowPredicates;
 
 @Mod(MyOtherStuff.MOD_ID)
 public class MyOtherStuff {
@@ -46,8 +50,8 @@ public class MyOtherStuff {
         OTSounds.registerSounds();
 
         forgeEventBus.register(this);
-        forgeEventBus.addListener(EventPriority.HIGH, OTOreGeneration::generateMagenticCrystalOres);
-        forgeEventBus.addListener(EventPriority.HIGH, OTOreGeneration::generateDiaemeraldOres);
+
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, OTConfigs.COMMON_SPEC, "jtw-mods/others-common.toml");
     }
 
     public static ResourceLocation resourceLoc(String name) {
@@ -57,6 +61,12 @@ public class MyOtherStuff {
     public void commonSetup(final FMLCommonSetupEvent event) {
         Minecraft.getInstance().getEntityRenderDispatcher().getSkinMap().values().forEach(player -> player.addLayer(new OTElytraLayer<>(player)));
 
+        addBowPredicates(OTItems.BLAZE_BOW.get());
+        addBowPredicates(OTItems.BAMBOO_BOW.get());
+        addCrossbowPredicates(OTItems.BLAZE_CROSSBOW.get());
+        addCrossbowPredicates(OTItems.BAMBOO_CROSSBOW.get());
+        addCrossbowPredicates(OTItems.DIAMOND_CROSSBOW.get());
+        addCrossbowPredicates(OTItems.ENDER_CROSSBOW.get());
         ItemModelsProperties.register(OTItems.BLAZE_ELYTRA.get(), new ResourceLocation("broken"), (stack, world, livEntity) -> ElytraItem.isFlyEnabled(stack) ? 0 : 1);
         ItemModelsProperties.register(OTItems.BAMBOO_FISHING_ROD.get(), new ResourceLocation("cast"), (stack, world, livEntity) -> {
             if (livEntity == null) {
@@ -71,7 +81,7 @@ public class MyOtherStuff {
         });
 
         // Will probably be added in the next release.
-        //OTVanillaCompatibilities.registerCompatibilities();
+        // OTVanillaCompatibilities.registerCompatibilities();
     }
 
     public void clientSetup(final FMLClientSetupEvent event) {
@@ -102,6 +112,10 @@ public class MyOtherStuff {
         RenderTypeLookup.setRenderLayer(OTBlocks.DECORATED_FLOWER_POT.get(), RenderType.cutout());
         RenderTypeLookup.setRenderLayer(OTBlocks.STRIPED_DECORATED_FLOWER_POT.get(), RenderType.cutout());
         RenderTypeLookup.setRenderLayer(OTBlocks.BLUE_CARROTS.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(OTBlocks.DRAWN_COMMAND_BLOCK.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(OTBlocks.DRAWN_CREATIVE_ENERGY_CUBE.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(OTBlocks.GOLDEN_CAULDRON.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(OTBlocks.INNO_FLOWER.get(), RenderType.cutout());
 
         ClientRegistry.bindTileEntityRenderer(OTBlockEntities.GOLDEN_BEACON.get(), BeaconTileEntityRenderer::new);
     }

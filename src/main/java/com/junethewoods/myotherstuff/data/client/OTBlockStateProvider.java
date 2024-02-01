@@ -39,8 +39,10 @@ public class OTBlockStateProvider extends BlockStateProvider {
         paneBlock((PaneBlock) OTBlocks.BLUE_GLASS_PANE.get(), modLoc("block/blue_glass"), modLoc("block/blue_glass_pane_top"));
         paneBlock((PaneBlock) OTBlocks.CYAN_GLASS_PANE.get(), modLoc("block/bluewhite_glass"), modLoc("block/bluewhite_glass_pane_top"));
         paneBlock((PaneBlock) OTBlocks.END_CRYSTAL_GLASS_PANE.get(), modLoc("block/end_crystal_glass"), modLoc("block/end_crystal_glass_pane_top"));
-        simpleBlock(OTBlocks.DRAWN_COMMAND_BLOCK.get());
-        simpleBlock(OTBlocks.DRAWN_CREATIVE_ENERGY_CUBE.get());
+        simpleBlock(OTBlocks.DRAWN_COMMAND_BLOCK.get(), models().withExistingParent("command_block_1", modLoc("block/template_two_layer_block")).texture("block", modLoc("block/drawn_command_block")).texture("overlay",
+                modLoc("block/drawn_command_block_outer")).texture("particle", modLoc("block/drawn_command_block")));
+        simpleBlock(OTBlocks.DRAWN_CREATIVE_ENERGY_CUBE.get(), models().withExistingParent("energy_cube", modLoc("block/template_two_layer_block")).texture("block", modLoc("block/creative_energy_cube")).texture("overlay",
+                modLoc("block/creative_energy_cube_outer")).texture("particle", modLoc("block/creative_energy_cube")));
         simpleBlock(OTBlocks.DRAWN_ACACIA_LEAVES.get());
         simpleBlock(OTBlocks.GRANITE_BRICKS.get());
         simpleBlock(OTBlocks.SLATE_BRICKS.get());
@@ -74,8 +76,8 @@ public class OTBlockStateProvider extends BlockStateProvider {
         simpleBlock(OTBlocks.POTTED_FLOWERING_AZALEA.get(), models().withExistingParent("potted_flowering_azalea_bush", modLoc("template_potted_azalea_bush")).texture("top", modLoc("block/potted_flowering_azalea_bush_top"))
                 .texture("side", modLoc("block/potted_flowering_azalea_bush_side")).texture("azalea_plant", modLoc("block/potted_flowering_azalea_bush_plant")));
 
-        horizontalBlock(OTBlocks.SCREEN_MONITOR.get(), modLoc("block/screen_monitor_side"), modLoc("block/screen_monitor_front"), modLoc("block/screen_monitor_side"));
-        horizontalBlock(OTBlocks.MONITOR.get(), modLoc("block/monitor_side"), modLoc("block/monitor_front"), modLoc("block/monitor_side"));
+        horizontalBlock(OTBlocks.SCREEN_MONITOR.get(), modLoc("block/black_steel_casing"), modLoc("block/screen_monitor_front"), modLoc("block/black_steel_casing"));
+        horizontalBlock(OTBlocks.MONITOR.get(), modLoc("block/black_steel_casing"), modLoc("block/monitor_front"), modLoc("block/black_steel_casing"));
 
         // Pre-Transition Blocks
         simpleBlock(OTBlocks.RAW_FIRST_BLOCK.get());
@@ -115,17 +117,17 @@ public class OTBlockStateProvider extends BlockStateProvider {
 
         // More Complex Blocks
         simpleBlock(OTBlocks.DRAWN_CRAFTING_TABLE.get(), models().cube("crafting_table_1",
-                modLoc("block/crafting_table_bottom"), modLoc("block/crafting_table_top"),
-                modLoc("block/crafting_table_side"), modLoc("block/crafting_table_side"),
-                modLoc("block/crafting_table_side"), modLoc("block/crafting_table_side")));
+                modLoc("block/drawn_crafting_table_bottom"), modLoc("block/drawn_crafting_table_top"),
+                modLoc("block/drawn_crafting_table_front"), modLoc("block/drawn_crafting_table_front"),
+                modLoc("block/drawn_crafting_table_side"), modLoc("block/drawn_crafting_table_side")).texture("particle", modLoc("block/drawn_crafting_table_front")));
         simpleBlock(OTBlocks.DRAWN_SMITHING_TABLE.get(), models().cube("smithing_table_1",
-                modLoc("block/smithing_table_bottom"), modLoc("block/smithing_table_top"),
-                modLoc("block/smithing_table"), modLoc("block/smithing_table"),
-                modLoc("block/smithing_table"), modLoc("block/smithing_table")));
+                modLoc("block/drawn_smithing_table_bottom"), modLoc("block/drawn_smithing_table_top"),
+                modLoc("block/drawn_smithing_table_front"), modLoc("block/drawn_smithing_table_front"),
+                modLoc("block/drawn_smithing_table_side"), modLoc("block/drawn_smithing_table_side")).texture("particle", modLoc("block/drawn_smithing_table_front")));
         simpleBlock(OTBlocks.CRAFTER.get(), models().cube("autocrafter",
-                mcLoc("block/gray_concrete"), modLoc("block/autocrafter_top"),
-                modLoc("block/autocrafter_front"), modLoc("block/autocrafter_front"),
-                modLoc("block/autocrafter_front"), modLoc("block/autocrafter_front")));
+                modLoc("block/crafter_bottom"), modLoc("block/crafter_top"),
+                modLoc("block/crafter_front"), modLoc("block/crafter_front"),
+                modLoc("block/crafter_side"), modLoc("block/crafter_side")).texture("particle", modLoc("block/crafter_front")));
 
         getVariantBuilder(OTBlocks.BLUE_CARROTS.get()).forAllStates(state -> {
             int cropAgeIndex = potatoAgeIndex(state.getValue(CropsBlock.AGE));

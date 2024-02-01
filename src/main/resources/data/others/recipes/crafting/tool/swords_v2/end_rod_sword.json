@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "C",
+    "C",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:end_rod"
+    },
+    "C": {
+      "tag": "forge:gems/quartz"
+    }
+  },
+  "result": {
+    "item": "others:end_rod_sword"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#P#",
+    "L L",
+    "# #"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:white_concrete"
+    },
+    "L": {
+      "item": "minecraft:light_blue_concrete"
+    },
+    "P": {
+      "tag": "forge:gems/magentic"
+    }
+  },
+  "result": {
+    "item": "others:fast_legs"
+  }
+}

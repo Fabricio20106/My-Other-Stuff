@@ -79,7 +79,7 @@ public class OTItems {
     public static final RegistryObject<Item> DRAWN_CREATIVE_ENERGY_CUBE = ITEMS.register("energy_cube", () -> new BlockItem(OTBlocks.DRAWN_CREATIVE_ENERGY_CUBE.get(), new Item.Properties().tab(OTBlocksTab.TAB)));
     public static final RegistryObject<Item> CRAFTER = ITEMS.register("autocrafter", () -> new BlockItem(OTBlocks.CRAFTER.get(), new Item.Properties().tab(OTBlocksTab.TAB)));
     public static final RegistryObject<Item> LEGO_FURNACE = ITEMS.register("lego_furnace", () -> new BlockItem(OTBlocks.DRAWN_FURNACE.get(), new Item.Properties().tab(OTBlocksTab.TAB)));
-    public static final RegistryObject<Item> DRAWN_COMMAND_BLOCK = ITEMS.register("command_block_1", () -> new BlockItem(OTBlocks.DRAWN_COMMAND_BLOCK.get(), new Item.Properties().tab(OTBlocksTab.TAB)));
+    public static final RegistryObject<Item> DRAWN_COMMAND_BLOCK = ITEMS.register("command_block_1", () -> new BlockItem(OTBlocks.DRAWN_COMMAND_BLOCK.get(), new Item.Properties().rarity(Rarity.EPIC).tab(OTBlocksTab.TAB)));
     public static final RegistryObject<Item> DRAWN_CRAFTING_TABLE = ITEMS.register("crafting_table_1", () -> new BlockItem(OTBlocks.DRAWN_CRAFTING_TABLE.get(), new Item.Properties().tab(OTBlocksTab.TAB)));
     public static final RegistryObject<Item> DRAWN_SMITHING_TABLE = ITEMS.register("smithing_table_1", () -> new BlockItem(OTBlocks.DRAWN_SMITHING_TABLE.get(), new Item.Properties().tab(OTBlocksTab.TAB)));
     public static final RegistryObject<Item> GOLDEN_BEACON = ITEMS.register("golden_beacon", () -> new DiscontinuedBlockItem(OTBlocks.GOLDEN_BEACON.get(), new Item.Properties().rarity(Rarity.RARE), "Variants"));
@@ -226,13 +226,13 @@ public class OTItems {
     public static final RegistryObject<Item> CREEPER_SUIT = ITEMS.register("creeper_suit", () -> new Item(new Item.Properties().tab(OTTab.TAB)));
     public static final RegistryObject<Item> CHARGED_CREEPER_SUIT = ITEMS.register("charged_creeper_suit", () -> new SimpleFoiledItem(new Item.Properties().rarity(Rarity.UNCOMMON).tab(OTTab.TAB)));
     public static final RegistryObject<Item> GHAST = ITEMS.register("ghast", () -> new Item(new Item.Properties().tab(OTTab.TAB)));
-    public static final RegistryObject<Item> ENDER_DRAGON_SPAWN_EGG = ITEMS.register("ender_dragon_spawn_egg", () -> new SpawnEggItem(EntityType.ENDER_DRAGON, 1513239, 7675362, (new Item.Properties()).tab(OTTab.TAB)));
-    public static final RegistryObject<Item> WITHER_SPAWN_EGG = ITEMS.register("wither_spawn_egg", () -> new SpawnEggItem(EntityType.WITHER, 0, 1513239, (new Item.Properties()).stacksTo(1).tab(OTTab.TAB)));
-    public static final RegistryObject<Item> GIANT_SPAWN_EGG = ITEMS.register("giant_spawn_egg", () -> new SpawnEggItem(EntityType.GIANT, 44975, 7969893, (new Item.Properties()).tab(OTTab.TAB)));
-    public static final RegistryObject<Item> ILLUSIONER_SPAWN_EGG = ITEMS.register("illusioner_spawn_egg", () -> new SpawnEggItem(EntityType.ILLUSIONER, 1267859, 733781, (new Item.Properties()).tab(OTTab.TAB)));
-    public static final RegistryObject<Item> IRON_GOLEM_SPAWN_EGG = ITEMS.register("iron_golem_spawn_egg", () -> new SpawnEggItem(EntityType.IRON_GOLEM, 13810858, 7560270, (new Item.Properties()).tab(OTTab.TAB)));
-    public static final RegistryObject<Item> SNOW_GOLEM_SPAWN_EGG = ITEMS.register("snow_golem_spawn_egg", () -> new SpawnEggItem(EntityType.SNOW_GOLEM, 15790320, 15641624, (new Item.Properties()).tab(OTTab.TAB)));
-    public static final RegistryObject<Item> FIREBALL_SPAWN_EGG = ITEMS.register("fireball_spawn_egg", () -> new SpawnEggItem(EntityType.FIREBALL, 3615272, 15641624, (new Item.Properties()).tab(OTTab.TAB)));
+    public static final RegistryObject<Item> ENDER_DRAGON_SPAWN_EGG = ITEMS.register("ender_dragon_spawn_egg", () -> new SpawnEggItem(EntityType.ENDER_DRAGON, 1842204, 14711290, new Item.Properties().tab(OTTab.TAB)));
+    public static final RegistryObject<Item> WITHER_SPAWN_EGG = ITEMS.register("wither_spawn_egg", () -> new SpawnEggItem(EntityType.WITHER, 1315860, 5075616, new Item.Properties().stacksTo(1).tab(OTTab.TAB)));
+    public static final RegistryObject<Item> GIANT_SPAWN_EGG = ITEMS.register("giant_spawn_egg", () -> new SpawnEggItem(EntityType.GIANT, 44975, 7969893, new Item.Properties().tab(OTTab.TAB)));
+    public static final RegistryObject<Item> ILLUSIONER_SPAWN_EGG = ITEMS.register("illusioner_spawn_egg", () -> new SpawnEggItem(EntityType.ILLUSIONER, 1267859, 733781, new Item.Properties().tab(OTTab.TAB)));
+    public static final RegistryObject<Item> IRON_GOLEM_SPAWN_EGG = ITEMS.register("iron_golem_spawn_egg", () -> new SpawnEggItem(EntityType.IRON_GOLEM, 14405058, 7643954, new Item.Properties().tab(OTTab.TAB)));
+    public static final RegistryObject<Item> SNOW_GOLEM_SPAWN_EGG = ITEMS.register("snow_golem_spawn_egg", () -> new SpawnEggItem(EntityType.SNOW_GOLEM, 14283506, 8496292, new Item.Properties().tab(OTTab.TAB)));
+    public static final RegistryObject<Item> FIREBALL_SPAWN_EGG = ITEMS.register("fireball_spawn_egg", () -> new SpawnEggItem(EntityType.FIREBALL, 3615272, 15641624, new Item.Properties().tab(OTTab.TAB)));
 
     // Items - Discontinued
     public static final RegistryObject<Item> GREEN_TEA = ITEMS.register("green_tea", () -> new DiscontinuedItem(new Item.Properties().stacksTo(1), "Gacha Life"));
@@ -338,13 +338,13 @@ public class OTItems {
     public static final RegistryObject<Item> BLAZE_BOW = ITEMS.register("blaze_bow", () -> new BowItem(new Item.Properties().durability(310).tab(OTWeaponTab.TAB)));
     public static final RegistryObject<Item> BLAZE_CROSSBOW = ITEMS.register("blaze_crossbow", () -> new CrossbowItem(new Item.Properties().durability(354).tab(OTWeaponTab.TAB)));
     public static final RegistryObject<Item> BLAZE_ARROW = ITEMS.register("blaze_arrow", () -> new ArrowItem(new Item.Properties().tab(OTWeaponTab.TAB)));
-    public static final RegistryObject<Item> DIAMOND_CROSSBOW = ITEMS.register("diamond_crossbow", () -> new CrossbowItem(new Item.Properties().rarity(Rarity.RARE).durability(1561).tab(OTWeaponTab.TAB)));
-    public static final RegistryObject<Item> ENDER_CROSSBOW = ITEMS.register("ender_crossbow", () -> new CrossbowItem(new Item.Properties().rarity(Rarity.RARE).durability(1862).tab(OTWeaponTab.TAB)));
+    public static final RegistryObject<Item> DIAMOND_CROSSBOW = ITEMS.register("diamond_crossbow", () -> new CrossbowItem(new Item.Properties().durability(1561).tab(OTWeaponTab.TAB)));
+    public static final RegistryObject<Item> ENDER_CROSSBOW = ITEMS.register("ender_crossbow", () -> new CrossbowItem(new Item.Properties().durability(1862).tab(OTWeaponTab.TAB)));
     public static final RegistryObject<Item> BLAZE_AND_GOLD = ITEMS.register("blaze_and_gold", () -> new FlintAndSteelItem(new Item.Properties().durability(80).tab(OTWeaponTab.TAB)));
     public static final RegistryObject<Item> BLAZE_SHEARS = ITEMS.register("blaze_shears", () -> new ShearsItem(new Item.Properties().durability(348).tab(OTWeaponTab.TAB)));
     public static final RegistryObject<Item> BAMBOO_FISHING_ROD = ITEMS.register("bamboo_fishing_rod", () -> new FishingRodItem(new Item.Properties().durability(72).tab(OTWeaponTab.TAB)));
-    public static final RegistryObject<Item> CARROT_ON_A_BAMBOO = ITEMS.register("carrot_on_a_bamboo", () -> new OnAStickItem<>(new Item.Properties().durability(75).tab(OTWeaponTab.TAB), EntityType.PIG, 7));
-    public static final RegistryObject<Item> WARPED_FUNGUS_ON_A_BAMBOO = ITEMS.register("warped_fungus_on_a_bamboo", () -> new OnAStickItem<>(new Item.Properties().durability(125).tab(OTWeaponTab.TAB), EntityType.STRIDER, 1));
+    public static final RegistryObject<Item> CARROT_ON_A_BAMBOO = ITEMS.register("carrot_on_a_bamboo", () -> new BambooOnAStickItem<>(EntityType.PIG, 7, new Item.Properties().durability(75).tab(OTWeaponTab.TAB)));
+    public static final RegistryObject<Item> WARPED_FUNGUS_ON_A_BAMBOO = ITEMS.register("warped_fungus_on_a_bamboo", () -> new BambooOnAStickItem<>(EntityType.STRIDER, 1, new Item.Properties().durability(125).tab(OTWeaponTab.TAB)));
     public static final RegistryObject<Item> MELONNIERS_CAPE = ITEMS.register("melon_cape", () -> new Item(new Item.Properties().rarity(Rarity.UNCOMMON).stacksTo(1).tab(OTWeaponTab.TAB)));
     public static final RegistryObject<Item> BAT_WINGS = ITEMS.register("bat_wing", () -> new Item(new Item.Properties().durability(750).rarity(Rarity.UNCOMMON).tab(OTWeaponTab.TAB)));
     public static final RegistryObject<Item> BEE_WINGS = ITEMS.register("bee_wing", () -> new OTElytraItem(new Item.Properties().durability(750).rarity(Rarity.UNCOMMON).tab(OTWeaponTab.TAB)));

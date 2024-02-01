@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# #",
+    " @ "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:orange_terracotta"
+    },
+    "@": {
+      "item": "minecraft:white_terracotta"
+    }
+  },
+  "result": {
+    "item": "others:orange_flower_pot"
+  }
+}

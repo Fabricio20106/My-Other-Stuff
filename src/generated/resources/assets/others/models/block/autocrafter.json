@@ -1,11 +1,12 @@
 {
   "parent": "minecraft:block/cube",
   "textures": {
-    "down": "minecraft:block/gray_concrete",
-    "up": "others:block/autocrafter_top",
-    "north": "others:block/autocrafter_front",
-    "south": "others:block/autocrafter_front",
-    "east": "others:block/autocrafter_front",
-    "west": "others:block/autocrafter_front"
+    "down": "others:block/crafter_bottom",
+    "up": "others:block/crafter_top",
+    "north": "others:block/crafter_front",
+    "south": "others:block/crafter_front",
+    "east": "others:block/crafter_side",
+    "west": "others:block/crafter_side",
+    "particle": "others:block/crafter_front"
   }
 }

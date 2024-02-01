@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "C",
+    "C",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:rods/wooden"
+    },
+    "C": {
+      "tag": "forge:ingots/nether"
+    }
+  },
+  "result": {
+    "item": "others:nether_sword"
+  }
+}

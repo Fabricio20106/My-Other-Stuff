@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "tile_stairs",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "others:nether_tiles"
+    }
+  },
+  "result": {
+    "item": "others:nether_tile_stairs",
+    "count": 6
+  }
+}

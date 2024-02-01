@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#L#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:black_wool"
+    },
+    "L": {
+      "item": "minecraft:white_wool"
+    }
+  },
+  "result": {
+    "item": "others:sophryst_helmet"
+  }
+}

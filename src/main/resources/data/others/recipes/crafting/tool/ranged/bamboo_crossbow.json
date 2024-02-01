@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#&#",
+    "~$~",
+    " # "
+  ],
+  "key": {
+    "~": {
+      "tag": "forge:string"
+    },
+    "#": {
+      "item": "minecraft:bamboo"
+    },
+    "&": {
+      "tag": "forge:ingots/iron"
+    },
+    "$": {
+      "item": "minecraft:tripwire_hook"
+    }
+  },
+  "result": {
+    "item": "others:bamboo_crossbow"
+  }
+}

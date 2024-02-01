@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "nether_core",
+  "ingredients": [
+    {
+      "tag": "forge:storage_blocks/nether_core"
+    }
+  ],
+  "result": {
+    "item": "others:nether_core",
+    "count": 9
+  }
+}

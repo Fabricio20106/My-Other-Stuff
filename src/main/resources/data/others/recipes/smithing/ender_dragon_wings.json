@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:elytra"
+  },
+  "addition": {
+    "item": "minecraft:dragon_head"
+  },
+  "result": {
+    "item": "others:dragon_wing"
+  }
+}

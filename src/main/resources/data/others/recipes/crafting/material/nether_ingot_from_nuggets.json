@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "group": "others:nether_ingot",
+  "group": "nether_ingot",
   "pattern": [
     "###",
     "###",

@@ -54,6 +54,7 @@ public class OTItemModelProvider extends ItemModelProvider {
         ModelFile generated = getExistingFile(mcLoc("item/generated"));
         ModelFile handheld = getExistingFile(mcLoc("item/handheld"));
         ModelFile handheldRod = getExistingFile(mcLoc("item/handheld_rod"));
+        ModelFile templateBow = getExistingFile(modLoc("item/template_bow"));
 
         // Transition Models
         // Blocks
@@ -330,6 +331,13 @@ public class OTItemModelProvider extends ItemModelProvider {
         toolSet(handheld, "magentic_crystal");
         toolSet(handheld, "diaemerald");
 
+        bow("blaze_bow");
+        bow("bamboo_bow");
+        crossbow("blaze_crossbow");
+        crossbow("bamboo_crossbow");
+        crossbow("diamond_crossbow");
+        crossbow("ender_crossbow");
+
         // Armors
         armorSet(generated, "anchor", false);
         armorSet(generated, "shulker", false);
@@ -452,5 +460,38 @@ public class OTItemModelProvider extends ItemModelProvider {
         }
         getBuilder(name + "_leggings").parent(parent).texture("layer0", "item/" + name + "_leggings");
         getBuilder(name + "_boots").parent(parent).texture("layer0", "item/" + name + "_boots");
+    }
+
+    private void bow(String name) {
+        ModelFile templateBow = getExistingFile(modLoc("item/template_bow"));
+
+        // Pulling States
+        standard(templateBow, name + "_pulling_0");
+        standard(templateBow, name + "_pulling_1");
+        standard(templateBow, name + "_pulling_2");
+
+        // Main Bow
+        getBuilder(name).parent(templateBow).texture("layer0", modLoc("item/" + name)).override().predicate(new ResourceLocation("pulling"), 1)
+                .model(getExistingFile(modLoc("item/" + name + "_pulling_0"))).end().override().predicate(new ResourceLocation("pulling"), 1).predicate(new ResourceLocation("pull"), 0.65f)
+                .model(getExistingFile(modLoc("item/" + name + "_pulling_1"))).end().override().predicate(new ResourceLocation("pulling"), 1).predicate(new ResourceLocation("pull"), 0.9f)
+                .model(getExistingFile(modLoc("item/" + name + "_pulling_2"))).end();
+    }
+
+    private void crossbow(String name) {
+        ModelFile templateCrossbow = getExistingFile(modLoc("item/template_crossbow"));
+
+        // Pulling States
+        standard(templateCrossbow, name + "_pulling_0"); // pulling=1
+        standard(templateCrossbow, name + "_pulling_1"); // pulling=1, pull=0.58
+        standard(templateCrossbow, name + "_pulling_2"); // pulling=1, pull=1
+        standard(templateCrossbow, name + "_arrow"); // charged=1
+        standard(templateCrossbow, name + "_firework"); // charged=1, firework=1
+
+        getBuilder(name).parent(templateCrossbow).texture("layer0", modLoc("item/" + name + "_standby"))
+                .override().predicate(new ResourceLocation("pulling"), 1).model(getExistingFile(modLoc("item/" + name + "_pulling_0"))).end()
+                .override().predicate(new ResourceLocation("pulling"), 1).predicate(new ResourceLocation("pull"), 0.58f).model(getExistingFile(modLoc("item/" + name + "_pulling_1"))).end()
+                .override().predicate(new ResourceLocation("pulling"), 1).predicate(new ResourceLocation("pull"), 1).model(getExistingFile(modLoc("item/" + name + "_pulling_2"))).end()
+                .override().predicate(new ResourceLocation("charged"), 1).model(getExistingFile(modLoc("item/" + name + "_arrow"))).end()
+                .override().predicate(new ResourceLocation("charged"), 1).predicate(new ResourceLocation("firework"), 1).model(getExistingFile(modLoc("item/" + name + "_firework"))).end();
     }
 }

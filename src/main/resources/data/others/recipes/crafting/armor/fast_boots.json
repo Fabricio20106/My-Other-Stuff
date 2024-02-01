@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# #",
+    "L L"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:white_concrete"
+    },
+    "L": {
+      "tag": "forge:gems/magentic"
+    }
+  },
+  "result": {
+    "item": "others:fast_boots"
+  }
+}

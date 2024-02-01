@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "L L",
+    "# #"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:white_wool"
+    },
+    "L": {
+      "tag": "forge:gems/emerald"
+    }
+  },
+  "result": {
+    "item": "others:sophryst_boots"
+  }
+}

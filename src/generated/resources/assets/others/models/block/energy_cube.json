@@ -1,6 +1,8 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "others:block/template_two_layer_block",
   "textures": {
-    "all": "others:block/energy_cube"
+    "block": "others:block/creative_energy_cube",
+    "overlay": "others:block/creative_energy_cube_outer",
+    "particle": "others:block/creative_energy_cube"
   }
 }

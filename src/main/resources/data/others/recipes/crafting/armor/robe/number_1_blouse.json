@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# #",
+    "#L#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:blue_wool"
+    },
+    "L": {
+      "item": "minecraft:orange_wool"
+    }
+  },
+  "result": {
+    "item": "others:number_1"
+  }
+}

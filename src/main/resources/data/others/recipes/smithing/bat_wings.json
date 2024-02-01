@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:elytra"
+  },
+  "addition": {
+    "item": "minecraft:bat_spawn_egg"
+  },
+  "result": {
+    "item": "others:bat_wings"
+  }
+}

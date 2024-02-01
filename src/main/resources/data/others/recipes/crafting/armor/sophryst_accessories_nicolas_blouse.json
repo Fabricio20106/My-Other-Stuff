@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# #",
+    "FLF",
+    "#L#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:black_wool"
+    },
+    "L": {
+      "item": "minecraft:white_wool"
+    },
+    "F": {
+      "tag": "minecraft:small_flowers"
+    }
+  },
+  "result": {
+    "item": "others:sophryst_chestplate"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "credit": "Made with Blockbench by JuneTheWoods",
+  "parent": "block/block",
+  "elements": [
+    {
+      "from": [0, 0, 0],
+      "to": [16, 16, 16],
+      "color": 9,
+      "faces": {
+        "north": {"uv": [0, 0, 16, 16], "texture": "#block"},
+        "east": {"uv": [0, 0, 16, 16], "texture": "#block"},
+        "south": {"uv": [0, 0, 16, 16], "texture": "#block"},
+        "west": {"uv": [0, 0, 16, 16], "texture": "#block"},
+        "up": {"uv": [0, 0, 16, 16], "texture": "#block"},
+        "down": {"uv": [0, 0, 16, 16], "texture": "#block"}
+      }
+    },
+    {
+      "from": [-0.5, -0.5, -0.5],
+      "to": [16.5, 16.5, 16.5],
+      "color": 5,
+      "faces": {
+        "north": {"uv": [0, 0, 16, 16], "texture": "#overlay"},
+        "east": {"uv": [0, 0, 16, 16], "texture": "#overlay"},
+        "south": {"uv": [0, 0, 16, 16], "texture": "#overlay"},
+        "west": {"uv": [0, 0, 16, 16], "texture": "#overlay"},
+        "up": {"uv": [0, 0, 16, 16], "texture": "#overlay"},
+        "down": {"uv": [0, 0, 16, 16], "texture": "#overlay"}
+      }
+    }
+  ]
+}

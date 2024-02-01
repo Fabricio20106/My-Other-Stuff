@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " #C",
+    "# C",
+    " #C"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:rods/blaze"
+    },
+    "C": {
+      "tag": "forge:string"
+    }
+  },
+  "result": {
+    "item": "others:blaze_bow"
+  }
+}

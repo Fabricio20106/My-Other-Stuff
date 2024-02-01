@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "# #",
+    "L L"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:purple_wool"
+    },
+    "L": {
+      "item": "minecraft:white_terracotta"
+    }
+  },
+  "result": {
+    "item": "others:magenta_short"
+  }
+}

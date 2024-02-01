@@ -109,6 +109,9 @@ public class OTBlockTagsProvider extends BlockTagsProvider {
         this.tag(OTTags.Blocks.CAVES_AND_CLIFFS_CONTENT).add(OTBlocks.AZALEA_LEAVES.get()).add(OTBlocks.FLOWERING_AZALEA_LEAVES.get()).add(OTBlocks.AZALEA.get())
                 .add(OTBlocks.FLOWERING_AZALEA.get()).add(OTBlocks.POTTED_AZALEA.get()).add(OTBlocks.POTTED_FLOWERING_AZALEA.get()).add(OTBlocks.MOSS_BLOCK.get())
                 .add(OTBlocks.MOSS_CARPET.get()).add(OTBlocks.ROOTED_DIRT.get()).add(OTBlocks.HANGING_ROOTS.get());
+
+        // Melony Tags
+        this.tag(OTTags.Blocks.DEEPSLATE_REPLACEABLES);
         this.tag(OTTags.Blocks.CRAFTING_TABLES).add(Blocks.CRAFTING_TABLE).add(OTBlocks.CRAFTER.get()).add(OTBlocks.DRAWN_CRAFTING_TABLE.get());
         this.tag(OTTags.Blocks.SMITHING_TABLES).add(Blocks.SMITHING_TABLE).add(OTBlocks.DRAWN_SMITHING_TABLE.get());
     }

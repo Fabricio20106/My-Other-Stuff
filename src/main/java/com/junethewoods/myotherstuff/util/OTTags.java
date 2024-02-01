@@ -79,6 +79,9 @@ public class OTTags {
         public static final ITag.INamedTag<Item> RAW_MATERIALS_INNO = forge("raw_materials/inno");
         public static final ITag.INamedTag<Item> RAW_MATERIALS_NETHER = forge("raw_materials/nether");
 
+        public static final ITag.INamedTag<Item> ARMORS_BOOTS = forge("armors/boots");
+        public static final ITag.INamedTag<Item> ELYTRA = forge("elytra");
+
         // Tags from My Other Stuff
         public static final ITag.INamedTag<Item> MINIFIGURES = mod("minifigures");
         public static final ITag.INamedTag<Item> SUITS = mod("suits");
@@ -92,25 +95,37 @@ public class OTTags {
         public static final ITag.INamedTag<Item> BELONGS_TO_RIMCRAFT = mod("belongs_to/rimcraft");
 
         public static final ITag.INamedTag<Item> CAVES_AND_CLIFFS_CONTENT = mod("caves_and_cliffs_content");
-        public static final ITag.INamedTag<Item> CRAFTING_TABLES = mod("crafting_tables");
-        public static final ITag.INamedTag<Item> SMITHING_TABLES = mod("smithing_tables");
         public static final ITag.INamedTag<Item> MONITORS = mod("monitors");
 
         // Tags from other mods
         // In Real Life - Sophie Clothes
         public static final ITag.INamedTag<Item> CLOTHS = otherMod("cloths", "inreallife");
         public static final ITag.INamedTag<Item> CLOTHS_REINFORCED = otherMod("cloths/reinforced", "inreallife");
+        public static final ITag.INamedTag<Item> CLOTHS_GALAXY = otherMod("cloths/galaxy", "inreallife");
+
+        // Melony
+        public static final ITag.INamedTag<Item> CRAFTING_TABLES = melony("crafting_tables");
+        public static final ITag.INamedTag<Item> SMITHING_TABLES = melony("smithing_tables");
+        public static final ITag.INamedTag<Item> BOWS = melony("bows");
+        public static final ITag.INamedTag<Item> CROSSBOWS = melony("crossbows");
+
+        // Curios
+        public static final ITag.INamedTag<Item> BACK_ITEMS = otherMod("back", "curios");
 
         public static ITag.INamedTag<Item> forge(String name) {
             return ItemTags.bind(new ResourceLocation("forge", name).toString());
+        }
+
+        public static ITag.INamedTag<Item> melony(String name) {
+            return ItemTags.bind(new ResourceLocation("melony", name).toString());
         }
 
         public static ITag.INamedTag<Item> mod(String name) {
             return ItemTags.bind(MyOtherStuff.resourceLoc(name).toString());
         }
 
-        public static ITag.INamedTag<Item> otherMod(String name, String modId) {
-            return ItemTags.bind(new ResourceLocation(modId, name).toString());
+        public static ITag.INamedTag<Item> otherMod(String name, String modID) {
+            return ItemTags.bind(new ResourceLocation(modID, name).toString());
         }
     }
 
@@ -147,11 +162,18 @@ public class OTTags {
         public static final ITag.INamedTag<Block> BELONGS_TO_RIMCRAFT = mod("belongs_to/rimcraft");
 
         public static final ITag.INamedTag<Block> CAVES_AND_CLIFFS_CONTENT = mod("caves_and_cliffs_content");
-        public static final ITag.INamedTag<Block> CRAFTING_TABLES = mod("crafting_tables");
-        public static final ITag.INamedTag<Block> SMITHING_TABLES = mod("smithing_tables");
+
+        // Melony Tags
+        public static final ITag.INamedTag<Block> DEEPSLATE_REPLACEABLES = melony("deepslate_replaceables");
+        public static final ITag.INamedTag<Block> CRAFTING_TABLES = melony("crafting_tables");
+        public static final ITag.INamedTag<Block> SMITHING_TABLES = melony("smithing_tables");
 
         public static ITag.INamedTag<Block> forge(String name) {
             return BlockTags.bind(new ResourceLocation("forge", name).toString());
+        }
+
+        public static ITag.INamedTag<Block> melony(String name) {
+            return BlockTags.bind(new ResourceLocation("melony", name).toString());
         }
 
         public static ITag.INamedTag<Block> mod(String name) {

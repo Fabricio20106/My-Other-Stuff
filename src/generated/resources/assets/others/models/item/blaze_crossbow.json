@@ -1,0 +1,41 @@
+{
+  "parent": "others:item/template_crossbow",
+  "textures": {
+    "layer0": "others:item/blaze_crossbow_standby"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "minecraft:pulling": 1.0
+      },
+      "model": "others:item/blaze_crossbow_pulling_0"
+    },
+    {
+      "predicate": {
+        "minecraft:pulling": 1.0,
+        "minecraft:pull": 0.58
+      },
+      "model": "others:item/blaze_crossbow_pulling_1"
+    },
+    {
+      "predicate": {
+        "minecraft:pulling": 1.0,
+        "minecraft:pull": 1.0
+      },
+      "model": "others:item/blaze_crossbow_pulling_2"
+    },
+    {
+      "predicate": {
+        "minecraft:charged": 1.0
+      },
+      "model": "others:item/blaze_crossbow_arrow"
+    },
+    {
+      "predicate": {
+        "minecraft:charged": 1.0,
+        "minecraft:firework": 1.0
+      },
+      "model": "others:item/blaze_crossbow_firework"
+    }
+  ]
+}

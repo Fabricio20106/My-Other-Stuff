@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "group": "others:first_ingot",
+  "group": "first_ingot",
   "pattern": [
     "###",
     "###",

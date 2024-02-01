@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "inno_core",
+  "ingredients": [
+    {
+      "tag": "forge:storage_blocks/inno_core"
+    }
+  ],
+  "result": {
+    "item": "others:inno_core",
+    "count": 9
+  }
+}

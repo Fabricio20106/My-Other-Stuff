@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "tile_slab",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "others:nether_tiles"
+    }
+  },
+  "result": {
+    "item": "others:nether_tile_slab",
+    "count": 6
+  }
+}

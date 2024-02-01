@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "value": {
+        "tag": "inreallife:cloths/galaxy",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "pattern": [
+    "# #",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "tag": "inreallife:cloths/galaxy"
+    }
+  },
+  "result": {
+    "item": "others:galaxy_chestplate"
+  }
+}

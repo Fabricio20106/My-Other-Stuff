@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "tile_stairs",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "others:blue_block"
+    }
+  },
+  "result": {
+    "item": "others:blue_stairs",
+    "count": 6
+  }
+}

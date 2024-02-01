@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:storage_blocks/raw_inno"
+    }
+  ],
+  "result": {
+    "item": "others:raw_inno",
+    "count": 9
+  }
+}

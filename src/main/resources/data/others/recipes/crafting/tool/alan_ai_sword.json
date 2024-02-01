@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "C",
+    "C",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:dusts/coal"
+    },
+    "C": {
+      "tag": "forge:gems/lapis"
+    }
+  },
+  "result": {
+    "item": "others:alan_ai_sword"
+  }
+}

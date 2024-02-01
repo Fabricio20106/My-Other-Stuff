@@ -72,7 +72,15 @@ public class OTItemTagsProvider extends ItemTagsProvider {
 
         this.tag(OTTags.Items.RODS_SOUL_BLAZE).add(OTItems.SOUL_BLAZE_ROD.get());
         this.tag(OTTags.Items.CLOTHS_REINFORCED).add(OTItems.REINFORCED_CLOTH.get());
+        this.tag(OTTags.Items.CLOTHS_GALAXY).add(OTItems.GALAXY_CLOTH.get());
         this.tag(OTTags.Items.DYES_INNO).add(OTItems.INNO_DYE.get());
+
+        this.tag(Tags.Items.SHEARS).add(OTItems.BLAZE_SHEARS.get());
+
+        this.tag(OTTags.Items.ARMORS_BOOTS).add(OTItems.SOPHRYST_ACCESSORIES_NICOLAS_BOOTS.get()).add(OTItems.MAGENTIC_CRYSTAL_BOOTS.get()).add(OTItems.SHULKER_BOOTS.get()).add(OTItems.ANCHOR_BOOTS.get()).add(OTItems.FAST_BOOTS.get())
+                .add(OTItems.RUNNING_SHOES.get()).add(OTItems.FINN_BOOTS.get()).add(OTItems.FIM_BOOTS.get()).add(OTItems.HAN_SOLO_BOOTS.get()).add(OTItems.MARIO_BOOTS.get()).add(OTItems.PONY_SHOES.get());
+        this.tag(OTTags.Items.ELYTRA).add(OTItems.BEE_WINGS.get()).add(OTItems.ENDER_DRAGON_WINGS.get()).add(OTItems.RED_PARROT_WINGS.get()).add(OTItems.VEX_WINGS.get()).add(OTItems.BLAZE_ELYTRA.get()).add(OTItems.FAST_ELYTRA.get());
+        this.tag(OTTags.Items.BACK_ITEMS).add(OTItems.BEE_WINGS.get()).add(OTItems.ENDER_DRAGON_WINGS.get()).add(OTItems.RED_PARROT_WINGS.get()).add(OTItems.VEX_WINGS.get()).add(OTItems.BLAZE_ELYTRA.get()).add(OTItems.FAST_ELYTRA.get());
 
         this.tag(OTTags.Items.STORAGE_BLOCKS_DIAEMERALD).add(OTItems.DIAEMERALD_BLOCK.get());
         this.tag(OTTags.Items.STORAGE_BLOCKS_MAGENTIC).add(OTItems.MAGENTIC_CRYSTAL_BLOCK.get());
@@ -125,7 +133,7 @@ public class OTItemTagsProvider extends ItemTagsProvider {
                 .addTag(OTTags.Items.DUSTS_IRON).addTag(OTTags.Items.DUSTS_COPPER).addTag(OTTags.Items.DUSTS_LAPIS).addTag(OTTags.Items.DUSTS_NETHERITE)
                 .addTag(OTTags.Items.DUSTS_NETHERITE_SCRAP).addTag(OTTags.Items.DUSTS_QUARTZ);
         this.tag(Tags.Items.RODS).addTag(OTTags.Items.RODS_SOUL_BLAZE);
-        this.tag(OTTags.Items.CLOTHS).addTag(OTTags.Items.CLOTHS_REINFORCED);
+        this.tag(OTTags.Items.CLOTHS).addTag(OTTags.Items.CLOTHS_REINFORCED).addTag(OTTags.Items.CLOTHS_GALAXY);
         this.tag(Tags.Items.DYES).addTag(OTTags.Items.DYES_INNO);
 
         // Adding items from OTTags to Minecraft tags.
@@ -160,7 +168,12 @@ public class OTItemTagsProvider extends ItemTagsProvider {
                 .add(OTItems.FLOWERING_AZALEA.get()).add(OTItems.MOSS_BLOCK.get()).add(OTItems.MOSS_CARPET.get()).add(OTItems.ROOTED_DIRT.get()).add(OTItems.HANGING_ROOTS.get())
                 .add(OTItems.AZALEA_HELM.get()).add(OTItems.AMETHYST_SWORD.get()).add(OTItems.LIGHTNING_SWORD.get()).add(OTItems.COPPER_DUST.get());
         this.tag(OTTags.Items.MONITORS).add(OTItems.MONITOR.get()).add(OTItems.SCREEN_MONITOR.get());
+
+        // Melony Tags
         this.tag(OTTags.Items.CRAFTING_TABLES).add(Items.CRAFTING_TABLE).add(OTItems.CRAFTER.get()).add(OTItems.DRAWN_CRAFTING_TABLE.get());
         this.tag(OTTags.Items.SMITHING_TABLES).add(Items.SMITHING_TABLE).add(OTItems.DRAWN_SMITHING_TABLE.get());
+
+        this.tag(OTTags.Items.BOWS).add(OTItems.BLAZE_BOW.get()).add(OTItems.BAMBOO_BOW.get());
+        this.tag(OTTags.Items.CROSSBOWS).add(OTItems.BLAZE_CROSSBOW.get()).add(OTItems.BAMBOO_CROSSBOW.get()).add(OTItems.DIAMOND_CROSSBOW.get()).add(OTItems.ENDER_CROSSBOW.get());
     }
 }

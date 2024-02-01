@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "tile_slab",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "others:blue_block"
+    }
+  },
+  "result": {
+    "item": "others:blue_slab",
+    "count": 6
+  }
+}

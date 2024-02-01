@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " #C",
+    "# C",
+    " #C"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:bamboo"
+    },
+    "C": {
+      "tag": "forge:string"
+    }
+  },
+  "result": {
+    "item": "others:bamboo_bow"
+  }
+}

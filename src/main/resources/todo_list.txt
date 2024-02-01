@@ -4,15 +4,23 @@ To-Do List for Others:
 - Add new recipes & fix existing ones;
 - Make Drawn Crafting Tables and Crafters able to have their menus opened [done];
 - Add Drawn Savannas & Drawn Acacia Trees;
-- Phoenix Gem, Phoenix Staff & Phoenix Gem Block;
-- Loading textures for Bamboo Bow, Bamboo Crossbow, Blaze Bow, Blaze Crossbow, Diamond Crossbow & Ender Crossbow;
+- Phoenix Gem [done], Phoenix Staff & Phoenix Gem Block; [done]
+- Loading textures for Bamboo Bow, Bamboo Crossbow, Blaze Bow, Blaze Crossbow, Diamond Crossbow & Ender Crossbow; [done]
 - Tall Birch, Swamp Oak & Jungle Bush Saplings [done];
 - Retextures:
-   - Monitor & Screen Monitor;
-   - CPU;
-   - (Auto) Crafter (texture will be inspired by the 1.21 crafter).
+   - Monitor & Screen Monitor; [done]
+   - CPU; [done]
+   - (Auto) Crafter (texture will be inspired by the 1.21 crafter). [done]
 
 To Add (31/01/2024):
 
 - Add "Faquinha"
 - Downscale Angel Rings & Mining Spoon
+- Deepslate ore generation [done]
+- Configs [done]
+    - Ore Generation [done]
+- Wandering Trader trades
+- Way too many recipes
+- Update existing recipes to match block textures
+- Remove recipes for discontinued items
+- Add broken textures for all elytras/wings

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# #",
+    "#L#",
+    "#L#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:blue_wool"
+    },
+    "L": {
+      "item": "minecraft:white_wool"
+    }
+  },
+  "result": {
+    "item": "others:empresary_robe"
+  }
+}
