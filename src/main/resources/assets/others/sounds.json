@@ -1,7 +1,6 @@
 {
   "music_disc.blockades": {
     "category": "record",
-    "subtitle": "music_disc.blockades",
     "sounds": [
       {
         "name": "others:music_disc/blockades",
@@ -11,7 +10,6 @@
   },
   "music_disc.first_date": {
     "category": "record",
-    "subtitle": "music_disc.first_date",
     "sounds": [
       {
         "name": "others:music_disc/first_date",
@@ -21,7 +19,6 @@
   },
   "music_disc.omae_wa_mu": {
     "category": "record",
-    "subtitle": "music_disc.omae_wa_mu",
     "sounds": [
       {
         "name": "others:music_disc/omae_wa_mu",
@@ -31,7 +28,6 @@
   },
   "music_disc.sfos": {
     "category": "record",
-    "subtitle": "music_disc.sfos",
     "sounds": [
       {
         "name": "others:music_disc/sfos",
@@ -41,7 +37,6 @@
   },
   "music_disc.traces": {
     "category": "record",
-    "subtitle": "music_disc.traces",
     "sounds": [
       {
         "name": "others:music_disc/traces",
@@ -49,9 +44,27 @@
       }
     ]
   },
+  "music_disc.otherside": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "others:music_disc/otherside",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc.relic": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "others:music_disc/relic",
+        "stream": true
+      }
+    ]
+  },
   "block.deepslate.break": {
     "category": "block",
-    "subtitle": "block.deepslate.break",
+    "subtitle": "subtitles.block.generic.break",
     "sounds": [
       {
         "name": "others:block/deepslate/break",

@@ -1,7 +1,6 @@
 package com.junethewoods.myotherstuff.world.ore;
 
 import com.junethewoods.myotherstuff.block.OTBlocks;
-import com.junethewoods.myotherstuff.config.OTConfigs;
 import com.junethewoods.myotherstuff.util.OTTags;
 import net.minecraft.block.BlockState;
 import net.minecraft.world.biome.Biome;

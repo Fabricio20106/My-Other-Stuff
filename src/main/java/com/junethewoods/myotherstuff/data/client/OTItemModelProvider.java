@@ -253,6 +253,10 @@ public class OTItemModelProvider extends ItemModelProvider {
         standard(generated, "alex_1");
         standard(generated, "steve_0");
         standard(generated, "steve_1");
+        standard(generated, "mini_beekeeper");
+        standard(generated, "mini_baker");
+        standard(generated, "mini_diver");
+        standard(generated, "mini_miner");
         standard(generated, "zombie_0");
         standard(generated, "creeper_0");
         standard(generated, "villager_alan_0");
@@ -282,6 +286,8 @@ public class OTItemModelProvider extends ItemModelProvider {
         standard(generated, "music_disc_rubedo");
         standard(generated, "music_disc_chrysopoeia");
         standard(generated, "music_disc_so_below");
+        standard(generated, "music_disc_otherside");
+        standard(generated, "music_disc_relic");
 
         // Tools & Weapons
         standard(handheld, "coal_sword");

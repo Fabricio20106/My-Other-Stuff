@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:dirt",
+    "#melony:farmland",
+    "others:moss_block",
+    "minecraft:clay"
+  ]
+}

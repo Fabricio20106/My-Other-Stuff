@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "others:music_disc_otherside",
+    "others:music_disc_relic",
     "others:music_disc_rubedo",
     "others:music_disc_chrysopoeia",
     "others:music_disc_so_below",

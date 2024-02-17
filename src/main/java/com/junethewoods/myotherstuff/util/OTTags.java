@@ -103,6 +103,9 @@ public class OTTags {
         public static final ITag.INamedTag<Item> CLOTHS_REINFORCED = otherMod("cloths/reinforced", "inreallife");
         public static final ITag.INamedTag<Item> CLOTHS_GALAXY = otherMod("cloths/galaxy", "inreallife");
 
+        // Project Alcook
+        public static final ITag.INamedTag<Item> MINI_PEOPLE = otherMod("mini_people", "project_alcook");
+
         // Melony
         public static final ITag.INamedTag<Item> CRAFTING_TABLES = melony("crafting_tables");
         public static final ITag.INamedTag<Item> SMITHING_TABLES = melony("smithing_tables");
@@ -162,11 +165,17 @@ public class OTTags {
         public static final ITag.INamedTag<Block> BELONGS_TO_RIMCRAFT = mod("belongs_to/rimcraft");
 
         public static final ITag.INamedTag<Block> CAVES_AND_CLIFFS_CONTENT = mod("caves_and_cliffs_content");
+        public static final ITag.INamedTag<Block> AZALEA_PLACEABLE_ON = mod("azalea_placeable_on");
+        public static final ITag.INamedTag<Block> BLUE_CARROTS_PLANTABLE_ON = mod("blue_carrots_plantable_on");
 
         // Melony Tags
         public static final ITag.INamedTag<Block> DEEPSLATE_REPLACEABLES = melony("deepslate_replaceables");
+        public static final ITag.INamedTag<Block> FARMLAND = melony("farmland");
         public static final ITag.INamedTag<Block> CRAFTING_TABLES = melony("crafting_tables");
         public static final ITag.INamedTag<Block> SMITHING_TABLES = melony("smithing_tables");
+
+        // Other Mods
+        public static final ITag.INamedTag<Block> INFINIBURN_ALJAN = otherMod("infiniburn_aljan", "backmath");
 
         public static ITag.INamedTag<Block> forge(String name) {
             return BlockTags.bind(new ResourceLocation("forge", name).toString());
@@ -178,6 +187,10 @@ public class OTTags {
 
         public static ITag.INamedTag<Block> mod(String name) {
             return BlockTags.bind(MyOtherStuff.resourceLoc(name).toString());
+        }
+
+        public static ITag.INamedTag<Block> otherMod(String name, String modID) {
+            return BlockTags.bind(new ResourceLocation(modID, name).toString());
         }
     }
 }

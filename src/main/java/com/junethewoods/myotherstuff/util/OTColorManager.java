@@ -14,7 +14,6 @@ public class OTColorManager {
     @OnlyIn(Dist.CLIENT)
     @SubscribeEvent
     public static void registerBlockColorHandlers(final ColorHandlerEvent.Block event) {
-        event.getBlockColors().register((x, reader, pos, u) -> reader != null && pos != null ? BiomeColors.getAverageWaterColor(reader, pos) : -1,
-                OTBlocks.GOLDEN_CAULDRON.get());
+        event.getBlockColors().register((x, reader, pos, u) -> reader != null && pos != null ? BiomeColors.getAverageWaterColor(reader, pos) : -1, OTBlocks.GOLDEN_CAULDRON.get());
     }
 }

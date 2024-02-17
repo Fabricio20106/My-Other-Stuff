@@ -15,8 +15,8 @@ public class OTWorkbenchContainer extends WorkbenchContainer {
     }
 
     protected static boolean stillValid(IWorldPosCallable access, PlayerEntity player) {
-        return access.evaluate((world, pos) -> world.getBlockState(pos).is(OTTags.Blocks.CRAFTING_TABLES) && player.distanceToSqr((double) pos.getX() + 0.5d,
-                (double) pos.getY() + 0.5d, (double) pos.getZ() + 0.5d) <= 64, true);
+        return access.evaluate((world, pos) -> world.getBlockState(pos).is(OTTags.Blocks.CRAFTING_TABLES) && player.distanceToSqr((double) pos.getX() + 0.5D,
+                (double) pos.getY() + 0.5D, (double) pos.getZ() + 0.5D) <= 64, true);
     }
 
     @Override

@@ -10,6 +10,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.item.MerchantOffer;
 import net.minecraft.world.biome.Biome;
+import net.minecraft.world.biome.Biomes;
 import net.minecraft.world.gen.GenerationStage;
 import net.minecraftforge.common.world.BiomeGenerationSettingsBuilder;
 import net.minecraftforge.event.village.WandererTradesEvent;
@@ -27,11 +28,11 @@ public class OTEvents {
         BiomeGenerationSettingsBuilder settings = event.getGeneration();
 
         // World Generation
-        if (event.getCategory() == Biome.Category.PLAINS || event.getCategory() == Biome.Category.FOREST && OTConfigs.COMMON_CONFIGS.enableObtainingDiscontinuedItems.get()) {
-            settings.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, OTFeatures.INNO_FLOWER_PATCH);
+        if (event.getCategory() == Biome.Category.PLAINS || event.getCategory() == Biome.Category.FOREST) {
+            if (OTConfigs.COMMON_CONFIGS.enableObtainingDiscontinuedItems.get()) settings.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, OTFeatures.INNO_FLOWER_PATCH);
         }
-        if (event.getCategory() == Biome.Category.FOREST && OTConfigs.COMMON_CONFIGS.azaleaTreeGeneration.get()) {
-            settings.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, OTFeatures.AZALEA_TREES);
+        if (event.getName() != null && event.getName().equals(Biomes.FOREST.getRegistryName()) || event.getName().equals(Biomes.WOODED_HILLS.getRegistryName())) {
+            if (OTConfigs.COMMON_CONFIGS.azaleaTreeGeneration.get()) settings.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, OTFeatures.AZALEA_TREES);
         }
         if (OTConfigs.COMMON_CONFIGS.diaemeraldOreGeneration.get()) OTOreGeneration.generateDiaemeraldOres(event);
         if (OTConfigs.COMMON_CONFIGS.magenticCrystalOreGeneration.get()) OTOreGeneration.generateMagenticCrystalOres(event);
@@ -45,15 +46,15 @@ public class OTEvents {
 
         genericTrades.add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD, 5), new ItemStack(OTItems.TALL_BIRCH_SAPLING.get(), 1),
                 // Max Trades, XP, Price Multiplier
-                8, 1, 0.05f));
-        genericTrades.add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD, 5), new ItemStack(OTItems.SWAMP_OAK_SAPLING.get(), 1), 8, 1, 0.05f));
-        genericTrades.add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD, 5), new ItemStack(OTItems.JUNGLE_BUSH_SAPLING.get(), 1), 8, 1, 0.05f));
-        genericTrades.add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD, 1), new ItemStack(OTItems.MOSS_BLOCK.get(), 2), 5, 1, 0.05f));
-        genericTrades.add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD, 1), new ItemStack(OTItems.ROOTED_DIRT.get(), 2), 5, 1, 0.05f));
+                8, 1, 0.05F));
+        genericTrades.add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD, 5), new ItemStack(OTItems.SWAMP_OAK_SAPLING.get(), 1), 8, 1, 0.05F));
+        genericTrades.add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD, 5), new ItemStack(OTItems.JUNGLE_BUSH_SAPLING.get(), 1), 8, 1, 0.05F));
+        genericTrades.add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD, 1), new ItemStack(OTItems.MOSS_BLOCK.get(), 2), 5, 1, 0.05F));
+        genericTrades.add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD, 1), new ItemStack(OTItems.ROOTED_DIRT.get(), 2), 5, 1, 0.05F));
 
         if (OTConfigs.COMMON_CONFIGS.enableObtainingDiscontinuedItems.get()) {
-            genericTrades.add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD, 1), new ItemStack(OTItems.INNO_FLOWER.get(), 1), 12, 1, 0.05f));
-            genericTrades.add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD, 1), new ItemStack(OTItems.INNO_DYE.get(), 3), 12, 1, 0.05f));
+            genericTrades.add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD, 1), new ItemStack(OTItems.INNO_FLOWER.get(), 1), 12, 1, 0.05F));
+            genericTrades.add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD, 1), new ItemStack(OTItems.INNO_DYE.get(), 3), 12, 1, 0.05F));
         }
     }
 }

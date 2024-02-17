@@ -109,12 +109,12 @@ public class OTItemTagsProvider extends ItemTagsProvider {
         this.tag(OTTags.Items.BELONGS_TO_F10_PACK).add(OTItems.BLUE_CARROT.get());
         this.tag(OTTags.Items.BELONGS_TO_RIMCRAFT).add(OTItems.GRANITE_BRICKS.get()).add(OTItems.SLATE_BRICKS.get()).add(OTItems.PLASTEEL_BLOCK.get());
 
-        this.tag(OTTags.Items.MINIFIGURES).add(OTItems.ALAN.get()).add(OTItems.YELLOW_ARMS_ALICE.get()).add(OTItems.CREEPER_ARMS_ALICE.get()).add(OTItems.INNO_ALICE.get()).add(OTItems.RED_ARMS_INNOVATOR.get())
-                .add(OTItems.WHITE_ARMS_INNOVATOR.get()).add(OTItems.SPACER_INNOVATOR.get()).add(OTItems.TYLER.get()).add(OTItems.MALENA.get()).add(OTItems.MAGMA_HEAD_NICOLAS.get())
-                .add(OTItems.LOUISE.get()).add(OTItems.ALEX.get()).add(OTItems.STEVE.get()).add(OTItems.WITHER_STEVE.get()).add(OTItems.ZOMBIE.get()).add(OTItems.CREEPER.get())
-                .add(OTItems.VILLAREN.get()).add(OTItems.FINN.get());
-        this.tag(OTTags.Items.SUITS).add(OTItems.PILLAGER_SUIT.get()).add(OTItems.VINDICATOR_SUIT.get()).add(OTItems.EVOKER_SUIT.get()).add(OTItems.ILLUSIONER_SUIT.get()).add(OTItems.PIGLIN_SUIT.get())
-                .add(OTItems.PIGLIN_BRUTE_SUIT.get()).add(OTItems.ZOMBIFIED_PIGLIN_SUIT.get()).add(OTItems.CREEPER_SUIT.get()).add(OTItems.CHARGED_CREEPER_SUIT.get());
+        this.tag(OTTags.Items.MINIFIGURES).add(OTItems.ALAN.get()).add(OTItems.YELLOW_ARMS_ALICE.get()).add(OTItems.CREEPER_ARMS_ALICE.get()).add(OTItems.INNO_ALICE.get()).add(OTItems.RED_ARMS_INNOVATOR.get()).add(OTItems.WHITE_ARMS_INNOVATOR.get())
+                .add(OTItems.SPACER_INNOVATOR.get()).add(OTItems.TYLER.get()).add(OTItems.MALENA.get()).add(OTItems.MAGMA_HEAD_NICOLAS.get()).add(OTItems.LOUISE.get()).add(OTItems.ALEX.get()).add(OTItems.STEVE.get()).add(OTItems.WITHER_STEVE.get())
+                .add(OTItems.MINI_BEEKEEPER.get()).add(OTItems.MINI_BAKER.get()).add(OTItems.MINI_DIVER.get()).add(OTItems.MINI_MINER.get()).add(OTItems.ZOMBIE.get()).add(OTItems.CREEPER.get()).add(OTItems.VILLAREN.get()).add(OTItems.FINN.get());
+        this.tag(OTTags.Items.SUITS).add(OTItems.PILLAGER_SUIT.get()).add(OTItems.VINDICATOR_SUIT.get()).add(OTItems.EVOKER_SUIT.get()).add(OTItems.ILLUSIONER_SUIT.get()).add(OTItems.PIGLIN_SUIT.get()).add(OTItems.PIGLIN_BRUTE_SUIT.get())
+                .add(OTItems.ZOMBIFIED_PIGLIN_SUIT.get()).add(OTItems.CREEPER_SUIT.get()).add(OTItems.CHARGED_CREEPER_SUIT.get());
+        this.tag(OTTags.Items.MINI_PEOPLE).addTag(OTTags.Items.MINIFIGURES);
 
         // Adding tags from OTTags to Forge tags.
         this.tag(Tags.Items.ORES).addTag(OTTags.Items.ORES_DIAEMERALD).addTag(OTTags.Items.ORES_MAGENTIC).addTag(OTTags.Items.ORES_INNO).addTag(OTTags.Items.ORES_NETHER);
@@ -135,6 +135,8 @@ public class OTItemTagsProvider extends ItemTagsProvider {
         this.tag(Tags.Items.RODS).addTag(OTTags.Items.RODS_SOUL_BLAZE);
         this.tag(OTTags.Items.CLOTHS).addTag(OTTags.Items.CLOTHS_REINFORCED).addTag(OTTags.Items.CLOTHS_GALAXY);
         this.tag(Tags.Items.DYES).addTag(OTTags.Items.DYES_INNO);
+        this.tag(Tags.Items.GLASS_COLORLESS).add(OTItems.BLUE_GLASS.get()).add(OTItems.CYAN_GLASS.get());
+        this.tag(Tags.Items.GLASS_PANES_COLORLESS).add(OTItems.BLUE_GLASS_PANE.get()).add(OTItems.CYAN_GLASS_PANE.get());
 
         // Adding items from OTTags to Minecraft tags.
 
@@ -157,7 +159,8 @@ public class OTItemTagsProvider extends ItemTagsProvider {
         this.tag(ItemTags.CARPETS).add(OTItems.MOSS_CARPET.get());
         this.tag(ItemTags.CREEPER_DROP_MUSIC_DISCS).add(OTItems.MUSIC_DISC_FIRST_DATE.get()).add(OTItems.MUSIC_DISC_OMAE_WA_MU.get()).add(OTItems.MUSIC_DISC_A_SKY_FULL_OF_STARS.get())
                 .add(OTItems.MUSIC_DISC_TRACES.get()).add(OTItems.MUSIC_DISC_UNDERWATER_TRACKS.get()).add(OTItems.MUSIC_DISC_CREATIVE_TRACKS.get()).add(OTItems.MUSIC_DISC_BLOCKADES.get());
-        this.tag(ItemTags.MUSIC_DISCS).add(OTItems.MUSIC_DISC_RUBEDO.get()).add(OTItems.MUSIC_DISC_CHRYSOPOEIA.get()).add(OTItems.MUSIC_DISC_SO_BELOW.get()).add(OTItems.ABU_TUNES.get());
+        this.tag(ItemTags.MUSIC_DISCS).add(OTItems.MUSIC_DISC_OTHERSIDE.get()).add(OTItems.MUSIC_DISC_RELIC.get()).add(OTItems.MUSIC_DISC_RUBEDO.get()).add(OTItems.MUSIC_DISC_CHRYSOPOEIA.get()).add(OTItems.MUSIC_DISC_SO_BELOW.get())
+                .add(OTItems.ABU_TUNES.get());
         this.tag(ItemTags.ARROWS).add(OTItems.BAMBOO_ARROW.get()).add(OTItems.BLAZE_ARROW.get());
 
         // Adding tags from OTTags to Others' tags.

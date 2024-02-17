@@ -65,6 +65,7 @@ public class OTBlockTagsProvider extends BlockTagsProvider {
                 .addTag(OTTags.Blocks.STORAGE_BLOCKS_DARK_FIRST).addTag(OTTags.Blocks.STORAGE_BLOCKS_INNO).addTag(OTTags.Blocks.STORAGE_BLOCKS_INNO_CORE)
                 .addTag(OTTags.Blocks.STORAGE_BLOCKS_RAW_INNO).addTag(OTTags.Blocks.STORAGE_BLOCKS_NETHER).addTag(OTTags.Blocks.STORAGE_BLOCKS_NETHER_CORE)
                 .addTag(OTTags.Blocks.STORAGE_BLOCKS_RAW_NETHER).addTag(OTTags.Blocks.STORAGE_BLOCKS_PLASTEEL).addTag(OTTags.Blocks.STORAGE_BLOCKS_PHOENIX);
+        this.tag(OTTags.Blocks.INFINIBURN_ALJAN).addTag(OTTags.Blocks.STORAGE_BLOCKS_PHOENIX);
         this.tag(Tags.Blocks.GLASS_COLORLESS).add(OTBlocks.BLUE_GLASS.get()).add(OTBlocks.CYAN_GLASS.get());
         this.tag(Tags.Blocks.GLASS_PANES_COLORLESS).add(OTBlocks.BLUE_GLASS_PANE.get()).add(OTBlocks.CYAN_GLASS_PANE.get());
         this.tag(Tags.Blocks.DIRT).add(OTBlocks.ROOTED_DIRT.get()).add(OTBlocks.MOSS_BLOCK.get());
@@ -109,9 +110,12 @@ public class OTBlockTagsProvider extends BlockTagsProvider {
         this.tag(OTTags.Blocks.CAVES_AND_CLIFFS_CONTENT).add(OTBlocks.AZALEA_LEAVES.get()).add(OTBlocks.FLOWERING_AZALEA_LEAVES.get()).add(OTBlocks.AZALEA.get())
                 .add(OTBlocks.FLOWERING_AZALEA.get()).add(OTBlocks.POTTED_AZALEA.get()).add(OTBlocks.POTTED_FLOWERING_AZALEA.get()).add(OTBlocks.MOSS_BLOCK.get())
                 .add(OTBlocks.MOSS_CARPET.get()).add(OTBlocks.ROOTED_DIRT.get()).add(OTBlocks.HANGING_ROOTS.get());
+        this.tag(OTTags.Blocks.AZALEA_PLACEABLE_ON).addTag(Tags.Blocks.DIRT).addTag(OTTags.Blocks.FARMLAND).add(OTBlocks.MOSS_BLOCK.get()).add(Blocks.CLAY);
+        this.tag(OTTags.Blocks.BLUE_CARROTS_PLANTABLE_ON).addTag(OTTags.Blocks.FARMLAND);
 
         // Melony Tags
         this.tag(OTTags.Blocks.DEEPSLATE_REPLACEABLES);
+        this.tag(OTTags.Blocks.FARMLAND).add(Blocks.FARMLAND);
         this.tag(OTTags.Blocks.CRAFTING_TABLES).add(Blocks.CRAFTING_TABLE).add(OTBlocks.CRAFTER.get()).add(OTBlocks.DRAWN_CRAFTING_TABLE.get());
         this.tag(OTTags.Blocks.SMITHING_TABLES).add(Blocks.SMITHING_TABLE).add(OTBlocks.DRAWN_SMITHING_TABLE.get());
     }

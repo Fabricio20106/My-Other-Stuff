@@ -11,7 +11,7 @@ import java.util.Random;
 public class FloweringAzaleaTree extends Tree {
     @Nullable
     @Override
-    protected ConfiguredFeature<BaseTreeFeatureConfig, ?> getConfiguredFeature(Random rand, boolean beehive) {
+    protected ConfiguredFeature<BaseTreeFeatureConfig, ?> getConfiguredFeature(Random rand, boolean hasBeehive) {
         return OTFeatures.FLOWERING_AZALEA_TREE;
     }
 }

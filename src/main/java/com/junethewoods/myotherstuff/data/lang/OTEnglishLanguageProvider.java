@@ -137,6 +137,10 @@ public class OTEnglishLanguageProvider extends LanguageProvider {
         item(OTItems.MAGMA_HEAD_NICOLAS, "Magma Cube Head Nicolas");
         item(OTItems.STEVE, "Steve");
         item(OTItems.WITHER_STEVE, "Wither Skeleton Skull Steve");
+        item(OTItems.MINI_BEEKEEPER, "Beekeeper");
+        item(OTItems.MINI_BAKER, "Baker");
+        item(OTItems.MINI_DIVER, "Dave (Diver)");
+        item(OTItems.MINI_MINER, "Parker (Miner)");
         item(OTItems.TYLER, "Tyler");
         item(OTItems.VILLAREN, "Villager (or FAKE Alan)");
         item(OTItems.ZOMBIE, "Zombie");
@@ -207,6 +211,10 @@ public class OTEnglishLanguageProvider extends LanguageProvider {
         add(OTItems.MUSIC_DISC_A_SKY_FULL_OF_STARS.get().getDescriptionId() + ".desc", "Coldplay - A Sky Full of Stars");
         item(OTItems.MUSIC_DISC_TRACES, "Music Disc");
         add(OTItems.MUSIC_DISC_TRACES.get().getDescriptionId() + ".desc", "Alistair Lindsay - Traces");
+        item(OTItems.MUSIC_DISC_OTHERSIDE, "Music Disc");
+        add(OTItems.MUSIC_DISC_OTHERSIDE.get().getDescriptionId() + ".desc", "Lena Raine - otherside");
+        item(OTItems.MUSIC_DISC_RELIC, "Music Disc");
+        add(OTItems.MUSIC_DISC_RELIC.get().getDescriptionId() + ".desc", "Aaron Cherof - Relic");
         item(OTItems.ANTIQUE_DIAMOND_DUST, "Antique Diamond Dust");
         item(OTItems.ANTIQUE_EMERALD_DUST, "Antique Emerald Dust");
         item(OTItems.ANTIQUE_GOLD_DUST, "Antique Gold Dust");
@@ -344,7 +352,27 @@ public class OTEnglishLanguageProvider extends LanguageProvider {
         item(OTItems.FAST_CHESTPLATE, "Fast Chestplate");
         item(OTItems.FAST_LEGGINGS, "Fast Leggings");
         item(OTItems.FAST_BOOTS, "Fast Boots");
+        item(OTItems.FIM_HOOD, "Fim Hood");
+        item(OTItems.FIM_BLOUSE, "Fim Blouse");
+        item(OTItems.FIM_PANTS, "Fim Pants");
+        item(OTItems.FIM_BOOTS, "Fim Boots");
+        item(OTItems.FINN_HOOD, "Finn Hood");
+        item(OTItems.FINN_BLOUSE, "Finn Blouse");
+        item(OTItems.FINN_PANTS, "Finn Pants");
+        item(OTItems.FINN_BOOTS, "Finn Boots");
+        item(OTItems.HAN_SOLO_ROBE, "Han Solo Shirt");
+        item(OTItems.HAN_SOLO_PANTS, "Han Solo Pants");
+        item(OTItems.HAN_SOLO_BOOTS, "Han Solo Boots");
         item(OTItems.SHULKER_HELMET, "Shulker Helmet");
+        item(OTItems.IAN_SHIRT, "Ian Shirt");
+        item(OTItems.MARIO_HAT, "Mario Hat");
+        item(OTItems.MARIO_ROBE, "Mario Jumper");
+        item(OTItems.MARIO_PANTS, "Mario Pants");
+        item(OTItems.MARIO_BOOTS, "Mario Boots");
+        item(OTItems.PONY_TIARA, "Pony Tiara");
+        item(OTItems.PONY_SHIRT, "Pony Shirt");
+        item(OTItems.PONY_SHORTS, "Pony Shorts");
+        item(OTItems.PONY_SHOES, "Pony Shoes");
         item(OTItems.SHULKER_CHESTPLATE, "Shulker Chestplate");
         item(OTItems.SHULKER_LEGGINGS, "Shulker Leggings");
         item(OTItems.SHULKER_BOOTS, "Shulker Boots");
@@ -408,7 +436,7 @@ public class OTEnglishLanguageProvider extends LanguageProvider {
 
         add("tooltip.others.discontinuation.block.main", "This block is from %s and it's being removed from My Other Stuff.");
         add("tooltip.others.discontinuation.item.main", "This item is from %s and it's being removed from My Other Stuff.");
-        add("tooltip.others.discontinuation.safety", "You should keep this in a museum, as you will never see this in Survival again.");
+        add("tooltip.others.discontinuation.safety", "You should keep this in a museum, as you may never see this in Survival again.");
 
         add("tooltip.others.mod.variants", "%s\u00A77 (Variants)");
         add("tooltip.others.mod.f10elements", "%s\u00A77 (F10 Elements)");
@@ -416,6 +444,7 @@ public class OTEnglishLanguageProvider extends LanguageProvider {
         add("tooltip.others.mod.rimcraft", "%s\u00A77 (Rimcraft)");
         add("tooltip.others.mod.gachalife", "%s\u00A77 (Gacha Life)");
         add("tooltip.others.mod.mobtaker", "%s\u00A77 (Mob Taker)");
+        add("tooltip.others.mod.inreallife", "%s\u00A77 (In Real Life - Sophie Clothes)");
 
         add("tooltip.others.can_be_worn.azalea", "Azalea Bushes can be worn on your head slot.");
     }

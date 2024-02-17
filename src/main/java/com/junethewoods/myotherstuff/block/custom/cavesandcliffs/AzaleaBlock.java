@@ -1,9 +1,12 @@
 package com.junethewoods.myotherstuff.block.custom.cavesandcliffs;
 
-import com.junethewoods.myotherstuff.block.OTBlocks;
 import com.junethewoods.myotherstuff.block.tree.AzaleaTree;
 import com.junethewoods.myotherstuff.block.tree.FloweringAzaleaTree;
-import net.minecraft.block.*;
+import com.junethewoods.myotherstuff.util.OTTags;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.BushBlock;
+import net.minecraft.block.IGrowable;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.shapes.ISelectionContext;
 import net.minecraft.util.math.shapes.VoxelShape;
@@ -11,7 +14,6 @@ import net.minecraft.util.math.shapes.VoxelShapes;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.World;
 import net.minecraft.world.server.ServerWorld;
-import net.minecraftforge.common.Tags;
 
 import java.util.Random;
 
@@ -31,7 +33,7 @@ public class AzaleaBlock extends BushBlock implements IGrowable {
 
     @Override
     protected boolean mayPlaceOn(BlockState state, IBlockReader world, BlockPos pos) {
-        return state.is(Blocks.CLAY) || state.is(Tags.Blocks.DIRT) || state.is(OTBlocks.MOSS_BLOCK.get()) || super.mayPlaceOn(state, world, pos);
+        return state.is(OTTags.Blocks.AZALEA_PLACEABLE_ON);
     }
 
     @Override

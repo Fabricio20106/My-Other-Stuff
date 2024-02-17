@@ -11,7 +11,7 @@ import java.util.Random;
 public class JungleBush extends Tree {
     @Nullable
     @Override
-    protected ConfiguredFeature<BaseTreeFeatureConfig, ?> getConfiguredFeature(Random rand, boolean beehive) {
+    protected ConfiguredFeature<BaseTreeFeatureConfig, ?> getConfiguredFeature(Random rand, boolean hasBeehive) {
         return OTFeatures.JUNGLE_BUSH;
     }
 }

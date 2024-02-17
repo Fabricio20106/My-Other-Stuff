@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "#inreallife:cloths/reinforced"
+    "#inreallife:cloths/reinforced",
+    "#inreallife:cloths/galaxy"
   ]
 }

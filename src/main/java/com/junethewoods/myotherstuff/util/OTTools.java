@@ -3,19 +3,19 @@ package com.junethewoods.myotherstuff.util;
 import com.junethewoods.myotherstuff.item.OTItems;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.IItemTier;
-import net.minecraft.item.Items;
 import net.minecraft.item.crafting.Ingredient;
+import net.minecraftforge.common.Tags;
 
 import java.util.function.Supplier;
 
 public enum OTTools implements IItemTier {
-    DIAEMERALD(3, 725, 7, 3.5f, 10, () -> Ingredient.of(OTItems.DIAEMERALD.get())),
-    MAGENTIC_CRYSTAL(2, 861, 7, 2.5f, 12, () -> Ingredient.of(OTItems.MAGENTIC_CRYSTAL.get())),
+    DIAEMERALD(3, 725, 7, 3.5F, 10, () -> Ingredient.of(OTTags.Items.GEMS_DIAEMERALD)),
+    MAGENTIC_CRYSTAL(2, 861, 7, 2.5F, 12, () -> Ingredient.of(OTTags.Items.GEMS_MAGENTIC)),
     PLASTEEL(4, 450, 15, 5, 50, () -> Ingredient.EMPTY),
-    ARTIFICIAL(4, 600, 15, 5, 50, () -> Ingredient.of(OTItems.COAL_DUST.get())),
-    WOVEN_GOLD(2, 600, 15, 5, 50, () -> Ingredient.of(Items.GOLD_INGOT)),
-    NETHER(3, 750, 15, 5, 50, () -> Ingredient.of(OTItems.NETHER_INGOT.get())),
-    INNO(3, 750, 15, 5, 50, () -> Ingredient.of(OTItems.INNO_INGOT.get())),
+    ARTIFICIAL(4, 600, 15, 5, 50, () -> Ingredient.of(OTTags.Items.DUSTS_COAL)),
+    WOVEN_GOLD(2, 600, 15, 5, 50, () -> Ingredient.of(Tags.Items.INGOTS_GOLD)),
+    NETHER(3, 750, 15, 5, 50, () -> Ingredient.of(OTTags.Items.INGOTS_NETHER)),
+    INNO(3, 750, 15, 5, 50, () -> Ingredient.of(OTTags.Items.INGOTS_INNO)),
     LEGO(2, 450, 15, 5, 20, () -> Ingredient.of(OTItems.LEGO_PIECES.get())),
     ANCHOR(4, 2031, 9, 4, 50, () -> Ingredient.of(Blocks.CRYING_OBSIDIAN)),
     V1SWORDS(3, 1025, 6, 2, 12, () -> Ingredient.EMPTY);

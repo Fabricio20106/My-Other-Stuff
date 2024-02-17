@@ -6,20 +6,24 @@ import net.minecraft.util.SoundEvent;
 import net.minecraftforge.registries.ForgeRegistries;
 
 public class OTSounds {
-    public static SoundEvent musicDiscBlockades;
-    public static SoundEvent musicDiscFirstDate;
-    public static SoundEvent musicDiscOmaeWaMu;
-    public static SoundEvent musicDiscASkyFullOfStars;
-    public static SoundEvent musicDiscTraces;
-    public static SoundEvent blockDeepslateBreak;
+    public static SoundEvent MUSIC_DISC_BLOCKADES;
+    public static SoundEvent MUSIC_DISC_FIRST_DATE;
+    public static SoundEvent MUSIC_DISC_OMAE_WA_MU;
+    public static SoundEvent MUSIC_DISC_A_SKY_FULL_OF_STARS;
+    public static SoundEvent MUSIC_DISC_TRACES;
+    public static SoundEvent MUSIC_DISC_OTHERSIDE;
+    public static SoundEvent MUSIC_DISC_RELIC;
+    public static SoundEvent BLOCK_DEEPSLATE_BREAK;
 
     public static void registerSounds() {
-        musicDiscBlockades = registerSound("music_disc.blockades");
-        musicDiscFirstDate = registerSound("music_disc.first_date");
-        musicDiscOmaeWaMu = registerSound("music_disc.omae_wa_mu");
-        musicDiscASkyFullOfStars = registerSound("music_disc.sfos");
-        musicDiscTraces = registerSound("music_disc.traces");
-        blockDeepslateBreak = registerSound("block.deepslate.break");
+        MUSIC_DISC_BLOCKADES = registerSound("music_disc.blockades");
+        MUSIC_DISC_FIRST_DATE = registerSound("music_disc.first_date");
+        MUSIC_DISC_OMAE_WA_MU = registerSound("music_disc.omae_wa_mu");
+        MUSIC_DISC_A_SKY_FULL_OF_STARS = registerSound("music_disc.sfos");
+        MUSIC_DISC_TRACES = registerSound("music_disc.traces");
+        MUSIC_DISC_OTHERSIDE = registerSound("music_disc.otherside");
+        MUSIC_DISC_RELIC = registerSound("music_disc.relic");
+        BLOCK_DEEPSLATE_BREAK = registerSound("block.deepslate.break");
     }
 
     private static SoundEvent registerSound(String name) {

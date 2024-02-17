@@ -87,7 +87,7 @@ public class OTItems {
     public static final RegistryObject<Item> BLUE_GLASS = ITEMS.register("blue_glass", () -> new BlockItem(OTBlocks.BLUE_GLASS.get(), new Item.Properties().tab(OTBlocksTab.TAB)));
     public static final RegistryObject<Item> BLUE_GLASS_PANE = ITEMS.register("blue_glass_pane", () -> new BlockItem(OTBlocks.BLUE_GLASS_PANE.get(), new Item.Properties().tab(OTBlocksTab.TAB)));
     public static final RegistryObject<Item> CYAN_GLASS = ITEMS.register("bluewhite_glass", () -> new BlockItem(OTBlocks.CYAN_GLASS.get(), new Item.Properties().tab(OTBlocksTab.TAB)));
-    public static final RegistryObject<Item> CYAN_CLASS_PANE = ITEMS.register("bluewhite_glass_pane", () -> new BlockItem(OTBlocks.CYAN_GLASS_PANE.get(), new Item.Properties().tab(OTBlocksTab.TAB)));
+    public static final RegistryObject<Item> CYAN_GLASS_PANE = ITEMS.register("bluewhite_glass_pane", () -> new BlockItem(OTBlocks.CYAN_GLASS_PANE.get(), new Item.Properties().tab(OTBlocksTab.TAB)));
     public static final RegistryObject<Item> END_CRYSTAL_GLASS = ITEMS.register("end_crystal_glass", () -> new DiscontinuedBlockItem(OTBlocks.END_CRYSTAL_GLASS.get(), new Item.Properties(), "Mob Taker"));
     public static final RegistryObject<Item> END_CRYSTAL_GLASS_PANE = ITEMS.register("end_crystal_glass_pane", () -> new DiscontinuedBlockItem(OTBlocks.END_CRYSTAL_GLASS_PANE.get(), new Item.Properties(), "Mob Taker"));
     public static final RegistryObject<Item> DRAWN_ACACIA_LEAVES = ITEMS.register("acacia_leaves_1", () -> new BlockItem(OTBlocks.DRAWN_ACACIA_LEAVES.get(), new Item.Properties().tab(OTBlocksTab.TAB)));
@@ -158,7 +158,7 @@ public class OTItems {
     public static final RegistryObject<Item> ARMOR_STAND = ITEMS.register("armor_stand", () -> new ArmorStandItem(new Item.Properties().stacksTo(16).tab(OTTab.TAB)));
     public static final RegistryObject<Item> BELL = ITEMS.register("bell", () -> new Item(new Item.Properties().tab(OTTab.TAB)));
     public static final RegistryObject<Item> BLAZE_RODS = ITEMS.register("blaze_rods", () -> new Item(new Item.Properties().tab(OTTab.TAB)));
-    public static final RegistryObject<Item> DRAGON_FIREBALL = ITEMS.register("dragon_fireball", () -> new Item(new Item.Properties().tab(OTTab.TAB)));
+    public static final RegistryObject<Item> DRAGON_FIREBALL = ITEMS.register("dragon_fireball", () -> new DiscontinuedItem(new Item.Properties(), "Mob Taker"));
     public static final RegistryObject<Item> ULTRA_BALL = ITEMS.register("ultra_ball", () -> new Item(new Item.Properties().tab(OTTab.TAB)));
     public static final RegistryObject<Item> MASTER_BALL = ITEMS.register("master_ball", () -> new Item(new Item.Properties().tab(OTTab.TAB)));
     public static final RegistryObject<Item> GREEN_BAG = ITEMS.register("green_bag", () -> new Item(new Item.Properties().tab(OTTab.TAB)));
@@ -183,17 +183,19 @@ public class OTItems {
     public static final RegistryObject<Item> BEE_ANGEL_RING = ITEMS.register("bee_angel_ring", () -> new Item(new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON).tab(OTTab.TAB)));
     public static final RegistryObject<Item> VEX_ANGEL_RING = ITEMS.register("vex_angel_ring", () -> new Item(new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON).tab(OTTab.TAB)));
     public static final RegistryObject<Item> ELYTRA_ANGEL_RING = ITEMS.register("elytra_angel_ring", () -> new Item(new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON).tab(OTTab.TAB)));
-    public static final RegistryObject<Item> MUSIC_DISC_FIRST_DATE = ITEMS.register("music_disc_first_date", () -> new MusicDiscItem(8, () -> OTSounds.musicDiscFirstDate, new Item.Properties().rarity(Rarity.RARE).stacksTo(1).tab(OTTab.TAB)));
-    public static final RegistryObject<Item> MUSIC_DISC_OMAE_WA_MU = ITEMS.register("music_disc_omae_wa_mu", () -> new MusicDiscItem(9, () -> OTSounds.musicDiscOmaeWaMu, new Item.Properties().rarity(Rarity.RARE).stacksTo(1).tab(OTTab.TAB)));
-    public static final RegistryObject<Item> MUSIC_DISC_TRACES = ITEMS.register("music_disc_traces", () -> new MusicDiscItem(9, () -> OTSounds.musicDiscTraces, new Item.Properties().rarity(Rarity.RARE).stacksTo(1).tab(OTTab.TAB)));
-    public static final RegistryObject<Item> MUSIC_DISC_A_SKY_FULL_OF_STARS = ITEMS.register("music_disc_sfos", () -> new MusicDiscItem(8, () -> OTSounds.musicDiscASkyFullOfStars, new Item.Properties().rarity(Rarity.RARE).stacksTo(1).tab(OTTab.TAB)));
-    public static final RegistryObject<Item> MUSIC_DISC_BLOCKADES = ITEMS.register("music_disc_blockades", () -> new MusicDiscItem(12, () -> OTSounds.musicDiscBlockades, new Item.Properties().rarity(Rarity.RARE).stacksTo(1).tab(OTTab.TAB)));
+    public static final RegistryObject<Item> MUSIC_DISC_FIRST_DATE = ITEMS.register("music_disc_first_date", () -> new MusicDiscItem(8, () -> OTSounds.MUSIC_DISC_FIRST_DATE, new Item.Properties().rarity(Rarity.RARE).stacksTo(1).tab(OTTab.TAB)));
+    public static final RegistryObject<Item> MUSIC_DISC_OMAE_WA_MU = ITEMS.register("music_disc_omae_wa_mu", () -> new MusicDiscItem(9, () -> OTSounds.MUSIC_DISC_OMAE_WA_MU, new Item.Properties().rarity(Rarity.RARE).stacksTo(1).tab(OTTab.TAB)));
+    public static final RegistryObject<Item> MUSIC_DISC_TRACES = ITEMS.register("music_disc_traces", () -> new MusicDiscItem(9, () -> OTSounds.MUSIC_DISC_TRACES, new Item.Properties().rarity(Rarity.RARE).stacksTo(1).tab(OTTab.TAB)));
+    public static final RegistryObject<Item> MUSIC_DISC_A_SKY_FULL_OF_STARS = ITEMS.register("music_disc_sfos", () -> new MusicDiscItem(8, () -> OTSounds.MUSIC_DISC_A_SKY_FULL_OF_STARS, new Item.Properties().rarity(Rarity.RARE).stacksTo(1).tab(OTTab.TAB)));
+    public static final RegistryObject<Item> MUSIC_DISC_BLOCKADES = ITEMS.register("music_disc_blockades", () -> new MusicDiscItem(12, () -> OTSounds.MUSIC_DISC_BLOCKADES, new Item.Properties().rarity(Rarity.RARE).stacksTo(1).tab(OTTab.TAB)));
     public static final RegistryObject<Item> MUSIC_DISC_UNDERWATER_TRACKS = ITEMS.register("music_disc_underwater", () -> new MusicDiscItem(11, () -> SoundEvents.MUSIC_UNDER_WATER, new Item.Properties().rarity(Rarity.RARE).stacksTo(1).tab(OTTab.TAB)));
     public static final RegistryObject<Item> MUSIC_DISC_CREATIVE_TRACKS = ITEMS.register("music_disc_creative", () -> new MusicDiscItem(9, () -> SoundEvents.MUSIC_CREATIVE, new Item.Properties().rarity(Rarity.RARE).stacksTo(1).tab(OTTab.TAB)));
     public static final RegistryObject<Item> MUSIC_DISC_THE_END = ITEMS.register("music_disc_end_high", () -> new MusicDiscItem(10, () -> SoundEvents.MUSIC_END, new Item.Properties().rarity(Rarity.RARE).stacksTo(1).tab(OTTab.TAB)));
     public static final RegistryObject<Item> MUSIC_DISC_RUBEDO = ITEMS.register("music_disc_rubedo", () -> new MusicDiscItem(6, () -> SoundEvents.MUSIC_BIOME_NETHER_WASTES, new Item.Properties().rarity(Rarity.RARE).stacksTo(1).tab(OTTab.TAB)));
     public static final RegistryObject<Item> MUSIC_DISC_CHRYSOPOEIA = ITEMS.register("music_disc_chrysopoeia", () -> new MusicDiscItem(7, () -> SoundEvents.MUSIC_BIOME_CRIMSON_FOREST, new Item.Properties().rarity(Rarity.RARE).stacksTo(1).tab(OTTab.TAB)));
     public static final RegistryObject<Item> MUSIC_DISC_SO_BELOW = ITEMS.register("music_disc_so_below", () -> new MusicDiscItem(8, () -> SoundEvents.MUSIC_BIOME_SOUL_SAND_VALLEY, new Item.Properties().rarity(Rarity.RARE).stacksTo(1).tab(OTTab.TAB)));
+    public static final RegistryObject<Item> MUSIC_DISC_OTHERSIDE = ITEMS.register("music_disc_otherside", () -> new MusicDiscItem(14, () -> OTSounds.MUSIC_DISC_OTHERSIDE, new Item.Properties().rarity(Rarity.RARE).stacksTo(1).tab(OTTab.TAB)));
+    public static final RegistryObject<Item> MUSIC_DISC_RELIC = ITEMS.register("music_disc_relic", () -> new MusicDiscItem(14, () -> OTSounds.MUSIC_DISC_RELIC, new Item.Properties().rarity(Rarity.RARE).stacksTo(1).tab(OTTab.TAB)));
     // Todo: Make this into a painting later.
     public static final RegistryObject<Item> FA_SKIN = ITEMS.register("fa_skin", () -> new Item(new Item.Properties().stacksTo(1).tab(OTTab.TAB)));
     public static final RegistryObject<Item> SPRITE = ITEMS.register("sprite", () -> new Item(new Item.Properties().tab(OTTab.TAB)));
@@ -212,6 +214,10 @@ public class OTItems {
     public static final RegistryObject<Item> ALEX = ITEMS.register("alex_1", () -> new Item(new Item.Properties().stacksTo(1).tab(OTTab.TAB)));
     public static final RegistryObject<Item> STEVE = ITEMS.register("steve_0", () -> new Item(new Item.Properties().stacksTo(1).tab(OTTab.TAB)));
     public static final RegistryObject<Item> WITHER_STEVE = ITEMS.register("steve_1", () -> new Item(new Item.Properties().stacksTo(1).tab(OTTab.TAB)));
+    public static final RegistryObject<Item> MINI_BEEKEEPER = ITEMS.register("mini_beekeeper", () -> new Item(new Item.Properties().stacksTo(1).tab(OTTab.TAB)));
+    public static final RegistryObject<Item> MINI_BAKER = ITEMS.register("mini_baker", () -> new Item(new Item.Properties().stacksTo(1).tab(OTTab.TAB)));
+    public static final RegistryObject<Item> MINI_DIVER = ITEMS.register("mini_diver", () -> new Item(new Item.Properties().stacksTo(1).tab(OTTab.TAB)));
+    public static final RegistryObject<Item> MINI_MINER = ITEMS.register("mini_miner", () -> new Item(new Item.Properties().stacksTo(1).tab(OTTab.TAB)));
     public static final RegistryObject<Item> ZOMBIE = ITEMS.register("zombie_0", () -> new Item(new Item.Properties().stacksTo(1).tab(OTTab.TAB)));
     public static final RegistryObject<Item> CREEPER = ITEMS.register("creeper_0", () -> new Item(new Item.Properties().stacksTo(1).tab(OTTab.TAB)));
     public static final RegistryObject<Item> VILLAREN = ITEMS.register("villager_alan_0", () -> new Item(new Item.Properties().stacksTo(1).tab(OTTab.TAB)));
@@ -379,10 +385,10 @@ public class OTItems {
     public static final RegistryObject<Item> FIM_BLOUSE = ITEMS.register("baby_demon_chestplate", () -> new ArmorItem(OTArmors.BABY_DEMON, EquipmentSlotType.CHEST, new Item.Properties().tab(OTWeaponTab.TAB)));
     public static final RegistryObject<Item> FIM_PANTS = ITEMS.register("baby_demon_leggings", () -> new ArmorItem(OTArmors.BABY_DEMON, EquipmentSlotType.LEGS, new Item.Properties().tab(OTWeaponTab.TAB)));
     public static final RegistryObject<Item> FIM_BOOTS = ITEMS.register("baby_demon_boots", () -> new ArmorItem(OTArmors.BABY_DEMON, EquipmentSlotType.FEET, new Item.Properties().tab(OTWeaponTab.TAB)));
-    public static final RegistryObject<Item> FINN_HOOD = ITEMS.register("finn_helmet", () -> new ArmorItem(OTArmors.FINN, EquipmentSlotType.HEAD, new Item.Properties().tab(OTWeaponTab.TAB)));
-    public static final RegistryObject<Item> FINN_BLOUSE = ITEMS.register("finn_chestplate", () -> new ArmorItem(OTArmors.FINN, EquipmentSlotType.CHEST, new Item.Properties().tab(OTWeaponTab.TAB)));
-    public static final RegistryObject<Item> FINN_PANTS = ITEMS.register("finn_leggings", () -> new ArmorItem(OTArmors.FINN, EquipmentSlotType.LEGS, new Item.Properties().tab(OTWeaponTab.TAB)));
-    public static final RegistryObject<Item> FINN_BOOTS = ITEMS.register("finn_boots", () -> new ArmorItem(OTArmors.FINN, EquipmentSlotType.FEET, new Item.Properties().tab(OTWeaponTab.TAB)));
+    public static final RegistryObject<Item> FINN_HOOD = ITEMS.register("finn_helmet", () -> new DiscontinuedArmorItem(OTArmors.FINN, EquipmentSlotType.HEAD, new Item.Properties(), "In Real Life"));
+    public static final RegistryObject<Item> FINN_BLOUSE = ITEMS.register("finn_chestplate", () -> new DiscontinuedArmorItem(OTArmors.FINN, EquipmentSlotType.CHEST, new Item.Properties(), "In Real Life"));
+    public static final RegistryObject<Item> FINN_PANTS = ITEMS.register("finn_leggings", () -> new DiscontinuedArmorItem(OTArmors.FINN, EquipmentSlotType.LEGS, new Item.Properties(), "In Real Life"));
+    public static final RegistryObject<Item> FINN_BOOTS = ITEMS.register("finn_boots", () -> new DiscontinuedArmorItem(OTArmors.FINN, EquipmentSlotType.FEET, new Item.Properties(), "In Real Life"));
     public static final RegistryObject<Item> HAN_SOLO_ROBE = ITEMS.register("han_chestplate", () -> new ArmorItem(OTArmors.HAN_SOLO, EquipmentSlotType.CHEST, new Item.Properties().tab(OTWeaponTab.TAB)));
     public static final RegistryObject<Item> HAN_SOLO_PANTS = ITEMS.register("han_leggings", () -> new ArmorItem(OTArmors.HAN_SOLO, EquipmentSlotType.LEGS, new Item.Properties().tab(OTWeaponTab.TAB)));
     public static final RegistryObject<Item> HAN_SOLO_BOOTS = ITEMS.register("han_boots", () -> new ArmorItem(OTArmors.HAN_SOLO, EquipmentSlotType.FEET, new Item.Properties().tab(OTWeaponTab.TAB)));
@@ -398,7 +404,7 @@ public class OTItems {
     public static final RegistryObject<Item> AZALEA_HELM = ITEMS.register("azalea_helm", () -> new ArmorItem(OTArmors.AZALEA_HELM, EquipmentSlotType.HEAD, new Item.Properties().tab(OTWeaponTab.TAB)));
     public static final RegistryObject<Item> BLUP_SHIRT = ITEMS.register("blup_chestplate", () -> new ArmorItem(OTRobes.BLUP, EquipmentSlotType.CHEST, new Item.Properties().tab(OTWeaponTab.TAB)));
     public static final RegistryObject<Item> EMPRESARY_2_ROBE = ITEMS.register("empresary_robe", () -> new ArmorItem(OTRobes.EMPRESARY_2, EquipmentSlotType.CHEST, new Item.Properties().tab(OTWeaponTab.TAB)));
-    public static final RegistryObject<Item> GALAXY_SHIRT = ITEMS.register("galaxy_chestplate", () -> new ArmorItem(OTRobes.GALAXY, EquipmentSlotType.CHEST, new Item.Properties().tab(OTWeaponTab.TAB)));
+    public static final RegistryObject<Item> GALAXY_SHIRT = ITEMS.register("galaxy_chestplate", () -> new DiscontinuedArmorItem(OTRobes.GALAXY, EquipmentSlotType.CHEST, new Item.Properties(), "Gacha Life"));
     public static final RegistryObject<Item> NUMBER_1_BLOUSE = ITEMS.register("number_1", () -> new ArmorItem(OTRobes.NUMBER_1, EquipmentSlotType.CHEST, new Item.Properties().tab(OTWeaponTab.TAB)));
     public static final RegistryObject<Item> STRIPED_RED_SHIRT = ITEMS.register("robe_with_pales", () -> new ArmorItem(OTRobes.STRIPES, EquipmentSlotType.CHEST, new Item.Properties().tab(OTWeaponTab.TAB)));
     public static final RegistryObject<Item> LIME_SHIRT = ITEMS.register("green_chestplate", () -> new ArmorItem(OTRobes.GREEN, EquipmentSlotType.CHEST, new Item.Properties().tab(OTWeaponTab.TAB)));
