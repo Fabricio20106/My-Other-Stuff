@@ -1,0 +1,17 @@
+{
+  "type": "others:tailoring",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "inreallife:cloths/lime"
+      }
+    }
+  ],
+  "ingredient": {
+    "tag": "inreallife:cloths/lime"
+  },
+  "result": "others:green_chestplate",
+  "count": 1
+}

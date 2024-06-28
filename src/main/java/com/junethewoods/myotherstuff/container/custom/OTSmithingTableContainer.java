@@ -1,4 +1,4 @@
-package com.junethewoods.myotherstuff.blockentity.inventory;
+package com.junethewoods.myotherstuff.container.custom;
 
 import com.junethewoods.myotherstuff.util.OTTags;
 import net.minecraft.entity.player.PlayerEntity;

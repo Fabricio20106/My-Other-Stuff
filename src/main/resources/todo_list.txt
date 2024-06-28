@@ -23,4 +23,13 @@ To Add (31/01/2024):
 - Way too many recipes
 - Update existing recipes to match block textures
 - Remove recipes for discontinued items
-- Add broken textures for all elytras/wings
+- Add broken textures for all Elytra/wings
+
+22/03/2024:
+
+- Add Tailoring Bench [done]
+- Make a texture for the Tailoring Bench
+   - Then think of a crafting recipe
+- Add anvil repair items for Others' items
+- Add all cloth colors to In Real Life
+- Add the Unfinished Clothing Pieces to Variants

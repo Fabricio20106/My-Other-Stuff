@@ -175,6 +175,7 @@ public class OTItemTagsProvider extends ItemTagsProvider {
         // Melony Tags
         this.tag(OTTags.Items.CRAFTING_TABLES).add(Items.CRAFTING_TABLE).add(OTItems.CRAFTER.get()).add(OTItems.DRAWN_CRAFTING_TABLE.get());
         this.tag(OTTags.Items.SMITHING_TABLES).add(Items.SMITHING_TABLE).add(OTItems.DRAWN_SMITHING_TABLE.get());
+        this.tag(OTTags.Items.TAILORING_BENCHES).add(OTItems.TAILORING_BENCH.get());
 
         this.tag(OTTags.Items.BOWS).add(OTItems.BLAZE_BOW.get()).add(OTItems.BAMBOO_BOW.get());
         this.tag(OTTags.Items.CROSSBOWS).add(OTItems.BLAZE_CROSSBOW.get()).add(OTItems.BAMBOO_CROSSBOW.get()).add(OTItems.DIAMOND_CROSSBOW.get()).add(OTItems.ENDER_CROSSBOW.get());

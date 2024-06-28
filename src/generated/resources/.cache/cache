@@ -79,8 +79,9 @@ fb5cb13a7ecc7c1a91b6acbc79caee62e707a8ae assets/others/blockstates/rooted_dirt.j
 ad1cbef3ebc5d116d6ed7c1ebce8bccde73eb436 assets/others/blockstates/slate_bricks.json
 8ffe205c8973e3ee774cfc1d36c10cf6197ee074 assets/others/blockstates/smithing_table_1.json
 98c96e30842738cc66d1cfe1a3a29f3c801f4e6c assets/others/blockstates/swamp_oak_sapling.json
+70d7a67e2f989bd2a8b8586fa150fa2d3c184cae assets/others/blockstates/tailoring_bench.json
 a631c80f3754267d21f0ec74045461eee2875cd0 assets/others/blockstates/tall_birch_sapling.json
-2d7f3fe17f30d81f5d305b60dad561f27fb192e7 assets/others/lang/en_us.json
+b6a5c39b858e45336fbb6e104a4fec16947f66f8 assets/others/lang/en_us.json
 6aea7c0de2594b2705cfa08342ee897d1f811e07 assets/others/models/block/acacia_leaves_1.json
 fef3e0c14a015f0c26918031ff3fa3692286c2e6 assets/others/models/block/autocrafter.json
 22b3022a1ca9da894d6695800d9149a63d9adb6b assets/others/models/block/azalea.json
@@ -204,6 +205,7 @@ dc88a321fbe810987e02099b73b9b9ba4eede322 assets/others/models/block/screen_monit
 960b1045f35363973406f60675ae0b355817afca assets/others/models/block/slate_bricks.json
 e6961d38f5da91d2ffef67ead5318b481ee40489 assets/others/models/block/smithing_table_1.json
 c9f19ddd94640257648151804051dc504482fafb assets/others/models/block/swamp_oak_sapling.json
+8645d72506b9402f8204949c7de73f051acdd601 assets/others/models/block/tailoring_bench.json
 5f95996ecd93c9b026adf0b7f7ecf566e38d69e6 assets/others/models/block/tall_birch_sapling.json
 bd592f689637ed7c8e6bf8e4512de8a80abb777d assets/others/models/item/abu_tunes.json
 4f7431960c77e9ef9d24e8797b86f8d46e264775 assets/others/models/item/acacia_leaves_1.json
@@ -566,6 +568,7 @@ e1ce1a3dc1d97b861c3fa37856c8894ed8beb84b assets/others/models/item/oak_bush_sapl
 39c7c421030bc9d48750cdbad66d2e034a68249d assets/others/models/item/orange_flower_pot.json
 15564ed83712dacf735abf3729b3fb0c7105bc54 assets/others/models/item/orange_flower_pot_1.json
 2fca22e3684c20716726fb96303b50ef90a65c18 assets/others/models/item/orange_leggings.json
+dcc2fdcf1dc5a0f6879193a7ae9601f867220fd1 assets/others/models/item/others_notebook.json
 aef332fed1d9f95825d58b072e7034b010f3eaf5 assets/others/models/item/pajama_boots.json
 3a5a413291ba0927e22026e4b7066b67de161f6a assets/others/models/item/pajama_helmet.json
 74990f70ed8401f167374ae6329abd304918f9e2 assets/others/models/item/pajama_leggings.json
@@ -639,6 +642,7 @@ b271a0101b6af73d81ab25b60cc8bbfea7c6cff3 assets/others/models/item/sprinkled_don
 9b1d4cd02b0b1539dd1970205e12b827d43819f4 assets/others/models/item/sugar_cookie.json
 8b672161bd82e1c33e8829465ea73a772c5e2390 assets/others/models/item/swamp_oak_sapling.json
 fce6defd8696a4cace791aadcba2437aa90eff0b assets/others/models/item/tab.json
+99e89e05122a8c7b2b7a8abb461dc2b16714a3fb assets/others/models/item/tailoring_bench.json
 ecf42271fecd9e0ece3ce7e98478bf3796b303f3 assets/others/models/item/tall_birch_sapling.json
 fbd4adecddb4b1bd3ef935c5684370fffcf1e98a assets/others/models/item/today_wireless_monitor.json
 064e4935c73d959fd7779e4a0e3f6b58e3a88227 assets/others/models/item/trident_pickaxe.json
@@ -808,6 +812,7 @@ a299d5acb2d7797b71b1e39b7bd984a81a489c1e data/others/tags/blocks/belongs_to/f10e
 88853033939db48d7bac7358662f5ad2bc4044ed data/others/tags/blocks/belongs_to/variants.json
 0c1eb64dab4df4c5771ea8dd2a54b7cf96fc8526 data/others/tags/blocks/blue_carrots_plantable_on.json
 535507852cd00bf0ca85d75596d4be60455baf27 data/others/tags/blocks/caves_and_cliffs_content.json
+b39048f6ef3048457b65bc8a23f5a2c63822770e data/others/tags/blocks/tailoring_benches.json
 7e95769aab11d5317bf3c71973293ff970637682 data/others/tags/items/belongs_to.json
 2944b3f86405498fae847333ef1e04cd664d368d data/others/tags/items/belongs_to/f10elements.json
 343829965e658cb0088ed48cebb4b6a3088242c0 data/others/tags/items/belongs_to/fabricio2010pack.json
@@ -819,4 +824,5 @@ a299d5acb2d7797b71b1e39b7bd984a81a489c1e data/others/tags/blocks/belongs_to/f10e
 de8736c41b82a36028bfe0b439db71fb85172a1f data/others/tags/items/minifigures.json
 fcf11884b720214e3aad80e6239e90adf46870dc data/others/tags/items/monitors.json
 baba7c6e9322fe512e09674ad1bbb4d1442cf38c data/others/tags/items/suits.json
+b39048f6ef3048457b65bc8a23f5a2c63822770e data/others/tags/items/tailoring_benches.json
 bedef2b7c6e7f01723181126d86c7ace6445f2be data/project_alcook/tags/items/mini_people.json

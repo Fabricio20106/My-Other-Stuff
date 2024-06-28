@@ -118,5 +118,6 @@ public class OTBlockTagsProvider extends BlockTagsProvider {
         this.tag(OTTags.Blocks.FARMLAND).add(Blocks.FARMLAND);
         this.tag(OTTags.Blocks.CRAFTING_TABLES).add(Blocks.CRAFTING_TABLE).add(OTBlocks.CRAFTER.get()).add(OTBlocks.DRAWN_CRAFTING_TABLE.get());
         this.tag(OTTags.Blocks.SMITHING_TABLES).add(Blocks.SMITHING_TABLE).add(OTBlocks.DRAWN_SMITHING_TABLE.get());
+        this.tag(OTTags.Blocks.TAILORING_BENCHES).add(OTBlocks.TAILORING_BENCH.get());
     }
 }

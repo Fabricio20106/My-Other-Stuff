@@ -1,6 +1,6 @@
 package com.junethewoods.myotherstuff.block.custom;
 
-import com.junethewoods.myotherstuff.blockentity.inventory.OTWorkbenchContainer;
+import com.junethewoods.myotherstuff.container.custom.OTWorkbenchContainer;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;

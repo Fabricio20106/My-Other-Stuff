@@ -1,6 +1,6 @@
 package com.junethewoods.myotherstuff.block.custom;
 
-import com.junethewoods.myotherstuff.blockentity.inventory.OTSmithingTableContainer;
+import com.junethewoods.myotherstuff.container.custom.OTSmithingTableContainer;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.container.INamedContainerProvider;

@@ -1,0 +1,17 @@
+{
+  "type": "others:tailoring",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "inreallife:cloths/cyan"
+      }
+    }
+  ],
+  "ingredient": {
+    "tag": "inreallife:cloths/cyan"
+  },
+  "result": "others:baby_demon_helmet",
+  "count": 1
+}

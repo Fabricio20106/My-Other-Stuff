@@ -1,0 +1,8 @@
+{
+  "type": "others:tailoring",
+  "ingredient": {
+    "item": "minecraft:leather"
+  },
+  "result": "minecraft:leather_chestplate",
+  "count": 1
+}

@@ -1,0 +1,17 @@
+{
+  "type": "others:tailoring",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "inreallife:cloths/red"
+      }
+    }
+  ],
+  "ingredient": {
+    "tag": "inreallife:cloths/red"
+  },
+  "result": "others:ian_chestplate",
+  "count": 1
+}

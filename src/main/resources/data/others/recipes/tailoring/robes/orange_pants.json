@@ -1,0 +1,17 @@
+{
+  "type": "others:tailoring",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "inreallife:cloths/orange"
+      }
+    }
+  ],
+  "ingredient": {
+    "tag": "inreallife:cloths/orange"
+  },
+  "result": "others:orange_leggings",
+  "count": 1
+}

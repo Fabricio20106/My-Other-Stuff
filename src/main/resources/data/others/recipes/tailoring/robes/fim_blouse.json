@@ -1,0 +1,17 @@
+{
+  "type": "others:tailoring",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "inreallife:cloths/magenta"
+      }
+    }
+  ],
+  "ingredient": {
+    "tag": "inreallife:cloths/magenta"
+  },
+  "result": "others:baby_demon_chestplate",
+  "count": 1
+}

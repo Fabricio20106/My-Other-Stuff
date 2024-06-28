@@ -14,6 +14,8 @@ public class OTSounds {
     public static SoundEvent MUSIC_DISC_OTHERSIDE;
     public static SoundEvent MUSIC_DISC_RELIC;
     public static SoundEvent BLOCK_DEEPSLATE_BREAK;
+    public static SoundEvent UI_TAILORING_BENCH_SELECT_ITEM;
+    public static SoundEvent UI_TAILORING_BENCH_TAKE_RESULT;
 
     public static void registerSounds() {
         MUSIC_DISC_BLOCKADES = registerSound("music_disc.blockades");
@@ -24,6 +26,8 @@ public class OTSounds {
         MUSIC_DISC_OTHERSIDE = registerSound("music_disc.otherside");
         MUSIC_DISC_RELIC = registerSound("music_disc.relic");
         BLOCK_DEEPSLATE_BREAK = registerSound("block.deepslate.break");
+        UI_TAILORING_BENCH_SELECT_ITEM = registerSound("ui.tailoring_bench.select_item");
+        UI_TAILORING_BENCH_TAKE_RESULT = registerSound("ui.tailoring_bench.take_result");
     }
 
     private static SoundEvent registerSound(String name) {

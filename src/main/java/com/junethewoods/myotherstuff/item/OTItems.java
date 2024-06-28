@@ -78,6 +78,7 @@ public class OTItems {
     public static final RegistryObject<Item> CPU = ITEMS.register("cpu", () -> new BlockItem(OTBlocks.CPU.get(), new Item.Properties().tab(OTBlocksTab.TAB)));
     public static final RegistryObject<Item> DRAWN_CREATIVE_ENERGY_CUBE = ITEMS.register("energy_cube", () -> new BlockItem(OTBlocks.DRAWN_CREATIVE_ENERGY_CUBE.get(), new Item.Properties().tab(OTBlocksTab.TAB)));
     public static final RegistryObject<Item> CRAFTER = ITEMS.register("autocrafter", () -> new BlockItem(OTBlocks.CRAFTER.get(), new Item.Properties().tab(OTBlocksTab.TAB)));
+    public static final RegistryObject<Item> TAILORING_BENCH = ITEMS.register("tailoring_bench", () -> new BlockItem(OTBlocks.TAILORING_BENCH.get(), new Item.Properties().tab(OTBlocksTab.TAB)));
     public static final RegistryObject<Item> LEGO_FURNACE = ITEMS.register("lego_furnace", () -> new BlockItem(OTBlocks.DRAWN_FURNACE.get(), new Item.Properties().tab(OTBlocksTab.TAB)));
     public static final RegistryObject<Item> DRAWN_COMMAND_BLOCK = ITEMS.register("command_block_1", () -> new BlockItem(OTBlocks.DRAWN_COMMAND_BLOCK.get(), new Item.Properties().rarity(Rarity.EPIC).tab(OTBlocksTab.TAB)));
     public static final RegistryObject<Item> DRAWN_CRAFTING_TABLE = ITEMS.register("crafting_table_1", () -> new BlockItem(OTBlocks.DRAWN_CRAFTING_TABLE.get(), new Item.Properties().tab(OTBlocksTab.TAB)));

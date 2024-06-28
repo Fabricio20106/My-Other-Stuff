@@ -3,10 +3,16 @@ package com.junethewoods.myotherstuff;
 import com.junethewoods.myotherstuff.block.OTBlocks;
 import com.junethewoods.myotherstuff.blockentity.OTBlockEntities;
 import com.junethewoods.myotherstuff.config.OTConfigs;
+import com.junethewoods.myotherstuff.container.OTContainerTypes;
+import com.junethewoods.myotherstuff.crafting.OTRecipeSerializers;
+import com.junethewoods.myotherstuff.crafting.custom.TailoringRecipe;
 import com.junethewoods.myotherstuff.entity.renderer.OTElytraLayer;
 import com.junethewoods.myotherstuff.item.OTItems;
+import com.junethewoods.myotherstuff.screen.TailoringBenchScreen;
 import com.junethewoods.myotherstuff.sound.OTSounds;
+import com.junethewoods.myotherstuff.util.OTStats;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.ScreenManager;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.tileentity.BeaconTileEntityRenderer;
@@ -15,6 +21,7 @@ import net.minecraft.item.ElytraItem;
 import net.minecraft.item.FishingRodItem;
 import net.minecraft.item.ItemModelsProperties;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.registry.Registry;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -26,16 +33,15 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-
-import java.util.logging.LogManager;
-import java.util.logging.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import static com.junethewoods.myotherstuff.util.OTItemPredicateProvider.addBowPredicates;
 import static com.junethewoods.myotherstuff.util.OTItemPredicateProvider.addCrossbowPredicates;
 
 @Mod(MyOtherStuff.MOD_ID)
 public class MyOtherStuff {
-    public static final Logger LOGGER = LogManager.getLogManager().getLogger(MyOtherStuff.MOD_ID);
+    public static final Logger LOGGER = LogManager.getLogger(MyOtherStuff.MOD_ID);
     public static final String MOD_ID = "others";
 
     public MyOtherStuff() {
@@ -47,7 +53,11 @@ public class MyOtherStuff {
         OTItems.ITEMS.register(modEventBus);
         OTBlocks.BLOCKS.register(modEventBus);
         OTBlockEntities.BLOCK_ENTITIES.register(modEventBus);
+        OTContainerTypes.CONTAINERS.register(modEventBus);
+        OTRecipeSerializers.RECIPE_SERIALIZERS.register(modEventBus);
+
         OTSounds.registerSounds();
+        OTStats.init();
 
         forgeEventBus.register(this);
 
@@ -60,6 +70,8 @@ public class MyOtherStuff {
 
     public void commonSetup(final FMLCommonSetupEvent event) {
         Minecraft.getInstance().getEntityRenderDispatcher().getSkinMap().values().forEach(player -> player.addLayer(new OTElytraLayer<>(player)));
+
+        Registry.register(Registry.RECIPE_TYPE, TailoringRecipe.TYPE_ID, OTRecipeSerializers.TAILORING_RECIPE);
 
         addBowPredicates(OTItems.BLAZE_BOW.get());
         addBowPredicates(OTItems.BAMBOO_BOW.get());
@@ -118,6 +130,8 @@ public class MyOtherStuff {
         RenderTypeLookup.setRenderLayer(OTBlocks.INNO_FLOWER.get(), RenderType.cutout());
 
         ClientRegistry.bindTileEntityRenderer(OTBlockEntities.GOLDEN_BEACON.get(), BeaconTileEntityRenderer::new);
+
+        ScreenManager.register(OTContainerTypes.TAILORING_BENCH.get(), TailoringBenchScreen::new);
     }
 
     @SubscribeEvent

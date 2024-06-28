@@ -109,6 +109,7 @@ public class OTItemModelProvider extends ItemModelProvider {
         blockItem("crafting_table_1");
         blockItem("smithing_table_1");
         blockItem("autocrafter");
+        blockItem("tailoring_bench");
         blockItem("lego_furnace");
         blockItem("golden_beacon");
 
@@ -237,6 +238,7 @@ public class OTItemModelProvider extends ItemModelProvider {
         standard(generated, "vex_wing");
         standard(generated, "broken_blaze_elytra");
         standard(generated, "fast_elytra");
+        standard(generated, "others_notebook");
 
         // Minifigures
         standard(generated, "alan");

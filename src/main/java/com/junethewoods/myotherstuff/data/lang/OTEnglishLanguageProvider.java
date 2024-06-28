@@ -76,6 +76,7 @@ public class OTEnglishLanguageProvider extends LanguageProvider {
         add(OTBlocks.DRAWN_CREATIVE_ENERGY_CUBE, "Creative Energy Cube");
         add(OTBlocks.CPU, "CPU");
         add(OTBlocks.CRAFTER, "Crafter");
+        add(OTBlocks.TAILORING_BENCH, "Tailoring Bench");
         add(OTBlocks.DRAWN_FURNACE, "Drawn Furnace");
         add(OTBlocks.JUNGLE_BUSH_SAPLING, "Jungle Bush Sapling");
         add(OTBlocks.SWAMP_OAK_SAPLING, "Swamp Oak Sapling");
@@ -116,6 +117,9 @@ public class OTEnglishLanguageProvider extends LanguageProvider {
         add("container.purplier_smithing", "Drawn Smithing");
         add("container.crafting_one", "Drawn Crafting");
         add("container.autocrafter", "Auto Crafting");
+        add("container.others.tailoring_bench", "Tailoring Bench");
+
+        add("gui.jei.category.tailoring", "Tailoring");
 
         add("itemGroup.others.items", "My Other Stuff - Items");
         add("itemGroup.others.weapons", "My Other Stuff - Weapons");
@@ -433,6 +437,8 @@ public class OTEnglishLanguageProvider extends LanguageProvider {
         item(OTItems.UNDYING_SWORD, "Undying Sword");
         item(OTItems.WEAK_ENCHANTING_SWORD, "Weak Undying Sword");
         item(OTItems.WITCH_SWORD, "Witch Sword");
+
+        add("subtitles.others.ui.tailoring_bench.take_result", "Tailoring Bench used");
 
         add("tooltip.others.discontinuation.block.main", "This block is from %s and it's being removed from My Other Stuff.");
         add("tooltip.others.discontinuation.item.main", "This item is from %s and it's being removed from My Other Stuff.");

@@ -1,0 +1,14 @@
+{
+  "type": "others:tailoring",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "otremoved"
+    }
+  ],
+  "ingredient": {
+    "item": "minecraft:leather"
+  },
+  "result": "otremoved:horse_saddle",
+  "count": 1
+}

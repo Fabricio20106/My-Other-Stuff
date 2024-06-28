@@ -1,0 +1,17 @@
+{
+  "type": "others:tailoring",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "inreallife:cloths/gray"
+      }
+    }
+  ],
+  "ingredient": {
+    "tag": "inreallife:cloths/gray"
+  },
+  "result": "others:pony_leggings",
+  "count": 1
+}

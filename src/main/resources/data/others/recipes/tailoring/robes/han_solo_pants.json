@@ -1,0 +1,17 @@
+{
+  "type": "others:tailoring",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "inreallife:cloths/blue"
+      }
+    }
+  ],
+  "ingredient": {
+    "tag": "inreallife:cloths/blue"
+  },
+  "result": "others:han_leggings",
+  "count": 1
+}

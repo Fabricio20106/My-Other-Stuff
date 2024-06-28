@@ -96,6 +96,7 @@ public class OTTags {
 
         public static final ITag.INamedTag<Item> CAVES_AND_CLIFFS_CONTENT = mod("caves_and_cliffs_content");
         public static final ITag.INamedTag<Item> MONITORS = mod("monitors");
+        public static final ITag.INamedTag<Item> TAILORING_BENCHES = mod("tailoring_benches");
 
         // Tags from other mods
         // In Real Life - Sophie Clothes
@@ -164,6 +165,7 @@ public class OTTags {
         public static final ITag.INamedTag<Block> BELONGS_TO_F10_PACK = mod("belongs_to/fabricio2010pack");
         public static final ITag.INamedTag<Block> BELONGS_TO_RIMCRAFT = mod("belongs_to/rimcraft");
 
+        public static final ITag.INamedTag<Block> TAILORING_BENCHES = mod("tailoring_benches");
         public static final ITag.INamedTag<Block> CAVES_AND_CLIFFS_CONTENT = mod("caves_and_cliffs_content");
         public static final ITag.INamedTag<Block> AZALEA_PLACEABLE_ON = mod("azalea_placeable_on");
         public static final ITag.INamedTag<Block> BLUE_CARROTS_PLANTABLE_ON = mod("blue_carrots_plantable_on");

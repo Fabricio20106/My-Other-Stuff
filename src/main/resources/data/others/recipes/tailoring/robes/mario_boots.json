@@ -1,0 +1,17 @@
+{
+  "type": "others:tailoring",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "inreallife:cloths/brown"
+      }
+    }
+  ],
+  "ingredient": {
+    "tag": "inreallife:cloths/brown"
+  },
+  "result": "others:mario_boots",
+  "count": 1
+}

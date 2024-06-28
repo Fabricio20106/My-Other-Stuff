@@ -1,7 +1,7 @@
 {
-  "name": "Others Help Center",
+  "name": "Others Notebook",
   "landing_text": "The very much needed guide for Others, Others Removed and OTWeapons.",
   "version": 1,
-  "model": "others:others_guide",
+  "model": "others:others_notebook",
   "creativeTab": "others"
 }

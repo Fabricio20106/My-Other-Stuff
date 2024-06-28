@@ -128,6 +128,7 @@ public class OTBlockStateProvider extends BlockStateProvider {
                 modLoc("block/crafter_bottom"), modLoc("block/crafter_top"),
                 modLoc("block/crafter_front"), modLoc("block/crafter_front"),
                 modLoc("block/crafter_side"), modLoc("block/crafter_side")).texture("particle", modLoc("block/crafter_front")));
+        simpleBlock(OTBlocks.TAILORING_BENCH.get(), models().cubeAll("tailoring_bench", modLoc("block/nether_core_block")));
 
         getVariantBuilder(OTBlocks.BLUE_CARROTS.get()).forAllStates(state -> {
             int cropAgeIndex = potatoAgeIndex(state.getValue(CropsBlock.AGE));
